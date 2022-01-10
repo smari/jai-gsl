@@ -821,7 +821,7 @@ gsl_integration_qawo_table_set_length :: (t: *gsl_integration_qawo_table, L: flo
 
 gsl_integration_qawo_table_free :: (t: *gsl_integration_qawo_table) -> void #foreign libgsl;
 
-gsl_integration_rule :: (a0: *gsl_function, a1: float64, a2: float64, a3: *float64, a4: *float64, a5: *float64, a6: *float64) -> void #c_call;
+gsl_integration_rule :: #type (a0: *gsl_function, a1: float64, a2: float64, a3: *float64, a4: *float64, a5: *float64, a6: *float64) -> void #c_call;
 
 gsl_integration_qk15 :: (f: *gsl_function, a: float64, b: float64, result: *float64, abserr: *float64, resabs: *float64, resasc: *float64) -> void #foreign libgsl;
 
