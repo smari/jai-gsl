@@ -8,15 +8,239 @@
 
 GSL_ODEIV_HADJ_INC :: 1;
 GSL_ODEIV_HADJ_NIL :: 0;
+GSL_ODEIV_HADJ_DEC :: -1;
 
+GSL_CONST_MKSA_SPEED_OF_LIGHT :: 2.99792458e8;
+GSL_CONST_MKSA_GRAVITATIONAL_CONSTANT :: 6.673e-11;
+GSL_CONST_MKSA_PLANCKS_CONSTANT_H :: 6.62606896e-34;
+GSL_CONST_MKSA_PLANCKS_CONSTANT_HBAR :: 1.05457162825e-34;
+GSL_CONST_MKSA_ASTRONOMICAL_UNIT :: 1.49597870691e11;
+GSL_CONST_MKSA_LIGHT_YEAR :: 9.46053620707e15;
+GSL_CONST_MKSA_PARSEC :: 3.08567758135e16;
+GSL_CONST_MKSA_GRAV_ACCEL :: 9.80665e0;
+GSL_CONST_MKSA_ELECTRON_VOLT :: 1.602176487e-19;
+GSL_CONST_MKSA_MASS_ELECTRON :: 9.10938188e-31;
+GSL_CONST_MKSA_MASS_MUON :: 1.88353109e-28;
+GSL_CONST_MKSA_MASS_PROTON :: 1.67262158e-27;
+GSL_CONST_MKSA_MASS_NEUTRON :: 1.67492716e-27;
+GSL_CONST_MKSA_RYDBERG :: 2.17987196968e-18;
+GSL_CONST_MKSA_BOLTZMANN :: 1.3806504e-23;
+GSL_CONST_MKSA_MOLAR_GAS :: 8.314472e0;
+GSL_CONST_MKSA_STANDARD_GAS_VOLUME :: 2.2710981e-2;
+GSL_CONST_MKSA_MINUTE :: 6e1;
+GSL_CONST_MKSA_HOUR :: 3.6e3;
+GSL_CONST_MKSA_DAY :: 8.64e4;
+GSL_CONST_MKSA_WEEK :: 6.048e5;
+GSL_CONST_MKSA_INCH :: 2.54e-2;
+GSL_CONST_MKSA_FOOT :: 3.048e-1;
+GSL_CONST_MKSA_YARD :: 9.144e-1;
+GSL_CONST_MKSA_MILE :: 1.609344e3;
+GSL_CONST_MKSA_NAUTICAL_MILE :: 1.852e3;
+GSL_CONST_MKSA_FATHOM :: 1.8288e0;
+GSL_CONST_MKSA_MIL :: 2.54e-5;
+GSL_CONST_MKSA_POINT :: 3.52777777778e-4;
+GSL_CONST_MKSA_TEXPOINT :: 3.51459803515e-4;
+GSL_CONST_MKSA_MICRON :: 1e-6;
+GSL_CONST_MKSA_ANGSTROM :: 1e-10;
+GSL_CONST_MKSA_HECTARE :: 1e4;
+GSL_CONST_MKSA_ACRE :: 4.04685642241e3;
+GSL_CONST_MKSA_BARN :: 1e-28;
+GSL_CONST_MKSA_LITER :: 1e-3;
+GSL_CONST_MKSA_US_GALLON :: 3.78541178402e-3;
+GSL_CONST_MKSA_QUART :: 9.46352946004e-4;
+GSL_CONST_MKSA_PINT :: 4.73176473002e-4;
+GSL_CONST_MKSA_CUP :: 2.36588236501e-4;
+GSL_CONST_MKSA_FLUID_OUNCE :: 2.95735295626e-5;
+GSL_CONST_MKSA_TABLESPOON :: 1.47867647813e-5;
+GSL_CONST_MKSA_TEASPOON :: 4.92892159375e-6;
+GSL_CONST_MKSA_CANADIAN_GALLON :: 4.54609e-3;
+GSL_CONST_MKSA_UK_GALLON :: 4.546092e-3;
+GSL_CONST_MKSA_MILES_PER_HOUR :: 4.4704e-1;
+GSL_CONST_MKSA_KILOMETERS_PER_HOUR :: 2.77777777778e-1;
+GSL_CONST_MKSA_KNOT :: 5.14444444444e-1;
+GSL_CONST_MKSA_POUND_MASS :: 4.5359237e-1;
+GSL_CONST_MKSA_OUNCE_MASS :: 2.8349523125e-2;
+GSL_CONST_MKSA_TON :: 9.0718474e2;
+GSL_CONST_MKSA_METRIC_TON :: 1e3;
+GSL_CONST_MKSA_UK_TON :: 1.0160469088e3;
+GSL_CONST_MKSA_TROY_OUNCE :: 3.1103475e-2;
+GSL_CONST_MKSA_CARAT :: 2e-4;
+GSL_CONST_MKSA_UNIFIED_ATOMIC_MASS :: 1.660538782e-27;
+GSL_CONST_MKSA_GRAM_FORCE :: 9.80665e-3;
+GSL_CONST_MKSA_POUND_FORCE :: 4.44822161526e0;
+GSL_CONST_MKSA_KILOPOUND_FORCE :: 4.44822161526e3;
+GSL_CONST_MKSA_POUNDAL :: 1.38255e-1;
+GSL_CONST_MKSA_CALORIE :: 4.1868e0;
+GSL_CONST_MKSA_BTU :: 1.05505585262e3;
+GSL_CONST_MKSA_THERM :: 1.05506e8;
+GSL_CONST_MKSA_HORSEPOWER :: 7.457e2;
+GSL_CONST_MKSA_BAR :: 1e5;
+GSL_CONST_MKSA_STD_ATMOSPHERE :: 1.01325e5;
+GSL_CONST_MKSA_TORR :: 1.33322368421e2;
+GSL_CONST_MKSA_METER_OF_MERCURY :: 1.33322368421e5;
+GSL_CONST_MKSA_INCH_OF_MERCURY :: 3.38638815789e3;
+GSL_CONST_MKSA_INCH_OF_WATER :: 2.490889e2;
+GSL_CONST_MKSA_PSI :: 6.89475729317e3;
+GSL_CONST_MKSA_POISE :: 1e-1;
+GSL_CONST_MKSA_STOKES :: 1e-4;
+GSL_CONST_MKSA_STILB :: 1e4;
+GSL_CONST_MKSA_LUMEN :: 1e0;
+GSL_CONST_MKSA_LUX :: 1e0;
+GSL_CONST_MKSA_PHOT :: 1e4;
+GSL_CONST_MKSA_FOOTCANDLE :: 1.076e1;
+GSL_CONST_MKSA_LAMBERT :: 1e4;
+GSL_CONST_MKSA_FOOTLAMBERT :: 1.07639104e1;
+GSL_CONST_MKSA_CURIE :: 3.7e10;
+GSL_CONST_MKSA_ROENTGEN :: 2.58e-4;
+GSL_CONST_MKSA_RAD :: 1e-2;
+GSL_CONST_MKSA_SOLAR_MASS :: 1.98892e30;
+GSL_CONST_MKSA_BOHR_RADIUS :: 5.291772083e-11;
+GSL_CONST_MKSA_NEWTON :: 1e0;
+GSL_CONST_MKSA_DYNE :: 1e-5;
+GSL_CONST_MKSA_JOULE :: 1e0;
+GSL_CONST_MKSA_ERG :: 1e-7;
+GSL_CONST_MKSA_STEFAN_BOLTZMANN_CONSTANT :: 5.67040047374e-8;
+GSL_CONST_MKSA_THOMSON_CROSS_SECTION :: 6.65245893699e-29;
+GSL_CONST_MKSA_BOHR_MAGNETON :: 9.27400899e-24;
+GSL_CONST_MKSA_NUCLEAR_MAGNETON :: 5.05078317e-27;
+GSL_CONST_MKSA_ELECTRON_MAGNETIC_MOMENT :: 9.28476362e-24;
+GSL_CONST_MKSA_PROTON_MAGNETIC_MOMENT :: 1.410606633e-26;
+GSL_CONST_MKSA_FARADAY :: 9.64853429775e4;
+GSL_CONST_MKSA_ELECTRON_CHARGE :: 1.602176487e-19;
+GSL_CONST_MKSA_VACUUM_PERMITTIVITY :: 8.854187817e-12;
+GSL_CONST_MKSA_VACUUM_PERMEABILITY :: 1.25663706144e-6;
+GSL_CONST_MKSA_DEBYE :: 3.33564095198e-30;
+GSL_CONST_MKSA_GAUSS :: 1e-4;
+
+GSL_CONST_CGSM_SPEED_OF_LIGHT :: 2.99792458e10;
+GSL_CONST_CGSM_GRAVITATIONAL_CONSTANT :: 6.673e-8;
+GSL_CONST_CGSM_PLANCKS_CONSTANT_H :: 6.62606896e-27;
+GSL_CONST_CGSM_PLANCKS_CONSTANT_HBAR :: 1.05457162825e-27;
+GSL_CONST_CGSM_ASTRONOMICAL_UNIT :: 1.49597870691e13;
+GSL_CONST_CGSM_LIGHT_YEAR :: 9.46053620707e17;
+GSL_CONST_CGSM_PARSEC :: 3.08567758135e18;
+GSL_CONST_CGSM_GRAV_ACCEL :: 9.80665e2;
+GSL_CONST_CGSM_ELECTRON_VOLT :: 1.602176487e-12;
+GSL_CONST_CGSM_MASS_ELECTRON :: 9.10938188e-28;
+GSL_CONST_CGSM_MASS_MUON :: 1.88353109e-25;
+GSL_CONST_CGSM_MASS_PROTON :: 1.67262158e-24;
+GSL_CONST_CGSM_MASS_NEUTRON :: 1.67492716e-24;
+GSL_CONST_CGSM_RYDBERG :: 2.17987196968e-11;
+GSL_CONST_CGSM_BOLTZMANN :: 1.3806504e-16;
+GSL_CONST_CGSM_MOLAR_GAS :: 8.314472e7;
+GSL_CONST_CGSM_STANDARD_GAS_VOLUME :: 2.2710981e4;
+GSL_CONST_CGSM_MINUTE :: 6e1;
+GSL_CONST_CGSM_HOUR :: 3.6e3;
+GSL_CONST_CGSM_DAY :: 8.64e4;
+GSL_CONST_CGSM_WEEK :: 6.048e5;
+GSL_CONST_CGSM_INCH :: 2.54e0;
+GSL_CONST_CGSM_FOOT :: 3.048e1;
+GSL_CONST_CGSM_YARD :: 9.144e1;
+GSL_CONST_CGSM_MILE :: 1.609344e5;
+GSL_CONST_CGSM_NAUTICAL_MILE :: 1.852e5;
+GSL_CONST_CGSM_FATHOM :: 1.8288e2;
+GSL_CONST_CGSM_MIL :: 2.54e-3;
+GSL_CONST_CGSM_POINT :: 3.52777777778e-2;
+GSL_CONST_CGSM_TEXPOINT :: 3.51459803515e-2;
+GSL_CONST_CGSM_MICRON :: 1e-4;
+GSL_CONST_CGSM_ANGSTROM :: 1e-8;
+GSL_CONST_CGSM_HECTARE :: 1e8;
+GSL_CONST_CGSM_ACRE :: 4.04685642241e7;
+GSL_CONST_CGSM_BARN :: 1e-24;
+GSL_CONST_CGSM_LITER :: 1e3;
+GSL_CONST_CGSM_US_GALLON :: 3.78541178402e3;
+GSL_CONST_CGSM_QUART :: 9.46352946004e2;
+GSL_CONST_CGSM_PINT :: 4.73176473002e2;
+GSL_CONST_CGSM_CUP :: 2.36588236501e2;
+GSL_CONST_CGSM_FLUID_OUNCE :: 2.95735295626e1;
+GSL_CONST_CGSM_TABLESPOON :: 1.47867647813e1;
+GSL_CONST_CGSM_TEASPOON :: 4.92892159375e0;
+GSL_CONST_CGSM_CANADIAN_GALLON :: 4.54609e3;
+GSL_CONST_CGSM_UK_GALLON :: 4.546092e3;
+GSL_CONST_CGSM_MILES_PER_HOUR :: 4.4704e1;
+GSL_CONST_CGSM_KILOMETERS_PER_HOUR :: 2.77777777778e1;
+GSL_CONST_CGSM_KNOT :: 5.14444444444e1;
+GSL_CONST_CGSM_POUND_MASS :: 4.5359237e2;
+GSL_CONST_CGSM_OUNCE_MASS :: 2.8349523125e1;
+GSL_CONST_CGSM_TON :: 9.0718474e5;
+GSL_CONST_CGSM_METRIC_TON :: 1e6;
+GSL_CONST_CGSM_UK_TON :: 1.0160469088e6;
+GSL_CONST_CGSM_TROY_OUNCE :: 3.1103475e1;
+GSL_CONST_CGSM_CARAT :: 2e-1;
+GSL_CONST_CGSM_UNIFIED_ATOMIC_MASS :: 1.660538782e-24;
+GSL_CONST_CGSM_GRAM_FORCE :: 9.80665e2;
+GSL_CONST_CGSM_POUND_FORCE :: 4.44822161526e5;
+GSL_CONST_CGSM_KILOPOUND_FORCE :: 4.44822161526e8;
+GSL_CONST_CGSM_POUNDAL :: 1.38255e4;
+GSL_CONST_CGSM_CALORIE :: 4.1868e7;
+GSL_CONST_CGSM_BTU :: 1.05505585262e10;
+GSL_CONST_CGSM_THERM :: 1.05506e15;
+GSL_CONST_CGSM_HORSEPOWER :: 7.457e9;
+GSL_CONST_CGSM_BAR :: 1e6;
+GSL_CONST_CGSM_STD_ATMOSPHERE :: 1.01325e6;
+GSL_CONST_CGSM_TORR :: 1.33322368421e3;
+GSL_CONST_CGSM_METER_OF_MERCURY :: 1.33322368421e6;
+GSL_CONST_CGSM_INCH_OF_MERCURY :: 3.38638815789e4;
+GSL_CONST_CGSM_INCH_OF_WATER :: 2.490889e3;
+GSL_CONST_CGSM_PSI :: 6.89475729317e4;
+GSL_CONST_CGSM_POISE :: 1e0;
+GSL_CONST_CGSM_STOKES :: 1e0;
+GSL_CONST_CGSM_STILB :: 1e0;
+GSL_CONST_CGSM_LUMEN :: 1e0;
+GSL_CONST_CGSM_LUX :: 1e-4;
+GSL_CONST_CGSM_PHOT :: 1e0;
+GSL_CONST_CGSM_FOOTCANDLE :: 1.076e-3;
+GSL_CONST_CGSM_LAMBERT :: 1e0;
+GSL_CONST_CGSM_FOOTLAMBERT :: 1.07639104e-3;
+GSL_CONST_CGSM_CURIE :: 3.7e10;
+GSL_CONST_CGSM_ROENTGEN :: 2.58e-8;
+GSL_CONST_CGSM_RAD :: 1e2;
+GSL_CONST_CGSM_SOLAR_MASS :: 1.98892e33;
+GSL_CONST_CGSM_BOHR_RADIUS :: 5.291772083e-9;
+GSL_CONST_CGSM_NEWTON :: 1e5;
+GSL_CONST_CGSM_DYNE :: 1e0;
+GSL_CONST_CGSM_JOULE :: 1e7;
+GSL_CONST_CGSM_ERG :: 1e0;
+GSL_CONST_CGSM_STEFAN_BOLTZMANN_CONSTANT :: 5.67040047374e-5;
+GSL_CONST_CGSM_THOMSON_CROSS_SECTION :: 6.65245893699e-25;
+GSL_CONST_CGSM_BOHR_MAGNETON :: 9.27400899e-21;
+GSL_CONST_CGSM_NUCLEAR_MAGNETON :: 5.05078317e-24;
+GSL_CONST_CGSM_ELECTRON_MAGNETIC_MOMENT :: 9.28476362e-21;
+GSL_CONST_CGSM_PROTON_MAGNETIC_MOMENT :: 1.410606633e-23;
+GSL_CONST_CGSM_FARADAY :: 9.64853429775e3;
+GSL_CONST_CGSM_ELECTRON_CHARGE :: 1.602176487e-20;
+
+GSL_CONST_NUM_FINE_STRUCTURE :: 7.297352533e-3;
+GSL_CONST_NUM_AVOGADRO :: 6.02214199e23;
+GSL_CONST_NUM_YOTTA :: 1e24;
+GSL_CONST_NUM_ZETTA :: 1e21;
+GSL_CONST_NUM_EXA :: 1e18;
+GSL_CONST_NUM_PETA :: 1e15;
+GSL_CONST_NUM_TERA :: 1e12;
+GSL_CONST_NUM_GIGA :: 1e9;
+GSL_CONST_NUM_MEGA :: 1e6;
+GSL_CONST_NUM_KILO :: 1e3;
+GSL_CONST_NUM_MILLI :: 1e-3;
+GSL_CONST_NUM_MICRO :: 1e-6;
+GSL_CONST_NUM_NANO :: 1e-9;
+GSL_CONST_NUM_PICO :: 1e-12;
+GSL_CONST_NUM_FEMTO :: 1e-15;
+GSL_CONST_NUM_ATTO :: 1e-18;
+GSL_CONST_NUM_ZEPTO :: 1e-21;
+GSL_CONST_NUM_YOCTO :: 1e-24;
+
+/* real polynomial, real x */
 gsl_poly_eval :: (c: *float64, len: s32, x: float64) -> float64 #foreign libgsl;
 
+/* real polynomial, complex x */
 gsl_poly_complex_eval :: (c: *float64, len: s32, z: gsl_complex) -> gsl_complex #foreign libgsl;
 
+/* complex polynomial, complex x */
 gsl_complex_poly_complex_eval :: (c: *gsl_complex, len: s32, z: gsl_complex) -> gsl_complex #foreign libgsl;
 
 gsl_poly_eval_derivs :: (c: *float64, lenc: size_t, x: float64, res: *float64, lenres: size_t) -> s32 #foreign libgsl;
 
+/* Work with divided-difference polynomials, Abramowitz & Stegun 25.2.26 */
 gsl_poly_dd_init :: (dd: *float64, x: *float64, y: *float64, size: size_t) -> s32 #foreign libgsl;
 
 gsl_poly_dd_eval :: (dd: *float64, xa: *float64, size: size_t, x: float64) -> float64 #foreign libgsl;
@@ -25,20 +249,38 @@ gsl_poly_dd_taylor :: (c: *float64, xp: float64, dd: *float64, x: *float64, size
 
 gsl_poly_dd_hermite_init :: (dd: *float64, z: *float64, xa: *float64, ya: *float64, dya: *float64, size: size_t) -> s32 #foreign libgsl;
 
+/* Solve for real or complex roots of the standard quadratic equation,
+* returning the number of real roots.
+*
+* Roots are returned ordered.
+*/
 gsl_poly_solve_quadratic :: (a: float64, b: float64, c: float64, x0: *float64, x1: *float64) -> s32 #foreign libgsl;
 
 gsl_poly_complex_solve_quadratic :: (a: float64, b: float64, c: float64, z0: *gsl_complex, z1: *gsl_complex) -> s32 #foreign libgsl;
 
+/* Solve for real roots of the cubic equation
+* x^3 + a x^2 + b x + c = 0, returning the
+* number of real roots.
+*
+* Roots are returned ordered.
+*/
 gsl_poly_solve_cubic :: (a: float64, b: float64, c: float64, x0: *float64, x1: *float64, x2: *float64) -> s32 #foreign libgsl;
 
 gsl_poly_complex_solve_cubic :: (a: float64, b: float64, c: float64, z0: *gsl_complex, z1: *gsl_complex, z2: *gsl_complex) -> s32 #foreign libgsl;
 
-anon_struct_1 :: struct {
+/* Solve for the complex roots of a general real polynomial */
+gsl_poly_complex_workspace :: struct {
     nc:     size_t;
     matrix: *float64;
 }
-
-gsl_poly_complex_workspace :: anon_struct_1;
+#run {
+    instance: gsl_poly_complex_workspace;
+    assert(((cast(*void)(*instance.nc)) - cast(*void)(*instance)) == 0, "gsl_poly_complex_workspace.nc has unexpected offset % instead of 0", ((cast(*void)(*instance.nc)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_poly_complex_workspace.nc)) == 8, "gsl_poly_complex_workspace.nc has unexpected size % instead of 8", size_of(type_of(gsl_poly_complex_workspace.nc)));
+    assert(((cast(*void)(*instance.matrix)) - cast(*void)(*instance)) == 8, "gsl_poly_complex_workspace.matrix has unexpected offset % instead of 8", ((cast(*void)(*instance.matrix)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_poly_complex_workspace.matrix)) == 8, "gsl_poly_complex_workspace.matrix has unexpected size % instead of 8", size_of(type_of(gsl_poly_complex_workspace.matrix)));
+    assert(size_of(gsl_poly_complex_workspace) == 16, "gsl_poly_complex_workspace has size % instead of 16", size_of(gsl_poly_complex_workspace));
+}
 
 gsl_poly_complex_workspace_alloc :: (n: size_t) -> *gsl_poly_complex_workspace #foreign libgsl;
 gsl_poly_complex_workspace_free :: (w: *gsl_poly_complex_workspace) -> void #foreign libgsl;
@@ -48,6 +290,14 @@ gsl_poly_complex_solve :: (a: *float64, n: size_t, w: *gsl_poly_complex_workspac
 gsl_permutation_struct :: struct {
     size: size_t;
     data: *size_t;
+}
+#run {
+    instance: gsl_permutation_struct;
+    assert(((cast(*void)(*instance.size)) - cast(*void)(*instance)) == 0, "gsl_permutation_struct.size has unexpected offset % instead of 0", ((cast(*void)(*instance.size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_permutation_struct.size)) == 8, "gsl_permutation_struct.size has unexpected size % instead of 8", size_of(type_of(gsl_permutation_struct.size)));
+    assert(((cast(*void)(*instance.data)) - cast(*void)(*instance)) == 8, "gsl_permutation_struct.data has unexpected offset % instead of 8", ((cast(*void)(*instance.data)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_permutation_struct.data)) == 8, "gsl_permutation_struct.data has unexpected size % instead of 8", size_of(type_of(gsl_permutation_struct.data)));
+    assert(size_of(gsl_permutation_struct) == 16, "gsl_permutation_struct has size % instead of 16", size_of(gsl_permutation_struct));
 }
 
 gsl_permutation :: gsl_permutation_struct;
@@ -89,6 +339,16 @@ gsl_combination_struct :: struct {
     k:    size_t;
     data: *size_t;
 }
+#run {
+    instance: gsl_combination_struct;
+    assert(((cast(*void)(*instance.n)) - cast(*void)(*instance)) == 0, "gsl_combination_struct.n has unexpected offset % instead of 0", ((cast(*void)(*instance.n)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_combination_struct.n)) == 8, "gsl_combination_struct.n has unexpected size % instead of 8", size_of(type_of(gsl_combination_struct.n)));
+    assert(((cast(*void)(*instance.k)) - cast(*void)(*instance)) == 8, "gsl_combination_struct.k has unexpected offset % instead of 8", ((cast(*void)(*instance.k)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_combination_struct.k)) == 8, "gsl_combination_struct.k has unexpected size % instead of 8", size_of(type_of(gsl_combination_struct.k)));
+    assert(((cast(*void)(*instance.data)) - cast(*void)(*instance)) == 16, "gsl_combination_struct.data has unexpected offset % instead of 16", ((cast(*void)(*instance.data)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_combination_struct.data)) == 8, "gsl_combination_struct.data has unexpected size % instead of 8", size_of(type_of(gsl_combination_struct.data)));
+    assert(size_of(gsl_combination_struct) == 24, "gsl_combination_struct has size % instead of 24", size_of(gsl_combination_struct));
+}
 
 gsl_combination :: gsl_combination_struct;
 
@@ -114,6 +374,10 @@ gsl_combination_prev :: (c: *gsl_combination) -> s32 #foreign libgsl;
 
 gsl_combination_get :: (c: *gsl_combination, i: size_t) -> size_t #foreign libgsl;
 
+/* ========================================================================
+* Level 1
+* ========================================================================
+*/
 gsl_blas_sdsdot :: (alpha: float, X: *gsl_vector_float, Y: *gsl_vector_float, result: *float) -> s32 #foreign libgsl;
 
 gsl_blas_dsdot :: (X: *gsl_vector_float, Y: *gsl_vector_float, result: *float64) -> s32 #foreign libgsl;
@@ -191,6 +455,9 @@ gsl_blas_zscal :: (alpha: gsl_complex, X: *gsl_vector_complex) -> void #foreign 
 gsl_blas_csscal :: (alpha: float, X: *gsl_vector_complex_float) -> void #foreign libgsl;
 gsl_blas_zdscal :: (alpha: float64, X: *gsl_vector_complex) -> void #foreign libgsl;
 
+/*
+* Routines with standard 4 prefixes (S, D, C, Z)
+*/
 gsl_blas_sgemv :: (TransA: CBLAS_TRANSPOSE_t, alpha: float, A: *gsl_matrix_float, X: *gsl_vector_float, beta: float, Y: *gsl_vector_float) -> s32 #foreign libgsl;
 
 gsl_blas_strmv :: (Uplo: CBLAS_UPLO_t, TransA: CBLAS_TRANSPOSE_t, Diag: CBLAS_DIAG_t, A: *gsl_matrix_float, X: *gsl_vector_float) -> s32 #foreign libgsl;
@@ -215,6 +482,9 @@ gsl_blas_ztrmv :: (Uplo: CBLAS_UPLO_t, TransA: CBLAS_TRANSPOSE_t, Diag: CBLAS_DI
 
 gsl_blas_ztrsv :: (Uplo: CBLAS_UPLO_t, TransA: CBLAS_TRANSPOSE_t, Diag: CBLAS_DIAG_t, A: *gsl_matrix_complex, X: *gsl_vector_complex) -> s32 #foreign libgsl;
 
+/*
+* Routines with S and D prefixes only
+*/
 gsl_blas_ssymv :: (Uplo: CBLAS_UPLO_t, alpha: float, A: *gsl_matrix_float, X: *gsl_vector_float, beta: float, Y: *gsl_vector_float) -> s32 #foreign libgsl;
 
 gsl_blas_sger :: (alpha: float, X: *gsl_vector_float, Y: *gsl_vector_float, A: *gsl_matrix_float) -> s32 #foreign libgsl;
@@ -231,6 +501,9 @@ gsl_blas_dsyr :: (Uplo: CBLAS_UPLO_t, alpha: float64, X: *gsl_vector, A: *gsl_ma
 
 gsl_blas_dsyr2 :: (Uplo: CBLAS_UPLO_t, alpha: float64, X: *gsl_vector, Y: *gsl_vector, A: *gsl_matrix) -> s32 #foreign libgsl;
 
+/*
+* Routines with C and Z prefixes only
+*/
 gsl_blas_chemv :: (Uplo: CBLAS_UPLO_t, alpha: gsl_complex_float, A: *gsl_matrix_complex_float, X: *gsl_vector_complex_float, beta: gsl_complex_float, Y: *gsl_vector_complex_float) -> s32 #foreign libgsl;
 
 gsl_blas_cgeru :: (alpha: gsl_complex_float, X: *gsl_vector_complex_float, Y: *gsl_vector_complex_float, A: *gsl_matrix_complex_float) -> s32 #foreign libgsl;
@@ -251,6 +524,9 @@ gsl_blas_zher :: (Uplo: CBLAS_UPLO_t, alpha: float64, X: *gsl_vector_complex, A:
 
 gsl_blas_zher2 :: (Uplo: CBLAS_UPLO_t, alpha: gsl_complex, X: *gsl_vector_complex, Y: *gsl_vector_complex, A: *gsl_matrix_complex) -> s32 #foreign libgsl;
 
+/*
+* Routines with standard 4 prefixes (S, D, C, Z)
+*/
 gsl_blas_sgemm :: (TransA: CBLAS_TRANSPOSE_t, TransB: CBLAS_TRANSPOSE_t, alpha: float, A: *gsl_matrix_float, B: *gsl_matrix_float, beta: float, C: *gsl_matrix_float) -> s32 #foreign libgsl;
 
 gsl_blas_ssymm :: (Side: CBLAS_SIDE_t, Uplo: CBLAS_UPLO_t, alpha: float, A: *gsl_matrix_float, B: *gsl_matrix_float, beta: float, C: *gsl_matrix_float) -> s32 #foreign libgsl;
@@ -299,6 +575,9 @@ gsl_blas_ztrmm :: (Side: CBLAS_SIDE_t, Uplo: CBLAS_UPLO_t, TransA: CBLAS_TRANSPO
 
 gsl_blas_ztrsm :: (Side: CBLAS_SIDE_t, Uplo: CBLAS_UPLO_t, TransA: CBLAS_TRANSPOSE_t, Diag: CBLAS_DIAG_t, alpha: gsl_complex, A: *gsl_matrix_complex, B: *gsl_matrix_complex) -> s32 #foreign libgsl;
 
+/*
+* Routines with prefixes C and Z only
+*/
 gsl_blas_chemm :: (Side: CBLAS_SIDE_t, Uplo: CBLAS_UPLO_t, alpha: gsl_complex_float, A: *gsl_matrix_complex_float, B: *gsl_matrix_complex_float, beta: gsl_complex_float, C: *gsl_matrix_complex_float) -> s32 #foreign libgsl;
 
 gsl_blas_cherk :: (Uplo: CBLAS_UPLO_t, Trans: CBLAS_TRANSPOSE_t, alpha: float, A: *gsl_matrix_complex_float, beta: float, C: *gsl_matrix_complex_float) -> s32 #foreign libgsl;
@@ -311,20 +590,38 @@ gsl_blas_zherk :: (Uplo: CBLAS_UPLO_t, Trans: CBLAS_TRANSPOSE_t, alpha: float64,
 
 gsl_blas_zher2k :: (Uplo: CBLAS_UPLO_t, Trans: CBLAS_TRANSPOSE_t, alpha: gsl_complex, A: *gsl_matrix_complex, B: *gsl_matrix_complex, beta: float64, C: *gsl_matrix_complex) -> s32 #foreign libgsl;
 
-anon_enum_11 :: enum u32 {
+gsl_linalg_matrix_mod_t :: enum u32 {
     GSL_LINALG_MOD_NONE      :: 0;
     GSL_LINALG_MOD_TRANSPOSE :: 1;
     GSL_LINALG_MOD_CONJUGATE :: 2;
 }
 
-gsl_linalg_matrix_mod_t :: anon_enum_11;
-
+/* Simple implementation of matrix multiply.
+* Calculates C = A.B
+*
+* exceptions: GSL_EBADLEN
+*/
 gsl_linalg_matmult :: (A: *gsl_matrix, B: *gsl_matrix, C: *gsl_matrix) -> s32 #foreign libgsl;
 
+/* Simple implementation of matrix multiply.
+* Allows transposition of either matrix, so it
+* can compute A.B or Trans(A).B or A.Trans(B) or Trans(A).Trans(B)
+*
+* exceptions: GSL_EBADLEN
+*/
 gsl_linalg_matmult_mod :: (A: *gsl_matrix, modA: gsl_linalg_matrix_mod_t, B: *gsl_matrix, modB: gsl_linalg_matrix_mod_t, C: *gsl_matrix) -> s32 #foreign libgsl;
 
+/* Calculate the matrix exponential by the scaling and
+* squaring method described in Moler + Van Loan,
+* SIAM Rev 20, 801 (1978). The mode argument allows
+* choosing an optimal strategy, from the table
+* given in the paper, for a given precision.
+*
+* exceptions: GSL_ENOTSQR, GSL_EBADLEN
+*/
 gsl_linalg_exponential_ss :: (A: *gsl_matrix, eA: *gsl_matrix, mode: gsl_mode_t) -> s32 #foreign libgsl;
 
+/* Householder Transformations */
 gsl_linalg_householder_transform :: (v: *gsl_vector) -> float64 #foreign libgsl;
 gsl_linalg_complex_householder_transform :: (v: *gsl_vector_complex) -> gsl_complex #foreign libgsl;
 
@@ -348,6 +645,7 @@ gsl_linalg_complex_householder_hv :: (tau: gsl_complex, v: *gsl_vector_complex, 
 
 gsl_linalg_complex_householder_left :: (tau: gsl_complex, v: *gsl_vector_complex, A: *gsl_matrix_complex, work: *gsl_vector_complex) -> s32 #foreign libgsl;
 
+/* Hessenberg reduction */
 gsl_linalg_hessenberg_decomp :: (A: *gsl_matrix, tau: *gsl_vector) -> s32 #foreign libgsl;
 gsl_linalg_hessenberg_unpack :: (H: *gsl_matrix, tau: *gsl_vector, U: *gsl_matrix) -> s32 #foreign libgsl;
 
@@ -356,8 +654,13 @@ gsl_linalg_hessenberg_unpack_accum :: (H: *gsl_matrix, tau: *gsl_vector, U: *gsl
 gsl_linalg_hessenberg_set_zero :: (H: *gsl_matrix) -> s32 #foreign libgsl;
 gsl_linalg_hessenberg_submatrix :: (M: *gsl_matrix, A: *gsl_matrix, top: size_t, tau: *gsl_vector) -> s32 #foreign libgsl;
 
+/* Hessenberg-Triangular reduction */
 gsl_linalg_hesstri_decomp :: (A: *gsl_matrix, B: *gsl_matrix, U: *gsl_matrix, V: *gsl_matrix, work: *gsl_vector) -> s32 #foreign libgsl;
 
+/* Singular Value Decomposition
+
+* exceptions: 
+*/
 gsl_linalg_SV_decomp :: (A: *gsl_matrix, V: *gsl_matrix, S: *gsl_vector, work: *gsl_vector) -> s32 #foreign libgsl;
 
 gsl_linalg_SV_decomp_mod :: (A: *gsl_matrix, X: *gsl_matrix, V: *gsl_matrix, S: *gsl_vector, work: *gsl_vector) -> s32 #foreign libgsl;
@@ -368,6 +671,8 @@ gsl_linalg_SV_solve :: (U: *gsl_matrix, Q: *gsl_matrix, S: *gsl_vector, b: *gsl_
 
 gsl_linalg_SV_leverage :: (U: *gsl_matrix, h: *gsl_vector) -> s32 #foreign libgsl;
 
+/* LU Decomposition, Gaussian elimination with partial pivoting
+*/
 gsl_linalg_LU_decomp :: (A: *gsl_matrix, p: *gsl_permutation, signum: *s32) -> s32 #foreign libgsl;
 
 gsl_linalg_LU_solve :: (LU: *gsl_matrix, p: *gsl_permutation, b: *gsl_vector, x: *gsl_vector) -> s32 #foreign libgsl;
@@ -384,6 +689,7 @@ gsl_linalg_LU_det :: (LU: *gsl_matrix, signum: s32) -> float64 #foreign libgsl;
 gsl_linalg_LU_lndet :: (LU: *gsl_matrix) -> float64 #foreign libgsl;
 gsl_linalg_LU_sgndet :: (lu: *gsl_matrix, signum: s32) -> s32 #foreign libgsl;
 
+/* Complex LU Decomposition */
 gsl_linalg_complex_LU_decomp :: (A: *gsl_matrix_complex, p: *gsl_permutation, signum: *s32) -> s32 #foreign libgsl;
 
 gsl_linalg_complex_LU_solve :: (LU: *gsl_matrix_complex, p: *gsl_permutation, b: *gsl_vector_complex, x: *gsl_vector_complex) -> s32 #foreign libgsl;
@@ -402,6 +708,7 @@ gsl_linalg_complex_LU_lndet :: (LU: *gsl_matrix_complex) -> float64 #foreign lib
 
 gsl_linalg_complex_LU_sgndet :: (LU: *gsl_matrix_complex, signum: s32) -> gsl_complex #foreign libgsl;
 
+/* QR decomposition */
 gsl_linalg_QR_decomp :: (A: *gsl_matrix, tau: *gsl_vector) -> s32 #foreign libgsl;
 
 gsl_linalg_QR_decomp_r :: (A: *gsl_matrix, T: *gsl_matrix) -> s32 #foreign libgsl;
@@ -446,6 +753,7 @@ gsl_linalg_R_svx :: (R: *gsl_matrix, x: *gsl_vector) -> s32 #foreign libgsl;
 
 gsl_linalg_QR_rcond :: (QR: *gsl_matrix, rcond: *float64, work: *gsl_vector) -> s32 #foreign libgsl;
 
+/* Q R P^T decomposition */
 gsl_linalg_QRPT_decomp :: (A: *gsl_matrix, tau: *gsl_vector, p: *gsl_permutation, signum: *s32, norm: *gsl_vector) -> s32 #foreign libgsl;
 
 gsl_linalg_QRPT_decomp2 :: (A: *gsl_matrix, q: *gsl_matrix, r: *gsl_matrix, tau: *gsl_vector, p: *gsl_permutation, signum: *s32, norm: *gsl_vector) -> s32 #foreign libgsl;
@@ -470,8 +778,10 @@ gsl_linalg_QRPT_rank :: (QR: *gsl_matrix, tol: float64) -> size_t #foreign libgs
 
 gsl_linalg_QRPT_rcond :: (QR: *gsl_matrix, rcond: *float64, work: *gsl_vector) -> s32 #foreign libgsl;
 
+/* triangle on top of rectangle QR decomposition */
 gsl_linalg_QR_TR_decomp :: (S: *gsl_matrix, A: *gsl_matrix, T: *gsl_matrix) -> s32 #foreign libgsl;
 
+/* COD decomposition */
 gsl_linalg_COD_decomp :: (A: *gsl_matrix, tau_Q: *gsl_vector, tau_Z: *gsl_vector, p: *gsl_permutation, rank: *size_t, work: *gsl_vector) -> s32 #foreign libgsl;
 
 gsl_linalg_COD_decomp_e :: (A: *gsl_matrix, tau_Q: *gsl_vector, tau_Z: *gsl_vector, p: *gsl_permutation, tol: float64, rank: *size_t, work: *gsl_vector) -> s32 #foreign libgsl;
@@ -484,6 +794,7 @@ gsl_linalg_COD_unpack :: (QRZT: *gsl_matrix, tau_Q: *gsl_vector, tau_Z: *gsl_vec
 
 gsl_linalg_COD_matZ :: (QRZT: *gsl_matrix, tau_Z: *gsl_vector, rank: size_t, A: *gsl_matrix, work: *gsl_vector) -> s32 #foreign libgsl;
 
+/* LQ decomposition */
 gsl_linalg_LQ_decomp :: (A: *gsl_matrix, tau: *gsl_vector) -> s32 #foreign libgsl;
 
 gsl_linalg_LQ_lssolve :: (LQ: *gsl_matrix, tau: *gsl_vector, b: *gsl_vector, x: *gsl_vector, residual: *gsl_vector) -> s32 #foreign libgsl;
@@ -512,6 +823,7 @@ gsl_linalg_LQ_update :: (Q: *gsl_matrix, R: *gsl_matrix, v: *gsl_vector, w: *gsl
 
 gsl_linalg_LQ_LQsolve :: (Q: *gsl_matrix, L: *gsl_matrix, b: *gsl_vector, x: *gsl_vector) -> s32 #foreign libgsl;
 
+/* P^T L Q decomposition */
 gsl_linalg_PTLQ_decomp :: (A: *gsl_matrix, tau: *gsl_vector, p: *gsl_permutation, signum: *s32, norm: *gsl_vector) -> s32 #foreign libgsl;
 
 gsl_linalg_PTLQ_decomp2 :: (A: *gsl_matrix, q: *gsl_matrix, r: *gsl_matrix, tau: *gsl_vector, p: *gsl_permutation, signum: *s32, norm: *gsl_vector) -> s32 #foreign libgsl;
@@ -528,6 +840,7 @@ gsl_linalg_PTLQ_Lsvx_T :: (LQ: *gsl_matrix, p: *gsl_permutation, x: *gsl_vector)
 
 gsl_linalg_PTLQ_update :: (Q: *gsl_matrix, L: *gsl_matrix, p: *gsl_permutation, v: *gsl_vector, w: *gsl_vector) -> s32 #foreign libgsl;
 
+/* Cholesky Decomposition */
 gsl_linalg_cholesky_decomp :: (A: *gsl_matrix) -> s32 #foreign libgsl;
 gsl_linalg_cholesky_decomp1 :: (A: *gsl_matrix) -> s32 #foreign libgsl;
 
@@ -541,6 +854,12 @@ gsl_linalg_cholesky_svx_mat :: (cholesky: *gsl_matrix, X: *gsl_matrix) -> s32 #f
 
 gsl_linalg_cholesky_invert :: (cholesky: *gsl_matrix) -> s32 #foreign libgsl;
 
+/* Cholesky decomposition with unit-diagonal triangular parts.
+*   A = L D L^T, where diag(L) = (1,1,...,1).
+*   Upon exit, A contains L and L^T as for Cholesky, and
+*   the diagonal of A is (1,1,...,1). The vector Dis set
+*   to the diagonal elements of the diagonal matrix D.
+*/
 gsl_linalg_cholesky_decomp_unit :: (A: *gsl_matrix, D: *gsl_vector) -> s32 #foreign libgsl;
 
 gsl_linalg_cholesky_scale :: (A: *gsl_matrix, S: *gsl_vector) -> s32 #foreign libgsl;
@@ -555,6 +874,7 @@ gsl_linalg_cholesky_solve2 :: (LLT: *gsl_matrix, S: *gsl_vector, b: *gsl_vector,
 
 gsl_linalg_cholesky_rcond :: (LLT: *gsl_matrix, rcond: *float64, work: *gsl_vector) -> s32 #foreign libgsl;
 
+/* Complex Cholesky Decomposition */
 gsl_linalg_complex_cholesky_decomp :: (A: *gsl_matrix_complex) -> s32 #foreign libgsl;
 
 gsl_linalg_complex_cholesky_solve :: (cholesky: *gsl_matrix_complex, b: *gsl_vector_complex, x: *gsl_vector_complex) -> s32 #foreign libgsl;
@@ -563,6 +883,7 @@ gsl_linalg_complex_cholesky_svx :: (cholesky: *gsl_matrix_complex, x: *gsl_vecto
 
 gsl_linalg_complex_cholesky_invert :: (cholesky: *gsl_matrix_complex) -> s32 #foreign libgsl;
 
+/* Pivoted Cholesky LDLT decomposition */
 gsl_linalg_pcholesky_decomp :: (A: *gsl_matrix, p: *gsl_permutation) -> s32 #foreign libgsl;
 
 gsl_linalg_pcholesky_solve :: (LDLT: *gsl_matrix, p: *gsl_permutation, b: *gsl_vector, x: *gsl_vector) -> s32 #foreign libgsl;
@@ -579,6 +900,7 @@ gsl_linalg_pcholesky_invert :: (LDLT: *gsl_matrix, p: *gsl_permutation, Ainv: *g
 
 gsl_linalg_pcholesky_rcond :: (LDLT: *gsl_matrix, p: *gsl_permutation, rcond: *float64, work: *gsl_vector) -> s32 #foreign libgsl;
 
+/* Modified Cholesky decomposition */
 gsl_linalg_mcholesky_decomp :: (A: *gsl_matrix, p: *gsl_permutation, E: *gsl_vector) -> s32 #foreign libgsl;
 
 gsl_linalg_mcholesky_solve :: (LDLT: *gsl_matrix, p: *gsl_permutation, b: *gsl_vector, x: *gsl_vector) -> s32 #foreign libgsl;
@@ -589,6 +911,7 @@ gsl_linalg_mcholesky_rcond :: (LDLT: *gsl_matrix, p: *gsl_permutation, rcond: *f
 
 gsl_linalg_mcholesky_invert :: (LDLT: *gsl_matrix, p: *gsl_permutation, Ainv: *gsl_matrix) -> s32 #foreign libgsl;
 
+/* Banded Cholesky decomposition */
 gsl_linalg_cholesky_band_decomp :: (A: *gsl_matrix) -> s32 #foreign libgsl;
 
 gsl_linalg_cholesky_band_solve :: (LLT: *gsl_matrix, b: *gsl_vector, x: *gsl_vector) -> s32 #foreign libgsl;
@@ -601,6 +924,7 @@ gsl_linalg_cholesky_band_unpack :: (LLT: *gsl_matrix, L: *gsl_matrix) -> s32 #fo
 
 gsl_linalg_cholesky_band_rcond :: (LLT: *gsl_matrix, rcond: *float64, work: *gsl_vector) -> s32 #foreign libgsl;
 
+/* L D L^T decomposition */
 gsl_linalg_ldlt_decomp :: (A: *gsl_matrix) -> s32 #foreign libgsl;
 
 gsl_linalg_ldlt_solve :: (LDLT: *gsl_matrix, b: *gsl_vector, x: *gsl_vector) -> s32 #foreign libgsl;
@@ -609,6 +933,7 @@ gsl_linalg_ldlt_svx :: (LDLT: *gsl_matrix, x: *gsl_vector) -> s32 #foreign libgs
 
 gsl_linalg_ldlt_rcond :: (LDLT: *gsl_matrix, rcond: *float64, work: *gsl_vector) -> s32 #foreign libgsl;
 
+/* Banded L D L^T decomposition */
 gsl_linalg_ldlt_band_decomp :: (A: *gsl_matrix) -> s32 #foreign libgsl;
 
 gsl_linalg_ldlt_band_solve :: (LDLT: *gsl_matrix, b: *gsl_vector, x: *gsl_vector) -> s32 #foreign libgsl;
@@ -619,29 +944,78 @@ gsl_linalg_ldlt_band_unpack :: (LDLT: *gsl_matrix, L: *gsl_matrix, D: *gsl_vecto
 
 gsl_linalg_ldlt_band_rcond :: (LDLT: *gsl_matrix, rcond: *float64, work: *gsl_vector) -> s32 #foreign libgsl;
 
+/* Symmetric to symmetric tridiagonal decomposition */
 gsl_linalg_symmtd_decomp :: (A: *gsl_matrix, tau: *gsl_vector) -> s32 #foreign libgsl;
 
 gsl_linalg_symmtd_unpack :: (A: *gsl_matrix, tau: *gsl_vector, Q: *gsl_matrix, diag: *gsl_vector, subdiag: *gsl_vector) -> s32 #foreign libgsl;
 
 gsl_linalg_symmtd_unpack_T :: (A: *gsl_matrix, diag: *gsl_vector, subdiag: *gsl_vector) -> s32 #foreign libgsl;
 
+/* Hermitian to symmetric tridiagonal decomposition */
 gsl_linalg_hermtd_decomp :: (A: *gsl_matrix_complex, tau: *gsl_vector_complex) -> s32 #foreign libgsl;
 
 gsl_linalg_hermtd_unpack :: (A: *gsl_matrix_complex, tau: *gsl_vector_complex, U: *gsl_matrix_complex, diag: *gsl_vector, sudiag: *gsl_vector) -> s32 #foreign libgsl;
 
 gsl_linalg_hermtd_unpack_T :: (A: *gsl_matrix_complex, diag: *gsl_vector, subdiag: *gsl_vector) -> s32 #foreign libgsl;
 
+/* Linear Solve Using Householder Transformations
+
+* exceptions: 
+*/
 gsl_linalg_HH_solve :: (A: *gsl_matrix, b: *gsl_vector, x: *gsl_vector) -> s32 #foreign libgsl;
 gsl_linalg_HH_svx :: (A: *gsl_matrix, x: *gsl_vector) -> s32 #foreign libgsl;
 
+/* Linear solve for a symmetric tridiagonal system.
+
+* The input vectors represent the NxN matrix as follows:
+*
+*     diag[0]  offdiag[0]             0    ...
+*  offdiag[0]     diag[1]    offdiag[1]    ...
+*           0  offdiag[1]       diag[2]    ...
+*           0           0    offdiag[2]    ...
+*         ...         ...           ...    ...
+*/
 gsl_linalg_solve_symm_tridiag :: (diag: *gsl_vector, offdiag: *gsl_vector, b: *gsl_vector, x: *gsl_vector) -> s32 #foreign libgsl;
 
+/* Linear solve for a nonsymmetric tridiagonal system.
+
+* The input vectors represent the NxN matrix as follows:
+*
+*       diag[0]  abovediag[0]              0    ...
+*  belowdiag[0]       diag[1]   abovediag[1]    ...
+*             0  belowdiag[1]        diag[2]    ...
+*             0             0   belowdiag[2]    ...
+*           ...           ...            ...    ...
+*/
 gsl_linalg_solve_tridiag :: (diag: *gsl_vector, abovediag: *gsl_vector, belowdiag: *gsl_vector, b: *gsl_vector, x: *gsl_vector) -> s32 #foreign libgsl;
 
+/* Linear solve for a symmetric cyclic tridiagonal system.
+
+* The input vectors represent the NxN matrix as follows:
+*
+*      diag[0]  offdiag[0]             0   .....  offdiag[N-1]
+*   offdiag[0]     diag[1]    offdiag[1]   .....
+*            0  offdiag[1]       diag[2]   .....
+*            0           0    offdiag[2]   .....
+*          ...         ...
+* offdiag[N-1]         ...
+*/
 gsl_linalg_solve_symm_cyc_tridiag :: (diag: *gsl_vector, offdiag: *gsl_vector, b: *gsl_vector, x: *gsl_vector) -> s32 #foreign libgsl;
 
+/* Linear solve for a nonsymmetric cyclic tridiagonal system.
+
+* The input vectors represent the NxN matrix as follows:
+*
+*        diag[0]  abovediag[0]             0   .....  belowdiag[N-1]
+*   belowdiag[0]       diag[1]  abovediag[1]   .....
+*              0  belowdiag[1]       diag[2]
+*              0             0  belowdiag[2]   .....
+*            ...           ...
+* abovediag[N-1]           ...
+*/
 gsl_linalg_solve_cyc_tridiag :: (diag: *gsl_vector, abovediag: *gsl_vector, belowdiag: *gsl_vector, b: *gsl_vector, x: *gsl_vector) -> s32 #foreign libgsl;
 
+/* Bidiagonal decomposition */
 gsl_linalg_bidiag_decomp :: (A: *gsl_matrix, tau_U: *gsl_vector, tau_V: *gsl_vector) -> s32 #foreign libgsl;
 
 gsl_linalg_bidiag_unpack :: (A: *gsl_matrix, tau_U: *gsl_vector, U: *gsl_matrix, tau_V: *gsl_vector, V: *gsl_matrix, diag: *gsl_vector, superdiag: *gsl_vector) -> s32 #foreign libgsl;
@@ -650,15 +1024,18 @@ gsl_linalg_bidiag_unpack2 :: (A: *gsl_matrix, tau_U: *gsl_vector, tau_V: *gsl_ve
 
 gsl_linalg_bidiag_unpack_B :: (A: *gsl_matrix, diag: *gsl_vector, superdiag: *gsl_vector) -> s32 #foreign libgsl;
 
+/* Balancing */
 gsl_linalg_balance_matrix :: (A: *gsl_matrix, D: *gsl_vector) -> s32 #foreign libgsl;
 gsl_linalg_balance_accum :: (A: *gsl_matrix, D: *gsl_vector) -> s32 #foreign libgsl;
 gsl_linalg_balance_columns :: (A: *gsl_matrix, D: *gsl_vector) -> s32 #foreign libgsl;
 
+/* condition estimation */
 gsl_linalg_tri_rcond :: (Uplo: CBLAS_UPLO_t, A: *gsl_matrix, rcond: *float64, work: *gsl_vector) -> s32 #foreign libgsl;
 gsl_linalg_tri_upper_rcond :: (A: *gsl_matrix, rcond: *float64, work: *gsl_vector) -> s32 #foreign libgsl;
 gsl_linalg_tri_lower_rcond :: (A: *gsl_matrix, rcond: *float64, work: *gsl_vector) -> s32 #foreign libgsl;
 gsl_linalg_invnorm1 :: (N: size_t, Ainvx: #type (a0: CBLAS_TRANSPOSE_t, a1: *gsl_vector, a2: *void) -> s32 #c_call, params: *void, Ainvnorm: *float64, work: *gsl_vector) -> s32 #foreign libgsl;
 
+/* triangular matrices */
 gsl_linalg_tri_upper_invert :: (T: *gsl_matrix) -> s32 #foreign libgsl;
 gsl_linalg_tri_lower_invert :: (T: *gsl_matrix) -> s32 #foreign libgsl;
 gsl_linalg_tri_upper_unit_invert :: (T: *gsl_matrix) -> s32 #foreign libgsl;
@@ -676,6 +1053,7 @@ gsl_linalg_givens :: (a: float64, b: float64, c: *float64, s: *float64) -> void 
 
 gsl_linalg_givens_gv :: (v: *gsl_vector, i: size_t, j: size_t, c: float64, s: float64) -> void #foreign libgsl;
 
+/*  Power of 2 routines  */
 gsl_fft_complex_radix2_forward :: (data: gsl_complex_packed_array, stride: size_t, n: size_t) -> s32 #foreign libgsl;
 
 gsl_fft_complex_radix2_backward :: (data: gsl_complex_packed_array, stride: size_t, n: size_t) -> s32 #foreign libgsl;
@@ -692,22 +1070,41 @@ gsl_fft_complex_radix2_dif_inverse :: (data: gsl_complex_packed_array, stride: s
 
 gsl_fft_complex_radix2_dif_transform :: (data: gsl_complex_packed_array, stride: size_t, n: size_t, sign: gsl_fft_direction) -> s32 #foreign libgsl;
 
-anon_struct_13 :: struct {
+/*  Mixed Radix general-N routines  */
+gsl_fft_complex_wavetable :: struct {
     n:       size_t;
     nf:      size_t;
     factor:  [64] size_t;
     twiddle: [64] *gsl_complex;
     trig:    *gsl_complex;
 }
+#run {
+    instance: gsl_fft_complex_wavetable;
+    assert(((cast(*void)(*instance.n)) - cast(*void)(*instance)) == 0, "gsl_fft_complex_wavetable.n has unexpected offset % instead of 0", ((cast(*void)(*instance.n)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_fft_complex_wavetable.n)) == 8, "gsl_fft_complex_wavetable.n has unexpected size % instead of 8", size_of(type_of(gsl_fft_complex_wavetable.n)));
+    assert(((cast(*void)(*instance.nf)) - cast(*void)(*instance)) == 8, "gsl_fft_complex_wavetable.nf has unexpected offset % instead of 8", ((cast(*void)(*instance.nf)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_fft_complex_wavetable.nf)) == 8, "gsl_fft_complex_wavetable.nf has unexpected size % instead of 8", size_of(type_of(gsl_fft_complex_wavetable.nf)));
+    assert(((cast(*void)(*instance.factor)) - cast(*void)(*instance)) == 16, "gsl_fft_complex_wavetable.factor has unexpected offset % instead of 16", ((cast(*void)(*instance.factor)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_fft_complex_wavetable.factor)) == 512, "gsl_fft_complex_wavetable.factor has unexpected size % instead of 512", size_of(type_of(gsl_fft_complex_wavetable.factor)));
+    assert(((cast(*void)(*instance.twiddle)) - cast(*void)(*instance)) == 528, "gsl_fft_complex_wavetable.twiddle has unexpected offset % instead of 528", ((cast(*void)(*instance.twiddle)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_fft_complex_wavetable.twiddle)) == 512, "gsl_fft_complex_wavetable.twiddle has unexpected size % instead of 512", size_of(type_of(gsl_fft_complex_wavetable.twiddle)));
+    assert(((cast(*void)(*instance.trig)) - cast(*void)(*instance)) == 1040, "gsl_fft_complex_wavetable.trig has unexpected offset % instead of 1040", ((cast(*void)(*instance.trig)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_fft_complex_wavetable.trig)) == 8, "gsl_fft_complex_wavetable.trig has unexpected size % instead of 8", size_of(type_of(gsl_fft_complex_wavetable.trig)));
+    assert(size_of(gsl_fft_complex_wavetable) == 1048, "gsl_fft_complex_wavetable has size % instead of 1048", size_of(gsl_fft_complex_wavetable));
+}
 
-gsl_fft_complex_wavetable :: anon_struct_13;
-
-anon_struct_14 :: struct {
+gsl_fft_complex_workspace :: struct {
     n:       size_t;
     scratch: *float64;
 }
-
-gsl_fft_complex_workspace :: anon_struct_14;
+#run {
+    instance: gsl_fft_complex_workspace;
+    assert(((cast(*void)(*instance.n)) - cast(*void)(*instance)) == 0, "gsl_fft_complex_workspace.n has unexpected offset % instead of 0", ((cast(*void)(*instance.n)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_fft_complex_workspace.n)) == 8, "gsl_fft_complex_workspace.n has unexpected size % instead of 8", size_of(type_of(gsl_fft_complex_workspace.n)));
+    assert(((cast(*void)(*instance.scratch)) - cast(*void)(*instance)) == 8, "gsl_fft_complex_workspace.scratch has unexpected offset % instead of 8", ((cast(*void)(*instance.scratch)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_fft_complex_workspace.scratch)) == 8, "gsl_fft_complex_workspace.scratch has unexpected size % instead of 8", size_of(type_of(gsl_fft_complex_workspace.scratch)));
+    assert(size_of(gsl_fft_complex_workspace) == 16, "gsl_fft_complex_workspace has size % instead of 16", size_of(gsl_fft_complex_workspace));
+}
 
 gsl_fft_complex_wavetable_alloc :: (n: size_t) -> *gsl_fft_complex_wavetable #foreign libgsl;
 
@@ -729,22 +1126,40 @@ gsl_fft_complex_transform :: (data: gsl_complex_packed_array, stride: size_t, n:
 
 gsl_fft_real_radix2_transform :: (data: *float64, stride: size_t, n: size_t) -> s32 #foreign libgsl;
 
-anon_struct_15 :: struct {
+gsl_fft_real_wavetable :: struct {
     n:       size_t;
     nf:      size_t;
     factor:  [64] size_t;
     twiddle: [64] *gsl_complex;
     trig:    *gsl_complex;
 }
+#run {
+    instance: gsl_fft_real_wavetable;
+    assert(((cast(*void)(*instance.n)) - cast(*void)(*instance)) == 0, "gsl_fft_real_wavetable.n has unexpected offset % instead of 0", ((cast(*void)(*instance.n)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_fft_real_wavetable.n)) == 8, "gsl_fft_real_wavetable.n has unexpected size % instead of 8", size_of(type_of(gsl_fft_real_wavetable.n)));
+    assert(((cast(*void)(*instance.nf)) - cast(*void)(*instance)) == 8, "gsl_fft_real_wavetable.nf has unexpected offset % instead of 8", ((cast(*void)(*instance.nf)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_fft_real_wavetable.nf)) == 8, "gsl_fft_real_wavetable.nf has unexpected size % instead of 8", size_of(type_of(gsl_fft_real_wavetable.nf)));
+    assert(((cast(*void)(*instance.factor)) - cast(*void)(*instance)) == 16, "gsl_fft_real_wavetable.factor has unexpected offset % instead of 16", ((cast(*void)(*instance.factor)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_fft_real_wavetable.factor)) == 512, "gsl_fft_real_wavetable.factor has unexpected size % instead of 512", size_of(type_of(gsl_fft_real_wavetable.factor)));
+    assert(((cast(*void)(*instance.twiddle)) - cast(*void)(*instance)) == 528, "gsl_fft_real_wavetable.twiddle has unexpected offset % instead of 528", ((cast(*void)(*instance.twiddle)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_fft_real_wavetable.twiddle)) == 512, "gsl_fft_real_wavetable.twiddle has unexpected size % instead of 512", size_of(type_of(gsl_fft_real_wavetable.twiddle)));
+    assert(((cast(*void)(*instance.trig)) - cast(*void)(*instance)) == 1040, "gsl_fft_real_wavetable.trig has unexpected offset % instead of 1040", ((cast(*void)(*instance.trig)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_fft_real_wavetable.trig)) == 8, "gsl_fft_real_wavetable.trig has unexpected size % instead of 8", size_of(type_of(gsl_fft_real_wavetable.trig)));
+    assert(size_of(gsl_fft_real_wavetable) == 1048, "gsl_fft_real_wavetable has size % instead of 1048", size_of(gsl_fft_real_wavetable));
+}
 
-gsl_fft_real_wavetable :: anon_struct_15;
-
-anon_struct_16 :: struct {
+gsl_fft_real_workspace :: struct {
     n:       size_t;
     scratch: *float64;
 }
-
-gsl_fft_real_workspace :: anon_struct_16;
+#run {
+    instance: gsl_fft_real_workspace;
+    assert(((cast(*void)(*instance.n)) - cast(*void)(*instance)) == 0, "gsl_fft_real_workspace.n has unexpected offset % instead of 0", ((cast(*void)(*instance.n)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_fft_real_workspace.n)) == 8, "gsl_fft_real_workspace.n has unexpected size % instead of 8", size_of(type_of(gsl_fft_real_workspace.n)));
+    assert(((cast(*void)(*instance.scratch)) - cast(*void)(*instance)) == 8, "gsl_fft_real_workspace.scratch has unexpected offset % instead of 8", ((cast(*void)(*instance.scratch)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_fft_real_workspace.scratch)) == 8, "gsl_fft_real_workspace.scratch has unexpected size % instead of 8", size_of(type_of(gsl_fft_real_workspace.scratch)));
+    assert(size_of(gsl_fft_real_workspace) == 16, "gsl_fft_real_workspace has size % instead of 16", size_of(gsl_fft_real_workspace));
+}
 
 gsl_fft_real_wavetable_alloc :: (n: size_t) -> *gsl_fft_real_wavetable #foreign libgsl;
 
@@ -758,7 +1173,8 @@ gsl_fft_real_transform :: (data: *float64, stride: size_t, n: size_t, wavetable:
 
 gsl_fft_real_unpack :: (real_coefficient: *float64, complex_coefficient: *float64, stride: size_t, n: size_t) -> s32 #foreign libgsl;
 
-anon_struct_17 :: struct {
+/* Workspace for adaptive integrators */
+gsl_integration_workspace :: struct {
     limit:         size_t;
     size:          size_t;
     nrmax:         size_t;
@@ -771,14 +1187,39 @@ anon_struct_17 :: struct {
     order:         *size_t;
     level:         *size_t;
 }
-
-gsl_integration_workspace :: anon_struct_17;
+#run {
+    instance: gsl_integration_workspace;
+    assert(((cast(*void)(*instance.limit)) - cast(*void)(*instance)) == 0, "gsl_integration_workspace.limit has unexpected offset % instead of 0", ((cast(*void)(*instance.limit)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_workspace.limit)) == 8, "gsl_integration_workspace.limit has unexpected size % instead of 8", size_of(type_of(gsl_integration_workspace.limit)));
+    assert(((cast(*void)(*instance.size)) - cast(*void)(*instance)) == 8, "gsl_integration_workspace.size has unexpected offset % instead of 8", ((cast(*void)(*instance.size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_workspace.size)) == 8, "gsl_integration_workspace.size has unexpected size % instead of 8", size_of(type_of(gsl_integration_workspace.size)));
+    assert(((cast(*void)(*instance.nrmax)) - cast(*void)(*instance)) == 16, "gsl_integration_workspace.nrmax has unexpected offset % instead of 16", ((cast(*void)(*instance.nrmax)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_workspace.nrmax)) == 8, "gsl_integration_workspace.nrmax has unexpected size % instead of 8", size_of(type_of(gsl_integration_workspace.nrmax)));
+    assert(((cast(*void)(*instance.i)) - cast(*void)(*instance)) == 24, "gsl_integration_workspace.i has unexpected offset % instead of 24", ((cast(*void)(*instance.i)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_workspace.i)) == 8, "gsl_integration_workspace.i has unexpected size % instead of 8", size_of(type_of(gsl_integration_workspace.i)));
+    assert(((cast(*void)(*instance.maximum_level)) - cast(*void)(*instance)) == 32, "gsl_integration_workspace.maximum_level has unexpected offset % instead of 32", ((cast(*void)(*instance.maximum_level)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_workspace.maximum_level)) == 8, "gsl_integration_workspace.maximum_level has unexpected size % instead of 8", size_of(type_of(gsl_integration_workspace.maximum_level)));
+    assert(((cast(*void)(*instance.alist)) - cast(*void)(*instance)) == 40, "gsl_integration_workspace.alist has unexpected offset % instead of 40", ((cast(*void)(*instance.alist)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_workspace.alist)) == 8, "gsl_integration_workspace.alist has unexpected size % instead of 8", size_of(type_of(gsl_integration_workspace.alist)));
+    assert(((cast(*void)(*instance.blist)) - cast(*void)(*instance)) == 48, "gsl_integration_workspace.blist has unexpected offset % instead of 48", ((cast(*void)(*instance.blist)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_workspace.blist)) == 8, "gsl_integration_workspace.blist has unexpected size % instead of 8", size_of(type_of(gsl_integration_workspace.blist)));
+    assert(((cast(*void)(*instance.rlist)) - cast(*void)(*instance)) == 56, "gsl_integration_workspace.rlist has unexpected offset % instead of 56", ((cast(*void)(*instance.rlist)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_workspace.rlist)) == 8, "gsl_integration_workspace.rlist has unexpected size % instead of 8", size_of(type_of(gsl_integration_workspace.rlist)));
+    assert(((cast(*void)(*instance.elist)) - cast(*void)(*instance)) == 64, "gsl_integration_workspace.elist has unexpected offset % instead of 64", ((cast(*void)(*instance.elist)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_workspace.elist)) == 8, "gsl_integration_workspace.elist has unexpected size % instead of 8", size_of(type_of(gsl_integration_workspace.elist)));
+    assert(((cast(*void)(*instance.order)) - cast(*void)(*instance)) == 72, "gsl_integration_workspace.order has unexpected offset % instead of 72", ((cast(*void)(*instance.order)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_workspace.order)) == 8, "gsl_integration_workspace.order has unexpected size % instead of 8", size_of(type_of(gsl_integration_workspace.order)));
+    assert(((cast(*void)(*instance.level)) - cast(*void)(*instance)) == 80, "gsl_integration_workspace.level has unexpected offset % instead of 80", ((cast(*void)(*instance.level)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_workspace.level)) == 8, "gsl_integration_workspace.level has unexpected size % instead of 8", size_of(type_of(gsl_integration_workspace.level)));
+    assert(size_of(gsl_integration_workspace) == 88, "gsl_integration_workspace has size % instead of 88", size_of(gsl_integration_workspace));
+}
 
 gsl_integration_workspace_alloc :: (n: size_t) -> *gsl_integration_workspace #foreign libgsl;
 
 gsl_integration_workspace_free :: (w: *gsl_integration_workspace) -> void #foreign libgsl;
 
-anon_struct_18 :: struct {
+/* Workspace for QAWS integrator */
+gsl_integration_qaws_table :: struct {
     alpha: float64;
     beta:  float64;
     mu:    s32;
@@ -788,8 +1229,26 @@ anon_struct_18 :: struct {
     rg:    [25] float64;
     rh:    [25] float64;
 }
-
-gsl_integration_qaws_table :: anon_struct_18;
+#run {
+    instance: gsl_integration_qaws_table;
+    assert(((cast(*void)(*instance.alpha)) - cast(*void)(*instance)) == 0, "gsl_integration_qaws_table.alpha has unexpected offset % instead of 0", ((cast(*void)(*instance.alpha)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_qaws_table.alpha)) == 8, "gsl_integration_qaws_table.alpha has unexpected size % instead of 8", size_of(type_of(gsl_integration_qaws_table.alpha)));
+    assert(((cast(*void)(*instance.beta)) - cast(*void)(*instance)) == 8, "gsl_integration_qaws_table.beta has unexpected offset % instead of 8", ((cast(*void)(*instance.beta)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_qaws_table.beta)) == 8, "gsl_integration_qaws_table.beta has unexpected size % instead of 8", size_of(type_of(gsl_integration_qaws_table.beta)));
+    assert(((cast(*void)(*instance.mu)) - cast(*void)(*instance)) == 16, "gsl_integration_qaws_table.mu has unexpected offset % instead of 16", ((cast(*void)(*instance.mu)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_qaws_table.mu)) == 4, "gsl_integration_qaws_table.mu has unexpected size % instead of 4", size_of(type_of(gsl_integration_qaws_table.mu)));
+    assert(((cast(*void)(*instance.nu)) - cast(*void)(*instance)) == 20, "gsl_integration_qaws_table.nu has unexpected offset % instead of 20", ((cast(*void)(*instance.nu)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_qaws_table.nu)) == 4, "gsl_integration_qaws_table.nu has unexpected size % instead of 4", size_of(type_of(gsl_integration_qaws_table.nu)));
+    assert(((cast(*void)(*instance.ri)) - cast(*void)(*instance)) == 24, "gsl_integration_qaws_table.ri has unexpected offset % instead of 24", ((cast(*void)(*instance.ri)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_qaws_table.ri)) == 200, "gsl_integration_qaws_table.ri has unexpected size % instead of 200", size_of(type_of(gsl_integration_qaws_table.ri)));
+    assert(((cast(*void)(*instance.rj)) - cast(*void)(*instance)) == 224, "gsl_integration_qaws_table.rj has unexpected offset % instead of 224", ((cast(*void)(*instance.rj)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_qaws_table.rj)) == 200, "gsl_integration_qaws_table.rj has unexpected size % instead of 200", size_of(type_of(gsl_integration_qaws_table.rj)));
+    assert(((cast(*void)(*instance.rg)) - cast(*void)(*instance)) == 424, "gsl_integration_qaws_table.rg has unexpected offset % instead of 424", ((cast(*void)(*instance.rg)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_qaws_table.rg)) == 200, "gsl_integration_qaws_table.rg has unexpected size % instead of 200", size_of(type_of(gsl_integration_qaws_table.rg)));
+    assert(((cast(*void)(*instance.rh)) - cast(*void)(*instance)) == 624, "gsl_integration_qaws_table.rh has unexpected offset % instead of 624", ((cast(*void)(*instance.rh)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_qaws_table.rh)) == 200, "gsl_integration_qaws_table.rh has unexpected size % instead of 200", size_of(type_of(gsl_integration_qaws_table.rh)));
+    assert(size_of(gsl_integration_qaws_table) == 824, "gsl_integration_qaws_table has size % instead of 824", size_of(gsl_integration_qaws_table));
+}
 
 gsl_integration_qaws_table_alloc :: (alpha: float64, beta: float64, mu: s32, nu: s32) -> *gsl_integration_qaws_table #foreign libgsl;
 
@@ -797,12 +1256,13 @@ gsl_integration_qaws_table_set :: (t: *gsl_integration_qaws_table, alpha: float6
 
 gsl_integration_qaws_table_free :: (t: *gsl_integration_qaws_table) -> void #foreign libgsl;
 
+/* Workspace for QAWO integrator */
 gsl_integration_qawo_enum :: enum u32 {
     GSL_INTEG_COSINE :: 0;
     GSL_INTEG_SINE   :: 1;
 }
 
-anon_struct_19 :: struct {
+gsl_integration_qawo_table :: struct {
     n:      size_t;
     omega:  float64;
     L:      float64;
@@ -810,8 +1270,22 @@ anon_struct_19 :: struct {
     sine:   gsl_integration_qawo_enum;
     chebmo: *float64;
 }
-
-gsl_integration_qawo_table :: anon_struct_19;
+#run {
+    instance: gsl_integration_qawo_table;
+    assert(((cast(*void)(*instance.n)) - cast(*void)(*instance)) == 0, "gsl_integration_qawo_table.n has unexpected offset % instead of 0", ((cast(*void)(*instance.n)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_qawo_table.n)) == 8, "gsl_integration_qawo_table.n has unexpected size % instead of 8", size_of(type_of(gsl_integration_qawo_table.n)));
+    assert(((cast(*void)(*instance.omega)) - cast(*void)(*instance)) == 8, "gsl_integration_qawo_table.omega has unexpected offset % instead of 8", ((cast(*void)(*instance.omega)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_qawo_table.omega)) == 8, "gsl_integration_qawo_table.omega has unexpected size % instead of 8", size_of(type_of(gsl_integration_qawo_table.omega)));
+    assert(((cast(*void)(*instance.L)) - cast(*void)(*instance)) == 16, "gsl_integration_qawo_table.L has unexpected offset % instead of 16", ((cast(*void)(*instance.L)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_qawo_table.L)) == 8, "gsl_integration_qawo_table.L has unexpected size % instead of 8", size_of(type_of(gsl_integration_qawo_table.L)));
+    assert(((cast(*void)(*instance.par)) - cast(*void)(*instance)) == 24, "gsl_integration_qawo_table.par has unexpected offset % instead of 24", ((cast(*void)(*instance.par)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_qawo_table.par)) == 8, "gsl_integration_qawo_table.par has unexpected size % instead of 8", size_of(type_of(gsl_integration_qawo_table.par)));
+    assert(((cast(*void)(*instance.sine)) - cast(*void)(*instance)) == 32, "gsl_integration_qawo_table.sine has unexpected offset % instead of 32", ((cast(*void)(*instance.sine)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_qawo_table.sine)) == 4, "gsl_integration_qawo_table.sine has unexpected size % instead of 4", size_of(type_of(gsl_integration_qawo_table.sine)));
+    assert(((cast(*void)(*instance.chebmo)) - cast(*void)(*instance)) == 40, "gsl_integration_qawo_table.chebmo has unexpected offset % instead of 40", ((cast(*void)(*instance.chebmo)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_qawo_table.chebmo)) == 8, "gsl_integration_qawo_table.chebmo has unexpected size % instead of 8", size_of(type_of(gsl_integration_qawo_table.chebmo)));
+    assert(size_of(gsl_integration_qawo_table) == 48, "gsl_integration_qawo_table has size % instead of 48", size_of(gsl_integration_qawo_table));
+}
 
 gsl_integration_qawo_table_alloc :: (omega: float64, L: float64, sine: gsl_integration_qawo_enum, n: size_t) -> *gsl_integration_qawo_table #foreign libgsl;
 
@@ -821,6 +1295,7 @@ gsl_integration_qawo_table_set_length :: (t: *gsl_integration_qawo_table, L: flo
 
 gsl_integration_qawo_table_free :: (t: *gsl_integration_qawo_table) -> void #foreign libgsl;
 
+/* Definition of an integration rule */
 gsl_integration_rule :: #type (a0: *gsl_function, a1: float64, a2: float64, a3: *float64, a4: *float64, a5: *float64, a6: *float64) -> void #c_call;
 
 gsl_integration_qk15 :: (f: *gsl_function, a: float64, b: float64, result: *float64, abserr: *float64, resabs: *float64, resasc: *float64) -> void #foreign libgsl;
@@ -837,7 +1312,9 @@ gsl_integration_qk61 :: (f: *gsl_function, a: float64, b: float64, result: *floa
 
 gsl_integration_qcheb :: (f: *gsl_function, a: float64, b: float64, cheb12: *float64, cheb24: *float64) -> void #foreign libgsl;
 
-anon_enum_20 :: enum u32 {
+/* The low-level integration rules in QUADPACK are identified by small
+integers (1-6). We'll use symbolic constants to refer to them.  */
+anon_enum :: enum u32 {
     GSL_INTEG_GAUSS15 :: 1;
     GSL_INTEG_GAUSS21 :: 2;
     GSL_INTEG_GAUSS31 :: 3;
@@ -870,24 +1347,38 @@ gsl_integration_qawo :: (f: *gsl_function, a: float64, epsabs: float64, epsrel: 
 
 gsl_integration_qawf :: (f: *gsl_function, a: float64, epsabs: float64, limit: size_t, workspace: *gsl_integration_workspace, cycle_workspace: *gsl_integration_workspace, wf: *gsl_integration_qawo_table, result: *float64, abserr: *float64) -> s32 #foreign libgsl;
 
-anon_struct_21 :: struct {
-    n:           size_t;
-    x:           *float64;
-    w:           *float64;
-    precomputed: s32;
+/* Workspace for fixed-order Gauss-Legendre integration */
+gsl_integration_glfixed_table :: struct {
+    n:           size_t; /* number of points */
+    x:           *float64; /* Gauss abscissae/points */
+    w:           *float64; /* Gauss weights for each abscissae */
+    precomputed: s32; /* high precision abscissae/weights precomputed? */
 }
-
-gsl_integration_glfixed_table :: anon_struct_21;
+#run {
+    instance: gsl_integration_glfixed_table;
+    assert(((cast(*void)(*instance.n)) - cast(*void)(*instance)) == 0, "gsl_integration_glfixed_table.n has unexpected offset % instead of 0", ((cast(*void)(*instance.n)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_glfixed_table.n)) == 8, "gsl_integration_glfixed_table.n has unexpected size % instead of 8", size_of(type_of(gsl_integration_glfixed_table.n)));
+    assert(((cast(*void)(*instance.x)) - cast(*void)(*instance)) == 8, "gsl_integration_glfixed_table.x has unexpected offset % instead of 8", ((cast(*void)(*instance.x)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_glfixed_table.x)) == 8, "gsl_integration_glfixed_table.x has unexpected size % instead of 8", size_of(type_of(gsl_integration_glfixed_table.x)));
+    assert(((cast(*void)(*instance.w)) - cast(*void)(*instance)) == 16, "gsl_integration_glfixed_table.w has unexpected offset % instead of 16", ((cast(*void)(*instance.w)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_glfixed_table.w)) == 8, "gsl_integration_glfixed_table.w has unexpected size % instead of 8", size_of(type_of(gsl_integration_glfixed_table.w)));
+    assert(((cast(*void)(*instance.precomputed)) - cast(*void)(*instance)) == 24, "gsl_integration_glfixed_table.precomputed has unexpected offset % instead of 24", ((cast(*void)(*instance.precomputed)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_glfixed_table.precomputed)) == 4, "gsl_integration_glfixed_table.precomputed has unexpected size % instead of 4", size_of(type_of(gsl_integration_glfixed_table.precomputed)));
+    assert(size_of(gsl_integration_glfixed_table) == 32, "gsl_integration_glfixed_table has size % instead of 32", size_of(gsl_integration_glfixed_table));
+}
 
 gsl_integration_glfixed_table_alloc :: (n: size_t) -> *gsl_integration_glfixed_table #foreign libgsl;
 
 gsl_integration_glfixed_table_free :: (t: *gsl_integration_glfixed_table) -> void #foreign libgsl;
 
+/* Routine for fixed-order Gauss-Legendre integration */
 gsl_integration_glfixed :: (f: *gsl_function, a: float64, b: float64, t: *gsl_integration_glfixed_table) -> float64 #foreign libgsl;
 
+/* Routine to retrieve the i-th Gauss-Legendre point and weight from t */
 gsl_integration_glfixed_point :: (a: float64, b: float64, i: size_t, xi: *float64, wi: *float64, t: *gsl_integration_glfixed_table) -> s32 #foreign libgsl;
 
-anon_struct_22 :: struct {
+/* Data of a single interval */
+gsl_integration_cquad_ival :: struct {
     a:      float64;
     b:      float64;
     c:      [64] float64;
@@ -898,16 +1389,45 @@ anon_struct_22 :: struct {
     rdepth: s32;
     ndiv:   s32;
 }
+#run {
+    instance: gsl_integration_cquad_ival;
+    assert(((cast(*void)(*instance.a)) - cast(*void)(*instance)) == 0, "gsl_integration_cquad_ival.a has unexpected offset % instead of 0", ((cast(*void)(*instance.a)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_cquad_ival.a)) == 8, "gsl_integration_cquad_ival.a has unexpected size % instead of 8", size_of(type_of(gsl_integration_cquad_ival.a)));
+    assert(((cast(*void)(*instance.b)) - cast(*void)(*instance)) == 8, "gsl_integration_cquad_ival.b has unexpected offset % instead of 8", ((cast(*void)(*instance.b)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_cquad_ival.b)) == 8, "gsl_integration_cquad_ival.b has unexpected size % instead of 8", size_of(type_of(gsl_integration_cquad_ival.b)));
+    assert(((cast(*void)(*instance.c)) - cast(*void)(*instance)) == 16, "gsl_integration_cquad_ival.c has unexpected offset % instead of 16", ((cast(*void)(*instance.c)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_cquad_ival.c)) == 512, "gsl_integration_cquad_ival.c has unexpected size % instead of 512", size_of(type_of(gsl_integration_cquad_ival.c)));
+    assert(((cast(*void)(*instance.fx)) - cast(*void)(*instance)) == 528, "gsl_integration_cquad_ival.fx has unexpected offset % instead of 528", ((cast(*void)(*instance.fx)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_cquad_ival.fx)) == 264, "gsl_integration_cquad_ival.fx has unexpected size % instead of 264", size_of(type_of(gsl_integration_cquad_ival.fx)));
+    assert(((cast(*void)(*instance.igral)) - cast(*void)(*instance)) == 792, "gsl_integration_cquad_ival.igral has unexpected offset % instead of 792", ((cast(*void)(*instance.igral)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_cquad_ival.igral)) == 8, "gsl_integration_cquad_ival.igral has unexpected size % instead of 8", size_of(type_of(gsl_integration_cquad_ival.igral)));
+    assert(((cast(*void)(*instance.err)) - cast(*void)(*instance)) == 800, "gsl_integration_cquad_ival.err has unexpected offset % instead of 800", ((cast(*void)(*instance.err)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_cquad_ival.err)) == 8, "gsl_integration_cquad_ival.err has unexpected size % instead of 8", size_of(type_of(gsl_integration_cquad_ival.err)));
+    assert(((cast(*void)(*instance.depth)) - cast(*void)(*instance)) == 808, "gsl_integration_cquad_ival.depth has unexpected offset % instead of 808", ((cast(*void)(*instance.depth)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_cquad_ival.depth)) == 4, "gsl_integration_cquad_ival.depth has unexpected size % instead of 4", size_of(type_of(gsl_integration_cquad_ival.depth)));
+    assert(((cast(*void)(*instance.rdepth)) - cast(*void)(*instance)) == 812, "gsl_integration_cquad_ival.rdepth has unexpected offset % instead of 812", ((cast(*void)(*instance.rdepth)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_cquad_ival.rdepth)) == 4, "gsl_integration_cquad_ival.rdepth has unexpected size % instead of 4", size_of(type_of(gsl_integration_cquad_ival.rdepth)));
+    assert(((cast(*void)(*instance.ndiv)) - cast(*void)(*instance)) == 816, "gsl_integration_cquad_ival.ndiv has unexpected offset % instead of 816", ((cast(*void)(*instance.ndiv)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_cquad_ival.ndiv)) == 4, "gsl_integration_cquad_ival.ndiv has unexpected size % instead of 4", size_of(type_of(gsl_integration_cquad_ival.ndiv)));
+    assert(size_of(gsl_integration_cquad_ival) == 824, "gsl_integration_cquad_ival has size % instead of 824", size_of(gsl_integration_cquad_ival));
+}
 
-gsl_integration_cquad_ival :: anon_struct_22;
-
-anon_struct_23 :: struct {
+/* The workspace is just a collection of intervals */
+gsl_integration_cquad_workspace :: struct {
     size:  size_t;
     ivals: *gsl_integration_cquad_ival;
     heap:  *size_t;
 }
-
-gsl_integration_cquad_workspace :: anon_struct_23;
+#run {
+    instance: gsl_integration_cquad_workspace;
+    assert(((cast(*void)(*instance.size)) - cast(*void)(*instance)) == 0, "gsl_integration_cquad_workspace.size has unexpected offset % instead of 0", ((cast(*void)(*instance.size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_cquad_workspace.size)) == 8, "gsl_integration_cquad_workspace.size has unexpected size % instead of 8", size_of(type_of(gsl_integration_cquad_workspace.size)));
+    assert(((cast(*void)(*instance.ivals)) - cast(*void)(*instance)) == 8, "gsl_integration_cquad_workspace.ivals has unexpected offset % instead of 8", ((cast(*void)(*instance.ivals)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_cquad_workspace.ivals)) == 8, "gsl_integration_cquad_workspace.ivals has unexpected size % instead of 8", size_of(type_of(gsl_integration_cquad_workspace.ivals)));
+    assert(((cast(*void)(*instance.heap)) - cast(*void)(*instance)) == 16, "gsl_integration_cquad_workspace.heap has unexpected offset % instead of 16", ((cast(*void)(*instance.heap)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_cquad_workspace.heap)) == 8, "gsl_integration_cquad_workspace.heap has unexpected size % instead of 8", size_of(type_of(gsl_integration_cquad_workspace.heap)));
+    assert(size_of(gsl_integration_cquad_workspace) == 24, "gsl_integration_cquad_workspace has size % instead of 24", size_of(gsl_integration_cquad_workspace));
+}
 
 gsl_integration_cquad_workspace_alloc :: (n: size_t) -> *gsl_integration_cquad_workspace #foreign libgsl;
 
@@ -915,19 +1435,29 @@ gsl_integration_cquad_workspace_free :: (w: *gsl_integration_cquad_workspace) ->
 
 gsl_integration_cquad :: (f: *gsl_function, a: float64, b: float64, epsabs: float64, epsrel: float64, ws: *gsl_integration_cquad_workspace, result: *float64, abserr: *float64, nevals: *size_t) -> s32 #foreign libgsl;
 
-anon_struct_24 :: struct {
-    n:     size_t;
-    work1: *float64;
-    work2: *float64;
+/* Romberg integration workspace and routines */
+gsl_integration_romberg_workspace :: struct {
+    n:     size_t; /* maximum number of steps */
+    work1: *float64; /* workspace for a row of R matrix, size n */
+    work2: *float64; /* workspace for a row of R matrix, size n */
 }
-
-gsl_integration_romberg_workspace :: anon_struct_24;
+#run {
+    instance: gsl_integration_romberg_workspace;
+    assert(((cast(*void)(*instance.n)) - cast(*void)(*instance)) == 0, "gsl_integration_romberg_workspace.n has unexpected offset % instead of 0", ((cast(*void)(*instance.n)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_romberg_workspace.n)) == 8, "gsl_integration_romberg_workspace.n has unexpected size % instead of 8", size_of(type_of(gsl_integration_romberg_workspace.n)));
+    assert(((cast(*void)(*instance.work1)) - cast(*void)(*instance)) == 8, "gsl_integration_romberg_workspace.work1 has unexpected offset % instead of 8", ((cast(*void)(*instance.work1)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_romberg_workspace.work1)) == 8, "gsl_integration_romberg_workspace.work1 has unexpected size % instead of 8", size_of(type_of(gsl_integration_romberg_workspace.work1)));
+    assert(((cast(*void)(*instance.work2)) - cast(*void)(*instance)) == 16, "gsl_integration_romberg_workspace.work2 has unexpected offset % instead of 16", ((cast(*void)(*instance.work2)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_romberg_workspace.work2)) == 8, "gsl_integration_romberg_workspace.work2 has unexpected size % instead of 8", size_of(type_of(gsl_integration_romberg_workspace.work2)));
+    assert(size_of(gsl_integration_romberg_workspace) == 24, "gsl_integration_romberg_workspace has size % instead of 24", size_of(gsl_integration_romberg_workspace));
+}
 
 gsl_integration_romberg_alloc :: (n: size_t) -> *gsl_integration_romberg_workspace #foreign libgsl;
 gsl_integration_romberg_free :: (w: *gsl_integration_romberg_workspace) -> void #foreign libgsl;
 gsl_integration_romberg :: (f: *gsl_function, a: float64, b: float64, epsabs: float64, epsrel: float64, result: *float64, neval: *size_t, w: *gsl_integration_romberg_workspace) -> s32 #foreign libgsl;
 
-anon_struct_25 :: struct {
+/* IQPACK related structures and routines */
+gsl_integration_fixed_params :: struct {
     alpha: float64;
     beta:  float64;
     a:     float64;
@@ -938,36 +1468,77 @@ anon_struct_25 :: struct {
     al:    float64;
     be:    float64;
 }
+#run {
+    instance: gsl_integration_fixed_params;
+    assert(((cast(*void)(*instance.alpha)) - cast(*void)(*instance)) == 0, "gsl_integration_fixed_params.alpha has unexpected offset % instead of 0", ((cast(*void)(*instance.alpha)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_fixed_params.alpha)) == 8, "gsl_integration_fixed_params.alpha has unexpected size % instead of 8", size_of(type_of(gsl_integration_fixed_params.alpha)));
+    assert(((cast(*void)(*instance.beta)) - cast(*void)(*instance)) == 8, "gsl_integration_fixed_params.beta has unexpected offset % instead of 8", ((cast(*void)(*instance.beta)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_fixed_params.beta)) == 8, "gsl_integration_fixed_params.beta has unexpected size % instead of 8", size_of(type_of(gsl_integration_fixed_params.beta)));
+    assert(((cast(*void)(*instance.a)) - cast(*void)(*instance)) == 16, "gsl_integration_fixed_params.a has unexpected offset % instead of 16", ((cast(*void)(*instance.a)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_fixed_params.a)) == 8, "gsl_integration_fixed_params.a has unexpected size % instead of 8", size_of(type_of(gsl_integration_fixed_params.a)));
+    assert(((cast(*void)(*instance.b)) - cast(*void)(*instance)) == 24, "gsl_integration_fixed_params.b has unexpected offset % instead of 24", ((cast(*void)(*instance.b)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_fixed_params.b)) == 8, "gsl_integration_fixed_params.b has unexpected size % instead of 8", size_of(type_of(gsl_integration_fixed_params.b)));
+    assert(((cast(*void)(*instance.zemu)) - cast(*void)(*instance)) == 32, "gsl_integration_fixed_params.zemu has unexpected offset % instead of 32", ((cast(*void)(*instance.zemu)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_fixed_params.zemu)) == 8, "gsl_integration_fixed_params.zemu has unexpected size % instead of 8", size_of(type_of(gsl_integration_fixed_params.zemu)));
+    assert(((cast(*void)(*instance.shft)) - cast(*void)(*instance)) == 40, "gsl_integration_fixed_params.shft has unexpected offset % instead of 40", ((cast(*void)(*instance.shft)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_fixed_params.shft)) == 8, "gsl_integration_fixed_params.shft has unexpected size % instead of 8", size_of(type_of(gsl_integration_fixed_params.shft)));
+    assert(((cast(*void)(*instance.slp)) - cast(*void)(*instance)) == 48, "gsl_integration_fixed_params.slp has unexpected offset % instead of 48", ((cast(*void)(*instance.slp)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_fixed_params.slp)) == 8, "gsl_integration_fixed_params.slp has unexpected size % instead of 8", size_of(type_of(gsl_integration_fixed_params.slp)));
+    assert(((cast(*void)(*instance.al)) - cast(*void)(*instance)) == 56, "gsl_integration_fixed_params.al has unexpected offset % instead of 56", ((cast(*void)(*instance.al)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_fixed_params.al)) == 8, "gsl_integration_fixed_params.al has unexpected size % instead of 8", size_of(type_of(gsl_integration_fixed_params.al)));
+    assert(((cast(*void)(*instance.be)) - cast(*void)(*instance)) == 64, "gsl_integration_fixed_params.be has unexpected offset % instead of 64", ((cast(*void)(*instance.be)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_fixed_params.be)) == 8, "gsl_integration_fixed_params.be has unexpected size % instead of 8", size_of(type_of(gsl_integration_fixed_params.be)));
+    assert(size_of(gsl_integration_fixed_params) == 72, "gsl_integration_fixed_params has size % instead of 72", size_of(gsl_integration_fixed_params));
+}
 
-gsl_integration_fixed_params :: anon_struct_25;
-
-anon_struct_26 :: struct {
+gsl_integration_fixed_type :: struct {
     check: #type (a0: size_t, a1: *gsl_integration_fixed_params) -> s32 #c_call;
     init:  #type (a0: size_t, a1: *float64, a2: *float64, a3: *gsl_integration_fixed_params) -> s32 #c_call;
 }
-
-gsl_integration_fixed_type :: anon_struct_26;
-
-anon_struct_27 :: struct {
-    n:       size_t;
-    weights: *float64;
-    x:       *float64;
-    diag:    *float64;
-    subdiag: *float64;
-    type:    *gsl_integration_fixed_type;
+#run {
+    instance: gsl_integration_fixed_type;
+    assert(((cast(*void)(*instance.check)) - cast(*void)(*instance)) == 0, "gsl_integration_fixed_type.check has unexpected offset % instead of 0", ((cast(*void)(*instance.check)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_fixed_type.check)) == 8, "gsl_integration_fixed_type.check has unexpected size % instead of 8", size_of(type_of(gsl_integration_fixed_type.check)));
+    assert(((cast(*void)(*instance.init)) - cast(*void)(*instance)) == 8, "gsl_integration_fixed_type.init has unexpected offset % instead of 8", ((cast(*void)(*instance.init)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_fixed_type.init)) == 8, "gsl_integration_fixed_type.init has unexpected size % instead of 8", size_of(type_of(gsl_integration_fixed_type.init)));
+    assert(size_of(gsl_integration_fixed_type) == 16, "gsl_integration_fixed_type has size % instead of 16", size_of(gsl_integration_fixed_type));
 }
 
-gsl_integration_fixed_workspace :: anon_struct_27;
+gsl_integration_fixed_workspace :: struct {
+    n:       size_t; /* number of nodes/weights */
+    weights: *float64; /* quadrature weights */
+    x:       *float64; /* quadrature nodes */
+    diag:    *float64; /* diagonal of Jacobi matrix */
+    subdiag: *float64; /* subdiagonal of Jacobi matrix */
+    type:    *gsl_integration_fixed_type;
+}
+#run {
+    instance: gsl_integration_fixed_workspace;
+    assert(((cast(*void)(*instance.n)) - cast(*void)(*instance)) == 0, "gsl_integration_fixed_workspace.n has unexpected offset % instead of 0", ((cast(*void)(*instance.n)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_fixed_workspace.n)) == 8, "gsl_integration_fixed_workspace.n has unexpected size % instead of 8", size_of(type_of(gsl_integration_fixed_workspace.n)));
+    assert(((cast(*void)(*instance.weights)) - cast(*void)(*instance)) == 8, "gsl_integration_fixed_workspace.weights has unexpected offset % instead of 8", ((cast(*void)(*instance.weights)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_fixed_workspace.weights)) == 8, "gsl_integration_fixed_workspace.weights has unexpected size % instead of 8", size_of(type_of(gsl_integration_fixed_workspace.weights)));
+    assert(((cast(*void)(*instance.x)) - cast(*void)(*instance)) == 16, "gsl_integration_fixed_workspace.x has unexpected offset % instead of 16", ((cast(*void)(*instance.x)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_fixed_workspace.x)) == 8, "gsl_integration_fixed_workspace.x has unexpected size % instead of 8", size_of(type_of(gsl_integration_fixed_workspace.x)));
+    assert(((cast(*void)(*instance.diag)) - cast(*void)(*instance)) == 24, "gsl_integration_fixed_workspace.diag has unexpected offset % instead of 24", ((cast(*void)(*instance.diag)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_fixed_workspace.diag)) == 8, "gsl_integration_fixed_workspace.diag has unexpected size % instead of 8", size_of(type_of(gsl_integration_fixed_workspace.diag)));
+    assert(((cast(*void)(*instance.subdiag)) - cast(*void)(*instance)) == 32, "gsl_integration_fixed_workspace.subdiag has unexpected offset % instead of 32", ((cast(*void)(*instance.subdiag)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_fixed_workspace.subdiag)) == 8, "gsl_integration_fixed_workspace.subdiag has unexpected size % instead of 8", size_of(type_of(gsl_integration_fixed_workspace.subdiag)));
+    assert(((cast(*void)(*instance.type)) - cast(*void)(*instance)) == 40, "gsl_integration_fixed_workspace.type has unexpected offset % instead of 40", ((cast(*void)(*instance.type)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_integration_fixed_workspace.type)) == 8, "gsl_integration_fixed_workspace.type has unexpected size % instead of 8", size_of(type_of(gsl_integration_fixed_workspace.type)));
+    assert(size_of(gsl_integration_fixed_workspace) == 48, "gsl_integration_fixed_workspace has size % instead of 48", size_of(gsl_integration_fixed_workspace));
+}
 
-gsl_integration_fixed_legendre_: *gsl_integration_fixed_type;
-gsl_integration_fixed_chebyshev_: *gsl_integration_fixed_type;
-gsl_integration_fixed_gegenbauer_: *gsl_integration_fixed_type;
-gsl_integration_fixed_jacobi_: *gsl_integration_fixed_type;
-gsl_integration_fixed_laguerre_: *gsl_integration_fixed_type;
-gsl_integration_fixed_hermite_: *gsl_integration_fixed_type;
-gsl_integration_fixed_exponential_: *gsl_integration_fixed_type;
-gsl_integration_fixed_rational_: *gsl_integration_fixed_type;
-gsl_integration_fixed_chebyshev2_: *gsl_integration_fixed_type;
+/* IQPACK integral types */
+gsl_integration_fixed_legendre: *gsl_integration_fixed_type;
+gsl_integration_fixed_chebyshev: *gsl_integration_fixed_type;
+gsl_integration_fixed_gegenbauer: *gsl_integration_fixed_type;
+gsl_integration_fixed_jacobi: *gsl_integration_fixed_type;
+gsl_integration_fixed_laguerre: *gsl_integration_fixed_type;
+gsl_integration_fixed_hermite: *gsl_integration_fixed_type;
+gsl_integration_fixed_exponential: *gsl_integration_fixed_type;
+gsl_integration_fixed_rational: *gsl_integration_fixed_type;
+gsl_integration_fixed_chebyshev2: *gsl_integration_fixed_type;
 
 gsl_integration_fixed_alloc :: (type: *gsl_integration_fixed_type, n: size_t, a: float64, b: float64, alpha: float64, beta: float64) -> *gsl_integration_fixed_workspace #foreign libgsl;
 
@@ -981,7 +1552,7 @@ gsl_integration_fixed_weights :: (w: *gsl_integration_fixed_workspace) -> *float
 
 gsl_integration_fixed :: (func: *gsl_function, result: *float64, w: *gsl_integration_fixed_workspace) -> s32 #foreign libgsl;
 
-anon_struct_28 :: struct {
+gsl_rng_type :: struct {
     name:       *u8;
     max:        u64;
     min:        u64;
@@ -990,83 +1561,107 @@ anon_struct_28 :: struct {
     get:        #type (a0: *void) -> u64 #c_call;
     get_double: #type (a0: *void) -> float64 #c_call;
 }
+#run {
+    instance: gsl_rng_type;
+    assert(((cast(*void)(*instance.name)) - cast(*void)(*instance)) == 0, "gsl_rng_type.name has unexpected offset % instead of 0", ((cast(*void)(*instance.name)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_rng_type.name)) == 8, "gsl_rng_type.name has unexpected size % instead of 8", size_of(type_of(gsl_rng_type.name)));
+    assert(((cast(*void)(*instance.max)) - cast(*void)(*instance)) == 8, "gsl_rng_type.max has unexpected offset % instead of 8", ((cast(*void)(*instance.max)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_rng_type.max)) == 8, "gsl_rng_type.max has unexpected size % instead of 8", size_of(type_of(gsl_rng_type.max)));
+    assert(((cast(*void)(*instance.min)) - cast(*void)(*instance)) == 16, "gsl_rng_type.min has unexpected offset % instead of 16", ((cast(*void)(*instance.min)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_rng_type.min)) == 8, "gsl_rng_type.min has unexpected size % instead of 8", size_of(type_of(gsl_rng_type.min)));
+    assert(((cast(*void)(*instance.size)) - cast(*void)(*instance)) == 24, "gsl_rng_type.size has unexpected offset % instead of 24", ((cast(*void)(*instance.size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_rng_type.size)) == 8, "gsl_rng_type.size has unexpected size % instead of 8", size_of(type_of(gsl_rng_type.size)));
+    assert(((cast(*void)(*instance.set)) - cast(*void)(*instance)) == 32, "gsl_rng_type.set has unexpected offset % instead of 32", ((cast(*void)(*instance.set)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_rng_type.set)) == 8, "gsl_rng_type.set has unexpected size % instead of 8", size_of(type_of(gsl_rng_type.set)));
+    assert(((cast(*void)(*instance.get)) - cast(*void)(*instance)) == 40, "gsl_rng_type.get has unexpected offset % instead of 40", ((cast(*void)(*instance.get)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_rng_type.get)) == 8, "gsl_rng_type.get has unexpected size % instead of 8", size_of(type_of(gsl_rng_type.get)));
+    assert(((cast(*void)(*instance.get_double)) - cast(*void)(*instance)) == 48, "gsl_rng_type.get_double has unexpected offset % instead of 48", ((cast(*void)(*instance.get_double)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_rng_type.get_double)) == 8, "gsl_rng_type.get_double has unexpected size % instead of 8", size_of(type_of(gsl_rng_type.get_double)));
+    assert(size_of(gsl_rng_type) == 56, "gsl_rng_type has size % instead of 56", size_of(gsl_rng_type));
+}
 
-gsl_rng_type :: anon_struct_28;
-
-anon_struct_29 :: struct {
+gsl_rng :: struct {
     type:  *gsl_rng_type;
     state: *void;
 }
+#run {
+    instance: gsl_rng;
+    assert(((cast(*void)(*instance.type)) - cast(*void)(*instance)) == 0, "gsl_rng.type has unexpected offset % instead of 0", ((cast(*void)(*instance.type)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_rng.type)) == 8, "gsl_rng.type has unexpected size % instead of 8", size_of(type_of(gsl_rng.type)));
+    assert(((cast(*void)(*instance.state)) - cast(*void)(*instance)) == 8, "gsl_rng.state has unexpected offset % instead of 8", ((cast(*void)(*instance.state)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_rng.state)) == 8, "gsl_rng.state has unexpected size % instead of 8", size_of(type_of(gsl_rng.state)));
+    assert(size_of(gsl_rng) == 16, "gsl_rng has size % instead of 16", size_of(gsl_rng));
+}
 
-gsl_rng :: anon_struct_29;
-
-gsl_rng_borosh13_: *gsl_rng_type;
-gsl_rng_coveyou_: *gsl_rng_type;
-gsl_rng_cmrg_: *gsl_rng_type;
-gsl_rng_fishman18_: *gsl_rng_type;
-gsl_rng_fishman20_: *gsl_rng_type;
-gsl_rng_fishman2x_: *gsl_rng_type;
-gsl_rng_gfsr4_: *gsl_rng_type;
-gsl_rng_knuthran_: *gsl_rng_type;
-gsl_rng_knuthran2_: *gsl_rng_type;
-gsl_rng_knuthran2002_: *gsl_rng_type;
-gsl_rng_lecuyer21_: *gsl_rng_type;
-gsl_rng_minstd_: *gsl_rng_type;
-gsl_rng_mrg_: *gsl_rng_type;
-gsl_rng_mt19937_: *gsl_rng_type;
-gsl_rng_mt19937_1999_: *gsl_rng_type;
-gsl_rng_mt19937_1998_: *gsl_rng_type;
-gsl_rng_r250_: *gsl_rng_type;
-gsl_rng_ran0_: *gsl_rng_type;
-gsl_rng_ran1_: *gsl_rng_type;
-gsl_rng_ran2_: *gsl_rng_type;
-gsl_rng_ran3_: *gsl_rng_type;
-gsl_rng_rand_: *gsl_rng_type;
-gsl_rng_rand48_: *gsl_rng_type;
-gsl_rng_random128_bsd_: *gsl_rng_type;
-gsl_rng_random128_glibc2_: *gsl_rng_type;
-gsl_rng_random128_libc5_: *gsl_rng_type;
-gsl_rng_random256_bsd_: *gsl_rng_type;
-gsl_rng_random256_glibc2_: *gsl_rng_type;
-gsl_rng_random256_libc5_: *gsl_rng_type;
-gsl_rng_random32_bsd_: *gsl_rng_type;
-gsl_rng_random32_glibc2_: *gsl_rng_type;
-gsl_rng_random32_libc5_: *gsl_rng_type;
-gsl_rng_random64_bsd_: *gsl_rng_type;
-gsl_rng_random64_glibc2_: *gsl_rng_type;
-gsl_rng_random64_libc5_: *gsl_rng_type;
-gsl_rng_random8_bsd_: *gsl_rng_type;
-gsl_rng_random8_glibc2_: *gsl_rng_type;
-gsl_rng_random8_libc5_: *gsl_rng_type;
-gsl_rng_random_bsd_: *gsl_rng_type;
-gsl_rng_random_glibc2_: *gsl_rng_type;
-gsl_rng_random_libc5_: *gsl_rng_type;
-gsl_rng_randu_: *gsl_rng_type;
-gsl_rng_ranf_: *gsl_rng_type;
-gsl_rng_ranlux_: *gsl_rng_type;
-gsl_rng_ranlux389_: *gsl_rng_type;
-gsl_rng_ranlxd1_: *gsl_rng_type;
-gsl_rng_ranlxd2_: *gsl_rng_type;
-gsl_rng_ranlxs0_: *gsl_rng_type;
-gsl_rng_ranlxs1_: *gsl_rng_type;
-gsl_rng_ranlxs2_: *gsl_rng_type;
-gsl_rng_ranmar_: *gsl_rng_type;
-gsl_rng_slatec_: *gsl_rng_type;
-gsl_rng_taus_: *gsl_rng_type;
-gsl_rng_taus2_: *gsl_rng_type;
-gsl_rng_taus113_: *gsl_rng_type;
-gsl_rng_transputer_: *gsl_rng_type;
-gsl_rng_tt800_: *gsl_rng_type;
-gsl_rng_uni_: *gsl_rng_type;
-gsl_rng_uni32_: *gsl_rng_type;
-gsl_rng_vax_: *gsl_rng_type;
-gsl_rng_waterman14_: *gsl_rng_type;
-gsl_rng_zuf_: *gsl_rng_type;
+/* These structs also need to appear in default.c so you can select
+them via the environment variable GSL_RNG_TYPE */
+gsl_rng_borosh13: *gsl_rng_type;
+gsl_rng_coveyou: *gsl_rng_type;
+gsl_rng_cmrg: *gsl_rng_type;
+gsl_rng_fishman18: *gsl_rng_type;
+gsl_rng_fishman20: *gsl_rng_type;
+gsl_rng_fishman2x: *gsl_rng_type;
+gsl_rng_gfsr4: *gsl_rng_type;
+gsl_rng_knuthran: *gsl_rng_type;
+gsl_rng_knuthran2: *gsl_rng_type;
+gsl_rng_knuthran2002: *gsl_rng_type;
+gsl_rng_lecuyer21: *gsl_rng_type;
+gsl_rng_minstd: *gsl_rng_type;
+gsl_rng_mrg: *gsl_rng_type;
+gsl_rng_mt19937: *gsl_rng_type;
+gsl_rng_mt19937_1999: *gsl_rng_type;
+gsl_rng_mt19937_1998: *gsl_rng_type;
+gsl_rng_r250: *gsl_rng_type;
+gsl_rng_ran0: *gsl_rng_type;
+gsl_rng_ran1: *gsl_rng_type;
+gsl_rng_ran2: *gsl_rng_type;
+gsl_rng_ran3: *gsl_rng_type;
+gsl_rng_rand: *gsl_rng_type;
+gsl_rng_rand48: *gsl_rng_type;
+gsl_rng_random128_bsd: *gsl_rng_type;
+gsl_rng_random128_glibc2: *gsl_rng_type;
+gsl_rng_random128_libc5: *gsl_rng_type;
+gsl_rng_random256_bsd: *gsl_rng_type;
+gsl_rng_random256_glibc2: *gsl_rng_type;
+gsl_rng_random256_libc5: *gsl_rng_type;
+gsl_rng_random32_bsd: *gsl_rng_type;
+gsl_rng_random32_glibc2: *gsl_rng_type;
+gsl_rng_random32_libc5: *gsl_rng_type;
+gsl_rng_random64_bsd: *gsl_rng_type;
+gsl_rng_random64_glibc2: *gsl_rng_type;
+gsl_rng_random64_libc5: *gsl_rng_type;
+gsl_rng_random8_bsd: *gsl_rng_type;
+gsl_rng_random8_glibc2: *gsl_rng_type;
+gsl_rng_random8_libc5: *gsl_rng_type;
+gsl_rng_random_bsd: *gsl_rng_type;
+gsl_rng_random_glibc2: *gsl_rng_type;
+gsl_rng_random_libc5: *gsl_rng_type;
+gsl_rng_randu: *gsl_rng_type;
+gsl_rng_ranf: *gsl_rng_type;
+gsl_rng_ranlux: *gsl_rng_type;
+gsl_rng_ranlux389: *gsl_rng_type;
+gsl_rng_ranlxd1: *gsl_rng_type;
+gsl_rng_ranlxd2: *gsl_rng_type;
+gsl_rng_ranlxs0: *gsl_rng_type;
+gsl_rng_ranlxs1: *gsl_rng_type;
+gsl_rng_ranlxs2: *gsl_rng_type;
+gsl_rng_ranmar: *gsl_rng_type;
+gsl_rng_slatec: *gsl_rng_type;
+gsl_rng_taus: *gsl_rng_type;
+gsl_rng_taus2: *gsl_rng_type;
+gsl_rng_taus113: *gsl_rng_type;
+gsl_rng_transputer: *gsl_rng_type;
+gsl_rng_tt800: *gsl_rng_type;
+gsl_rng_uni: *gsl_rng_type;
+gsl_rng_uni32: *gsl_rng_type;
+gsl_rng_vax: *gsl_rng_type;
+gsl_rng_waterman14: *gsl_rng_type;
+gsl_rng_zuf: *gsl_rng_type;
 
 gsl_rng_types_setup :: () -> **gsl_rng_type #foreign libgsl;
 
-gsl_rng_default_: *gsl_rng_type;
-gsl_rng_default_seed_: u64;
+gsl_rng_default: *gsl_rng_type;
+gsl_rng_default_seed: u64;
 
 gsl_rng_alloc :: (T: *gsl_rng_type) -> *gsl_rng #foreign libgsl;
 gsl_rng_memcpy :: (dest: *gsl_rng, src: *gsl_rng) -> s32 #foreign libgsl;
@@ -1094,46 +1689,89 @@ gsl_rng_uniform :: (r: *gsl_rng) -> float64 #foreign libgsl;
 gsl_rng_uniform_pos :: (r: *gsl_rng) -> float64 #foreign libgsl;
 gsl_rng_uniform_int :: (r: *gsl_rng, n: u64) -> u64 #foreign libgsl;
 
-anon_struct_30 :: struct {
+/* Structure describing a type of generator.
+*/
+gsl_qrng_type :: struct {
     name:          *u8;
     max_dimension: u32;
     state_size:    #type (a0: u32) -> size_t #c_call;
     init_state:    #type (a0: *void, a1: u32) -> s32 #c_call;
     get:           #type (a0: *void, a1: u32, a2: *float64) -> s32 #c_call;
 }
+#run {
+    instance: gsl_qrng_type;
+    assert(((cast(*void)(*instance.name)) - cast(*void)(*instance)) == 0, "gsl_qrng_type.name has unexpected offset % instead of 0", ((cast(*void)(*instance.name)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_qrng_type.name)) == 8, "gsl_qrng_type.name has unexpected size % instead of 8", size_of(type_of(gsl_qrng_type.name)));
+    assert(((cast(*void)(*instance.max_dimension)) - cast(*void)(*instance)) == 8, "gsl_qrng_type.max_dimension has unexpected offset % instead of 8", ((cast(*void)(*instance.max_dimension)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_qrng_type.max_dimension)) == 4, "gsl_qrng_type.max_dimension has unexpected size % instead of 4", size_of(type_of(gsl_qrng_type.max_dimension)));
+    assert(((cast(*void)(*instance.state_size)) - cast(*void)(*instance)) == 16, "gsl_qrng_type.state_size has unexpected offset % instead of 16", ((cast(*void)(*instance.state_size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_qrng_type.state_size)) == 8, "gsl_qrng_type.state_size has unexpected size % instead of 8", size_of(type_of(gsl_qrng_type.state_size)));
+    assert(((cast(*void)(*instance.init_state)) - cast(*void)(*instance)) == 24, "gsl_qrng_type.init_state has unexpected offset % instead of 24", ((cast(*void)(*instance.init_state)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_qrng_type.init_state)) == 8, "gsl_qrng_type.init_state has unexpected size % instead of 8", size_of(type_of(gsl_qrng_type.init_state)));
+    assert(((cast(*void)(*instance.get)) - cast(*void)(*instance)) == 32, "gsl_qrng_type.get has unexpected offset % instead of 32", ((cast(*void)(*instance.get)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_qrng_type.get)) == 8, "gsl_qrng_type.get has unexpected size % instead of 8", size_of(type_of(gsl_qrng_type.get)));
+    assert(size_of(gsl_qrng_type) == 40, "gsl_qrng_type has size % instead of 40", size_of(gsl_qrng_type));
+}
 
-gsl_qrng_type :: anon_struct_30;
-
-anon_struct_31 :: struct {
+/* Structure describing a generator instance of a
+* specified type, with generator-specific state info
+* and dimension-specific info.
+*/
+gsl_qrng :: struct {
     type:       *gsl_qrng_type;
     dimension:  u32;
     state_size: size_t;
     state:      *void;
 }
+#run {
+    instance: gsl_qrng;
+    assert(((cast(*void)(*instance.type)) - cast(*void)(*instance)) == 0, "gsl_qrng.type has unexpected offset % instead of 0", ((cast(*void)(*instance.type)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_qrng.type)) == 8, "gsl_qrng.type has unexpected size % instead of 8", size_of(type_of(gsl_qrng.type)));
+    assert(((cast(*void)(*instance.dimension)) - cast(*void)(*instance)) == 8, "gsl_qrng.dimension has unexpected offset % instead of 8", ((cast(*void)(*instance.dimension)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_qrng.dimension)) == 4, "gsl_qrng.dimension has unexpected size % instead of 4", size_of(type_of(gsl_qrng.dimension)));
+    assert(((cast(*void)(*instance.state_size)) - cast(*void)(*instance)) == 16, "gsl_qrng.state_size has unexpected offset % instead of 16", ((cast(*void)(*instance.state_size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_qrng.state_size)) == 8, "gsl_qrng.state_size has unexpected size % instead of 8", size_of(type_of(gsl_qrng.state_size)));
+    assert(((cast(*void)(*instance.state)) - cast(*void)(*instance)) == 24, "gsl_qrng.state has unexpected offset % instead of 24", ((cast(*void)(*instance.state)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_qrng.state)) == 8, "gsl_qrng.state has unexpected size % instead of 8", size_of(type_of(gsl_qrng.state)));
+    assert(size_of(gsl_qrng) == 32, "gsl_qrng has size % instead of 32", size_of(gsl_qrng));
+}
 
-gsl_qrng :: anon_struct_31;
+/* Supported generator types.
+*/
+gsl_qrng_niederreiter_2: *gsl_qrng_type;
+gsl_qrng_sobol: *gsl_qrng_type;
+gsl_qrng_halton: *gsl_qrng_type;
+gsl_qrng_reversehalton: *gsl_qrng_type;
 
-gsl_qrng_niederreiter_2_: *gsl_qrng_type;
-gsl_qrng_sobol_: *gsl_qrng_type;
-gsl_qrng_halton_: *gsl_qrng_type;
-gsl_qrng_reversehalton_: *gsl_qrng_type;
-
+/* Allocate and initialize a generator
+* of the specified type, in the given
+* space dimension.
+*/
 gsl_qrng_alloc :: (T: *gsl_qrng_type, dimension: u32) -> *gsl_qrng #foreign libgsl;
 
+/* Copy a generator. */
 gsl_qrng_memcpy :: (dest: *gsl_qrng, src: *gsl_qrng) -> s32 #foreign libgsl;
 
+/* Clone a generator. */
 gsl_qrng_clone :: (q: *gsl_qrng) -> *gsl_qrng #foreign libgsl;
 
+/* Free a generator. */
 gsl_qrng_free :: (q: *gsl_qrng) -> void #foreign libgsl;
 
+/* Intialize a generator. */
 gsl_qrng_init :: (q: *gsl_qrng) -> void #foreign libgsl;
 
+/* Get the standardized name of the generator. */
 gsl_qrng_name :: (q: *gsl_qrng) -> *u8 #foreign libgsl;
 
+/* ISN'T THIS CONFUSING FOR PEOPLE?
+WHAT IF SOMEBODY TRIES TO COPY WITH THIS ???
+*/
 gsl_qrng_size :: (q: *gsl_qrng) -> size_t #foreign libgsl;
 
 gsl_qrng_state :: (q: *gsl_qrng) -> *void #foreign libgsl;
 
+/* Retrieve next vector in sequence. */
 gsl_qrng_get :: (q: *gsl_qrng, x: *float64) -> s32 #foreign libgsl;
 
 gsl_ran_bernoulli :: (r: *gsl_rng, p: float64) -> u32 #foreign libgsl;
@@ -1281,13 +1919,21 @@ gsl_ran_shuffle :: (r: *gsl_rng, base: *void, nmembm: size_t, size: size_t) -> v
 gsl_ran_choose :: (r: *gsl_rng, dest: *void, k: size_t, src: *void, n: size_t, size: size_t) -> s32 #foreign libgsl;
 gsl_ran_sample :: (r: *gsl_rng, dest: *void, k: size_t, src: *void, n: size_t, size: size_t) -> void #foreign libgsl;
 
-anon_struct_32 :: struct {
+gsl_ran_discrete_t :: struct {
     K: size_t;
     A: *size_t;
     F: *float64;
 }
-
-gsl_ran_discrete_t :: anon_struct_32;
+#run {
+    instance: gsl_ran_discrete_t;
+    assert(((cast(*void)(*instance.K)) - cast(*void)(*instance)) == 0, "gsl_ran_discrete_t.K has unexpected offset % instead of 0", ((cast(*void)(*instance.K)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_ran_discrete_t.K)) == 8, "gsl_ran_discrete_t.K has unexpected size % instead of 8", size_of(type_of(gsl_ran_discrete_t.K)));
+    assert(((cast(*void)(*instance.A)) - cast(*void)(*instance)) == 8, "gsl_ran_discrete_t.A has unexpected offset % instead of 8", ((cast(*void)(*instance.A)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_ran_discrete_t.A)) == 8, "gsl_ran_discrete_t.A has unexpected size % instead of 8", size_of(type_of(gsl_ran_discrete_t.A)));
+    assert(((cast(*void)(*instance.F)) - cast(*void)(*instance)) == 16, "gsl_ran_discrete_t.F has unexpected offset % instead of 16", ((cast(*void)(*instance.F)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_ran_discrete_t.F)) == 8, "gsl_ran_discrete_t.F has unexpected size % instead of 8", size_of(type_of(gsl_ran_discrete_t.F)));
+    assert(size_of(gsl_ran_discrete_t) == 24, "gsl_ran_discrete_t has size % instead of 24", size_of(gsl_ran_discrete_t));
+}
 
 gsl_ran_discrete_preproc :: (K: size_t, P: *float64) -> *gsl_ran_discrete_t #foreign libgsl;
 gsl_ran_discrete_free :: (g: *gsl_ran_discrete_t) -> void #foreign libgsl;
@@ -1450,6 +2096,7 @@ gsl_stats_lag1_autocorrelation_m :: (data: *float64, stride: size_t, n: size_t, 
 
 gsl_stats_covariance_m :: (data1: *float64, stride1: size_t, data2: *float64, stride2: size_t, n: size_t, mean1: float64, mean2: float64) -> float64 #foreign libgsl;
 
+/* DEFINED FOR FLOATING POINT TYPES ONLY */
 gsl_stats_wmean :: (w: *float64, wstride: size_t, data: *float64, stride: size_t, n: size_t) -> float64 #foreign libgsl;
 gsl_stats_wvariance :: (w: *float64, wstride: size_t, data: *float64, stride: size_t, n: size_t) -> float64 #foreign libgsl;
 gsl_stats_wsd :: (w: *float64, wstride: size_t, data: *float64, stride: size_t, n: size_t) -> float64 #foreign libgsl;
@@ -1467,6 +2114,7 @@ gsl_stats_wabsdev_m :: (w: *float64, wstride: size_t, data: *float64, stride: si
 gsl_stats_wskew_m_sd :: (w: *float64, wstride: size_t, data: *float64, stride: size_t, n: size_t, wmean: float64, wsd: float64) -> float64 #foreign libgsl;
 gsl_stats_wkurtosis_m_sd :: (w: *float64, wstride: size_t, data: *float64, stride: size_t, n: size_t, wmean: float64, wsd: float64) -> float64 #foreign libgsl;
 
+/* END OF FLOATING POINT TYPES */
 gsl_stats_pvariance :: (data1: *float64, stride1: size_t, n1: size_t, data2: *float64, stride2: size_t, n2: size_t) -> float64 #foreign libgsl;
 gsl_stats_ttest :: (data1: *float64, stride1: size_t, n1: size_t, data2: *float64, stride2: size_t, n2: size_t) -> float64 #foreign libgsl;
 
@@ -1551,21 +2199,37 @@ gsl_stats_int_Sn_from_sorted_data :: (sorted_data: *s32, stride: size_t, n: size
 gsl_stats_int_Qn0_from_sorted_data :: (sorted_data: *s32, stride: size_t, n: size_t, work: *s32, work_int: *s32) -> s32 #foreign libgsl;
 gsl_stats_int_Qn_from_sorted_data :: (sorted_data: *s32, stride: size_t, n: size_t, work: *s32, work_int: *s32) -> float64 #foreign libgsl;
 
-anon_struct_33 :: struct {
+gsl_histogram :: struct {
     n:     size_t;
     range: *float64;
     bin:   *float64;
 }
+#run {
+    instance: gsl_histogram;
+    assert(((cast(*void)(*instance.n)) - cast(*void)(*instance)) == 0, "gsl_histogram.n has unexpected offset % instead of 0", ((cast(*void)(*instance.n)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_histogram.n)) == 8, "gsl_histogram.n has unexpected size % instead of 8", size_of(type_of(gsl_histogram.n)));
+    assert(((cast(*void)(*instance.range)) - cast(*void)(*instance)) == 8, "gsl_histogram.range has unexpected offset % instead of 8", ((cast(*void)(*instance.range)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_histogram.range)) == 8, "gsl_histogram.range has unexpected size % instead of 8", size_of(type_of(gsl_histogram.range)));
+    assert(((cast(*void)(*instance.bin)) - cast(*void)(*instance)) == 16, "gsl_histogram.bin has unexpected offset % instead of 16", ((cast(*void)(*instance.bin)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_histogram.bin)) == 8, "gsl_histogram.bin has unexpected size % instead of 8", size_of(type_of(gsl_histogram.bin)));
+    assert(size_of(gsl_histogram) == 24, "gsl_histogram has size % instead of 24", size_of(gsl_histogram));
+}
 
-gsl_histogram :: anon_struct_33;
-
-anon_struct_34 :: struct {
+gsl_histogram_pdf :: struct {
     n:     size_t;
     range: *float64;
     sum:   *float64;
 }
-
-gsl_histogram_pdf :: anon_struct_34;
+#run {
+    instance: gsl_histogram_pdf;
+    assert(((cast(*void)(*instance.n)) - cast(*void)(*instance)) == 0, "gsl_histogram_pdf.n has unexpected offset % instead of 0", ((cast(*void)(*instance.n)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_histogram_pdf.n)) == 8, "gsl_histogram_pdf.n has unexpected size % instead of 8", size_of(type_of(gsl_histogram_pdf.n)));
+    assert(((cast(*void)(*instance.range)) - cast(*void)(*instance)) == 8, "gsl_histogram_pdf.range has unexpected offset % instead of 8", ((cast(*void)(*instance.range)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_histogram_pdf.range)) == 8, "gsl_histogram_pdf.range has unexpected size % instead of 8", size_of(type_of(gsl_histogram_pdf.range)));
+    assert(((cast(*void)(*instance.sum)) - cast(*void)(*instance)) == 16, "gsl_histogram_pdf.sum has unexpected offset % instead of 16", ((cast(*void)(*instance.sum)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_histogram_pdf.sum)) == 8, "gsl_histogram_pdf.sum has unexpected size % instead of 8", size_of(type_of(gsl_histogram_pdf.sum)));
+    assert(size_of(gsl_histogram_pdf) == 24, "gsl_histogram_pdf has size % instead of 24", size_of(gsl_histogram_pdf));
+}
 
 gsl_histogram_alloc :: (n: size_t) -> *gsl_histogram #foreign libgsl;
 
@@ -1634,25 +2298,49 @@ gsl_histogram_pdf_init :: (p: *gsl_histogram_pdf, h: *gsl_histogram) -> s32 #for
 gsl_histogram_pdf_free :: (p: *gsl_histogram_pdf) -> void #foreign libgsl;
 gsl_histogram_pdf_sample :: (p: *gsl_histogram_pdf, r: float64) -> float64 #foreign libgsl;
 
-anon_struct_35 :: struct {
+gsl_histogram2d :: struct {
     nx:     size_t;
     ny:     size_t;
     xrange: *float64;
     yrange: *float64;
     bin:    *float64;
 }
+#run {
+    instance: gsl_histogram2d;
+    assert(((cast(*void)(*instance.nx)) - cast(*void)(*instance)) == 0, "gsl_histogram2d.nx has unexpected offset % instead of 0", ((cast(*void)(*instance.nx)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_histogram2d.nx)) == 8, "gsl_histogram2d.nx has unexpected size % instead of 8", size_of(type_of(gsl_histogram2d.nx)));
+    assert(((cast(*void)(*instance.ny)) - cast(*void)(*instance)) == 8, "gsl_histogram2d.ny has unexpected offset % instead of 8", ((cast(*void)(*instance.ny)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_histogram2d.ny)) == 8, "gsl_histogram2d.ny has unexpected size % instead of 8", size_of(type_of(gsl_histogram2d.ny)));
+    assert(((cast(*void)(*instance.xrange)) - cast(*void)(*instance)) == 16, "gsl_histogram2d.xrange has unexpected offset % instead of 16", ((cast(*void)(*instance.xrange)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_histogram2d.xrange)) == 8, "gsl_histogram2d.xrange has unexpected size % instead of 8", size_of(type_of(gsl_histogram2d.xrange)));
+    assert(((cast(*void)(*instance.yrange)) - cast(*void)(*instance)) == 24, "gsl_histogram2d.yrange has unexpected offset % instead of 24", ((cast(*void)(*instance.yrange)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_histogram2d.yrange)) == 8, "gsl_histogram2d.yrange has unexpected size % instead of 8", size_of(type_of(gsl_histogram2d.yrange)));
+    assert(((cast(*void)(*instance.bin)) - cast(*void)(*instance)) == 32, "gsl_histogram2d.bin has unexpected offset % instead of 32", ((cast(*void)(*instance.bin)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_histogram2d.bin)) == 8, "gsl_histogram2d.bin has unexpected size % instead of 8", size_of(type_of(gsl_histogram2d.bin)));
+    assert(size_of(gsl_histogram2d) == 40, "gsl_histogram2d has size % instead of 40", size_of(gsl_histogram2d));
+}
 
-gsl_histogram2d :: anon_struct_35;
-
-anon_struct_36 :: struct {
+gsl_histogram2d_pdf :: struct {
     nx:     size_t;
     ny:     size_t;
     xrange: *float64;
     yrange: *float64;
     sum:    *float64;
 }
-
-gsl_histogram2d_pdf :: anon_struct_36;
+#run {
+    instance: gsl_histogram2d_pdf;
+    assert(((cast(*void)(*instance.nx)) - cast(*void)(*instance)) == 0, "gsl_histogram2d_pdf.nx has unexpected offset % instead of 0", ((cast(*void)(*instance.nx)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_histogram2d_pdf.nx)) == 8, "gsl_histogram2d_pdf.nx has unexpected size % instead of 8", size_of(type_of(gsl_histogram2d_pdf.nx)));
+    assert(((cast(*void)(*instance.ny)) - cast(*void)(*instance)) == 8, "gsl_histogram2d_pdf.ny has unexpected offset % instead of 8", ((cast(*void)(*instance.ny)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_histogram2d_pdf.ny)) == 8, "gsl_histogram2d_pdf.ny has unexpected size % instead of 8", size_of(type_of(gsl_histogram2d_pdf.ny)));
+    assert(((cast(*void)(*instance.xrange)) - cast(*void)(*instance)) == 16, "gsl_histogram2d_pdf.xrange has unexpected offset % instead of 16", ((cast(*void)(*instance.xrange)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_histogram2d_pdf.xrange)) == 8, "gsl_histogram2d_pdf.xrange has unexpected size % instead of 8", size_of(type_of(gsl_histogram2d_pdf.xrange)));
+    assert(((cast(*void)(*instance.yrange)) - cast(*void)(*instance)) == 24, "gsl_histogram2d_pdf.yrange has unexpected offset % instead of 24", ((cast(*void)(*instance.yrange)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_histogram2d_pdf.yrange)) == 8, "gsl_histogram2d_pdf.yrange has unexpected size % instead of 8", size_of(type_of(gsl_histogram2d_pdf.yrange)));
+    assert(((cast(*void)(*instance.sum)) - cast(*void)(*instance)) == 32, "gsl_histogram2d_pdf.sum has unexpected offset % instead of 32", ((cast(*void)(*instance.sum)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_histogram2d_pdf.sum)) == 8, "gsl_histogram2d_pdf.sum has unexpected size % instead of 8", size_of(type_of(gsl_histogram2d_pdf.sum)));
+    assert(size_of(gsl_histogram2d_pdf) == 40, "gsl_histogram2d_pdf has size % instead of 40", size_of(gsl_histogram2d_pdf));
+}
 
 gsl_histogram2d_alloc :: (nx: size_t, ny: size_t) -> *gsl_histogram2d #foreign libgsl;
 gsl_histogram2d_calloc :: (nx: size_t, ny: size_t) -> *gsl_histogram2d #foreign libgsl;
@@ -1735,12 +2423,18 @@ gsl_histogram2d_pdf_init :: (p: *gsl_histogram2d_pdf, h: *gsl_histogram2d) -> s3
 gsl_histogram2d_pdf_free :: (p: *gsl_histogram2d_pdf) -> void #foreign libgsl;
 gsl_histogram2d_pdf_sample :: (p: *gsl_histogram2d_pdf, r1: float64, r2: float64, x: *float64, y: *float64) -> s32 #foreign libgsl;
 
-anon_struct_37 :: struct {
+gsl_monte_plain_state :: struct {
     dim: size_t;
     x:   *float64;
 }
-
-gsl_monte_plain_state :: anon_struct_37;
+#run {
+    instance: gsl_monte_plain_state;
+    assert(((cast(*void)(*instance.dim)) - cast(*void)(*instance)) == 0, "gsl_monte_plain_state.dim has unexpected offset % instead of 0", ((cast(*void)(*instance.dim)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_plain_state.dim)) == 8, "gsl_monte_plain_state.dim has unexpected size % instead of 8", size_of(type_of(gsl_monte_plain_state.dim)));
+    assert(((cast(*void)(*instance.x)) - cast(*void)(*instance)) == 8, "gsl_monte_plain_state.x has unexpected offset % instead of 8", ((cast(*void)(*instance.x)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_plain_state.x)) == 8, "gsl_monte_plain_state.x has unexpected size % instead of 8", size_of(type_of(gsl_monte_plain_state.x)));
+    assert(size_of(gsl_monte_plain_state) == 16, "gsl_monte_plain_state has size % instead of 16", size_of(gsl_monte_plain_state));
+}
 
 gsl_monte_plain_integrate :: (f: *gsl_monte_function, xl: *float64, xu: *float64, dim: size_t, calls: size_t, r: *gsl_rng, state: *gsl_monte_plain_state, result: *float64, abserr: *float64) -> s32 #foreign libgsl;
 
@@ -1750,7 +2444,7 @@ gsl_monte_plain_init :: (state: *gsl_monte_plain_state) -> s32 #foreign libgsl;
 
 gsl_monte_plain_free :: (state: *gsl_monte_plain_state) -> void #foreign libgsl;
 
-anon_struct_38 :: struct {
+gsl_monte_miser_state :: struct {
     min_calls:               size_t;
     min_calls_per_bisection: size_t;
     dither:                  float64;
@@ -1775,8 +2469,56 @@ anon_struct_38 :: struct {
     hits_l:                  *size_t;
     hits_r:                  *size_t;
 }
-
-gsl_monte_miser_state :: anon_struct_38;
+#run {
+    instance: gsl_monte_miser_state;
+    assert(((cast(*void)(*instance.min_calls)) - cast(*void)(*instance)) == 0, "gsl_monte_miser_state.min_calls has unexpected offset % instead of 0", ((cast(*void)(*instance.min_calls)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.min_calls)) == 8, "gsl_monte_miser_state.min_calls has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_state.min_calls)));
+    assert(((cast(*void)(*instance.min_calls_per_bisection)) - cast(*void)(*instance)) == 8, "gsl_monte_miser_state.min_calls_per_bisection has unexpected offset % instead of 8", ((cast(*void)(*instance.min_calls_per_bisection)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.min_calls_per_bisection)) == 8, "gsl_monte_miser_state.min_calls_per_bisection has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_state.min_calls_per_bisection)));
+    assert(((cast(*void)(*instance.dither)) - cast(*void)(*instance)) == 16, "gsl_monte_miser_state.dither has unexpected offset % instead of 16", ((cast(*void)(*instance.dither)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.dither)) == 8, "gsl_monte_miser_state.dither has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_state.dither)));
+    assert(((cast(*void)(*instance.estimate_frac)) - cast(*void)(*instance)) == 24, "gsl_monte_miser_state.estimate_frac has unexpected offset % instead of 24", ((cast(*void)(*instance.estimate_frac)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.estimate_frac)) == 8, "gsl_monte_miser_state.estimate_frac has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_state.estimate_frac)));
+    assert(((cast(*void)(*instance.alpha)) - cast(*void)(*instance)) == 32, "gsl_monte_miser_state.alpha has unexpected offset % instead of 32", ((cast(*void)(*instance.alpha)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.alpha)) == 8, "gsl_monte_miser_state.alpha has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_state.alpha)));
+    assert(((cast(*void)(*instance.dim)) - cast(*void)(*instance)) == 40, "gsl_monte_miser_state.dim has unexpected offset % instead of 40", ((cast(*void)(*instance.dim)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.dim)) == 8, "gsl_monte_miser_state.dim has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_state.dim)));
+    assert(((cast(*void)(*instance.estimate_style)) - cast(*void)(*instance)) == 48, "gsl_monte_miser_state.estimate_style has unexpected offset % instead of 48", ((cast(*void)(*instance.estimate_style)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.estimate_style)) == 4, "gsl_monte_miser_state.estimate_style has unexpected size % instead of 4", size_of(type_of(gsl_monte_miser_state.estimate_style)));
+    assert(((cast(*void)(*instance.depth)) - cast(*void)(*instance)) == 52, "gsl_monte_miser_state.depth has unexpected offset % instead of 52", ((cast(*void)(*instance.depth)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.depth)) == 4, "gsl_monte_miser_state.depth has unexpected size % instead of 4", size_of(type_of(gsl_monte_miser_state.depth)));
+    assert(((cast(*void)(*instance.verbose)) - cast(*void)(*instance)) == 56, "gsl_monte_miser_state.verbose has unexpected offset % instead of 56", ((cast(*void)(*instance.verbose)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.verbose)) == 4, "gsl_monte_miser_state.verbose has unexpected size % instead of 4", size_of(type_of(gsl_monte_miser_state.verbose)));
+    assert(((cast(*void)(*instance.x)) - cast(*void)(*instance)) == 64, "gsl_monte_miser_state.x has unexpected offset % instead of 64", ((cast(*void)(*instance.x)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.x)) == 8, "gsl_monte_miser_state.x has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_state.x)));
+    assert(((cast(*void)(*instance.xmid)) - cast(*void)(*instance)) == 72, "gsl_monte_miser_state.xmid has unexpected offset % instead of 72", ((cast(*void)(*instance.xmid)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.xmid)) == 8, "gsl_monte_miser_state.xmid has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_state.xmid)));
+    assert(((cast(*void)(*instance.sigma_l)) - cast(*void)(*instance)) == 80, "gsl_monte_miser_state.sigma_l has unexpected offset % instead of 80", ((cast(*void)(*instance.sigma_l)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.sigma_l)) == 8, "gsl_monte_miser_state.sigma_l has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_state.sigma_l)));
+    assert(((cast(*void)(*instance.sigma_r)) - cast(*void)(*instance)) == 88, "gsl_monte_miser_state.sigma_r has unexpected offset % instead of 88", ((cast(*void)(*instance.sigma_r)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.sigma_r)) == 8, "gsl_monte_miser_state.sigma_r has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_state.sigma_r)));
+    assert(((cast(*void)(*instance.fmax_l)) - cast(*void)(*instance)) == 96, "gsl_monte_miser_state.fmax_l has unexpected offset % instead of 96", ((cast(*void)(*instance.fmax_l)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.fmax_l)) == 8, "gsl_monte_miser_state.fmax_l has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_state.fmax_l)));
+    assert(((cast(*void)(*instance.fmax_r)) - cast(*void)(*instance)) == 104, "gsl_monte_miser_state.fmax_r has unexpected offset % instead of 104", ((cast(*void)(*instance.fmax_r)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.fmax_r)) == 8, "gsl_monte_miser_state.fmax_r has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_state.fmax_r)));
+    assert(((cast(*void)(*instance.fmin_l)) - cast(*void)(*instance)) == 112, "gsl_monte_miser_state.fmin_l has unexpected offset % instead of 112", ((cast(*void)(*instance.fmin_l)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.fmin_l)) == 8, "gsl_monte_miser_state.fmin_l has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_state.fmin_l)));
+    assert(((cast(*void)(*instance.fmin_r)) - cast(*void)(*instance)) == 120, "gsl_monte_miser_state.fmin_r has unexpected offset % instead of 120", ((cast(*void)(*instance.fmin_r)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.fmin_r)) == 8, "gsl_monte_miser_state.fmin_r has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_state.fmin_r)));
+    assert(((cast(*void)(*instance.fsum_l)) - cast(*void)(*instance)) == 128, "gsl_monte_miser_state.fsum_l has unexpected offset % instead of 128", ((cast(*void)(*instance.fsum_l)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.fsum_l)) == 8, "gsl_monte_miser_state.fsum_l has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_state.fsum_l)));
+    assert(((cast(*void)(*instance.fsum_r)) - cast(*void)(*instance)) == 136, "gsl_monte_miser_state.fsum_r has unexpected offset % instead of 136", ((cast(*void)(*instance.fsum_r)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.fsum_r)) == 8, "gsl_monte_miser_state.fsum_r has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_state.fsum_r)));
+    assert(((cast(*void)(*instance.fsum2_l)) - cast(*void)(*instance)) == 144, "gsl_monte_miser_state.fsum2_l has unexpected offset % instead of 144", ((cast(*void)(*instance.fsum2_l)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.fsum2_l)) == 8, "gsl_monte_miser_state.fsum2_l has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_state.fsum2_l)));
+    assert(((cast(*void)(*instance.fsum2_r)) - cast(*void)(*instance)) == 152, "gsl_monte_miser_state.fsum2_r has unexpected offset % instead of 152", ((cast(*void)(*instance.fsum2_r)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.fsum2_r)) == 8, "gsl_monte_miser_state.fsum2_r has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_state.fsum2_r)));
+    assert(((cast(*void)(*instance.hits_l)) - cast(*void)(*instance)) == 160, "gsl_monte_miser_state.hits_l has unexpected offset % instead of 160", ((cast(*void)(*instance.hits_l)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.hits_l)) == 8, "gsl_monte_miser_state.hits_l has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_state.hits_l)));
+    assert(((cast(*void)(*instance.hits_r)) - cast(*void)(*instance)) == 168, "gsl_monte_miser_state.hits_r has unexpected offset % instead of 168", ((cast(*void)(*instance.hits_r)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_state.hits_r)) == 8, "gsl_monte_miser_state.hits_r has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_state.hits_r)));
+    assert(size_of(gsl_monte_miser_state) == 176, "gsl_monte_miser_state has size % instead of 176", size_of(gsl_monte_miser_state));
+}
 
 gsl_monte_miser_integrate :: (f: *gsl_monte_function, xl: *float64, xh: *float64, dim: size_t, calls: size_t, r: *gsl_rng, state: *gsl_monte_miser_state, result: *float64, abserr: *float64) -> s32 #foreign libgsl;
 
@@ -1786,31 +2528,44 @@ gsl_monte_miser_init :: (state: *gsl_monte_miser_state) -> s32 #foreign libgsl;
 
 gsl_monte_miser_free :: (state: *gsl_monte_miser_state) -> void #foreign libgsl;
 
-anon_struct_39 :: struct {
+gsl_monte_miser_params :: struct {
     estimate_frac:           float64;
     min_calls:               size_t;
     min_calls_per_bisection: size_t;
     alpha:                   float64;
     dither:                  float64;
 }
-
-gsl_monte_miser_params :: anon_struct_39;
+#run {
+    instance: gsl_monte_miser_params;
+    assert(((cast(*void)(*instance.estimate_frac)) - cast(*void)(*instance)) == 0, "gsl_monte_miser_params.estimate_frac has unexpected offset % instead of 0", ((cast(*void)(*instance.estimate_frac)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_params.estimate_frac)) == 8, "gsl_monte_miser_params.estimate_frac has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_params.estimate_frac)));
+    assert(((cast(*void)(*instance.min_calls)) - cast(*void)(*instance)) == 8, "gsl_monte_miser_params.min_calls has unexpected offset % instead of 8", ((cast(*void)(*instance.min_calls)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_params.min_calls)) == 8, "gsl_monte_miser_params.min_calls has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_params.min_calls)));
+    assert(((cast(*void)(*instance.min_calls_per_bisection)) - cast(*void)(*instance)) == 16, "gsl_monte_miser_params.min_calls_per_bisection has unexpected offset % instead of 16", ((cast(*void)(*instance.min_calls_per_bisection)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_params.min_calls_per_bisection)) == 8, "gsl_monte_miser_params.min_calls_per_bisection has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_params.min_calls_per_bisection)));
+    assert(((cast(*void)(*instance.alpha)) - cast(*void)(*instance)) == 24, "gsl_monte_miser_params.alpha has unexpected offset % instead of 24", ((cast(*void)(*instance.alpha)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_params.alpha)) == 8, "gsl_monte_miser_params.alpha has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_params.alpha)));
+    assert(((cast(*void)(*instance.dither)) - cast(*void)(*instance)) == 32, "gsl_monte_miser_params.dither has unexpected offset % instead of 32", ((cast(*void)(*instance.dither)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_miser_params.dither)) == 8, "gsl_monte_miser_params.dither has unexpected size % instead of 8", size_of(type_of(gsl_monte_miser_params.dither)));
+    assert(size_of(gsl_monte_miser_params) == 40, "gsl_monte_miser_params has size % instead of 40", size_of(gsl_monte_miser_params));
+}
 
 gsl_monte_miser_params_get :: (state: *gsl_monte_miser_state, params: *gsl_monte_miser_params) -> void #foreign libgsl;
 
 gsl_monte_miser_params_set :: (state: *gsl_monte_miser_state, params: *gsl_monte_miser_params) -> void #foreign libgsl;
 
-anon_enum_40 :: enum s32 {
+anon_enum_1 :: enum s32 {
     GSL_VEGAS_MODE_IMPORTANCE      :: 1;
     GSL_VEGAS_MODE_IMPORTANCE_ONLY :: 0;
     GSL_VEGAS_MODE_STRATIFIED      :: -1;
 }
 
-anon_struct_41 :: struct {
+gsl_monte_vegas_state :: struct {
+    /* grid */
     dim:           size_t;
     bins_max:      size_t;
     bins:          u32;
-    boxes:         u32;
+    boxes:         u32; /* these are both counted along the axes */
     xi:            *float64;
     xin:           *float64;
     delx:          *float64;
@@ -1821,14 +2576,17 @@ anon_struct_41 :: struct {
     bin:           *s32;
     box:           *s32;
 
+    /* distribution */
     d:             *float64;
 
+    /* control variables */
     alpha:         float64;
     mode:          s32;
     verbose:       s32;
     iterations:    u32;
     stage:         s32;
 
+    /* scratch variables preserved between calls to vegas1/2/3  */
     jac:           float64;
     wtd_int_sum:   float64;
     sum_wgts:      float64;
@@ -1845,8 +2603,70 @@ anon_struct_41 :: struct {
 
     ostream:       *FILE;
 }
-
-gsl_monte_vegas_state :: anon_struct_41;
+#run {
+    instance: gsl_monte_vegas_state;
+    assert(((cast(*void)(*instance.dim)) - cast(*void)(*instance)) == 0, "gsl_monte_vegas_state.dim has unexpected offset % instead of 0", ((cast(*void)(*instance.dim)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.dim)) == 8, "gsl_monte_vegas_state.dim has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_state.dim)));
+    assert(((cast(*void)(*instance.bins_max)) - cast(*void)(*instance)) == 8, "gsl_monte_vegas_state.bins_max has unexpected offset % instead of 8", ((cast(*void)(*instance.bins_max)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.bins_max)) == 8, "gsl_monte_vegas_state.bins_max has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_state.bins_max)));
+    assert(((cast(*void)(*instance.bins)) - cast(*void)(*instance)) == 16, "gsl_monte_vegas_state.bins has unexpected offset % instead of 16", ((cast(*void)(*instance.bins)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.bins)) == 4, "gsl_monte_vegas_state.bins has unexpected size % instead of 4", size_of(type_of(gsl_monte_vegas_state.bins)));
+    assert(((cast(*void)(*instance.boxes)) - cast(*void)(*instance)) == 20, "gsl_monte_vegas_state.boxes has unexpected offset % instead of 20", ((cast(*void)(*instance.boxes)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.boxes)) == 4, "gsl_monte_vegas_state.boxes has unexpected size % instead of 4", size_of(type_of(gsl_monte_vegas_state.boxes)));
+    assert(((cast(*void)(*instance.xi)) - cast(*void)(*instance)) == 24, "gsl_monte_vegas_state.xi has unexpected offset % instead of 24", ((cast(*void)(*instance.xi)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.xi)) == 8, "gsl_monte_vegas_state.xi has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_state.xi)));
+    assert(((cast(*void)(*instance.xin)) - cast(*void)(*instance)) == 32, "gsl_monte_vegas_state.xin has unexpected offset % instead of 32", ((cast(*void)(*instance.xin)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.xin)) == 8, "gsl_monte_vegas_state.xin has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_state.xin)));
+    assert(((cast(*void)(*instance.delx)) - cast(*void)(*instance)) == 40, "gsl_monte_vegas_state.delx has unexpected offset % instead of 40", ((cast(*void)(*instance.delx)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.delx)) == 8, "gsl_monte_vegas_state.delx has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_state.delx)));
+    assert(((cast(*void)(*instance.weight)) - cast(*void)(*instance)) == 48, "gsl_monte_vegas_state.weight has unexpected offset % instead of 48", ((cast(*void)(*instance.weight)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.weight)) == 8, "gsl_monte_vegas_state.weight has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_state.weight)));
+    assert(((cast(*void)(*instance.vol)) - cast(*void)(*instance)) == 56, "gsl_monte_vegas_state.vol has unexpected offset % instead of 56", ((cast(*void)(*instance.vol)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.vol)) == 8, "gsl_monte_vegas_state.vol has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_state.vol)));
+    assert(((cast(*void)(*instance.x)) - cast(*void)(*instance)) == 64, "gsl_monte_vegas_state.x has unexpected offset % instead of 64", ((cast(*void)(*instance.x)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.x)) == 8, "gsl_monte_vegas_state.x has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_state.x)));
+    assert(((cast(*void)(*instance.bin)) - cast(*void)(*instance)) == 72, "gsl_monte_vegas_state.bin has unexpected offset % instead of 72", ((cast(*void)(*instance.bin)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.bin)) == 8, "gsl_monte_vegas_state.bin has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_state.bin)));
+    assert(((cast(*void)(*instance.box)) - cast(*void)(*instance)) == 80, "gsl_monte_vegas_state.box has unexpected offset % instead of 80", ((cast(*void)(*instance.box)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.box)) == 8, "gsl_monte_vegas_state.box has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_state.box)));
+    assert(((cast(*void)(*instance.d)) - cast(*void)(*instance)) == 88, "gsl_monte_vegas_state.d has unexpected offset % instead of 88", ((cast(*void)(*instance.d)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.d)) == 8, "gsl_monte_vegas_state.d has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_state.d)));
+    assert(((cast(*void)(*instance.alpha)) - cast(*void)(*instance)) == 96, "gsl_monte_vegas_state.alpha has unexpected offset % instead of 96", ((cast(*void)(*instance.alpha)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.alpha)) == 8, "gsl_monte_vegas_state.alpha has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_state.alpha)));
+    assert(((cast(*void)(*instance.mode)) - cast(*void)(*instance)) == 104, "gsl_monte_vegas_state.mode has unexpected offset % instead of 104", ((cast(*void)(*instance.mode)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.mode)) == 4, "gsl_monte_vegas_state.mode has unexpected size % instead of 4", size_of(type_of(gsl_monte_vegas_state.mode)));
+    assert(((cast(*void)(*instance.verbose)) - cast(*void)(*instance)) == 108, "gsl_monte_vegas_state.verbose has unexpected offset % instead of 108", ((cast(*void)(*instance.verbose)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.verbose)) == 4, "gsl_monte_vegas_state.verbose has unexpected size % instead of 4", size_of(type_of(gsl_monte_vegas_state.verbose)));
+    assert(((cast(*void)(*instance.iterations)) - cast(*void)(*instance)) == 112, "gsl_monte_vegas_state.iterations has unexpected offset % instead of 112", ((cast(*void)(*instance.iterations)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.iterations)) == 4, "gsl_monte_vegas_state.iterations has unexpected size % instead of 4", size_of(type_of(gsl_monte_vegas_state.iterations)));
+    assert(((cast(*void)(*instance.stage)) - cast(*void)(*instance)) == 116, "gsl_monte_vegas_state.stage has unexpected offset % instead of 116", ((cast(*void)(*instance.stage)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.stage)) == 4, "gsl_monte_vegas_state.stage has unexpected size % instead of 4", size_of(type_of(gsl_monte_vegas_state.stage)));
+    assert(((cast(*void)(*instance.jac)) - cast(*void)(*instance)) == 120, "gsl_monte_vegas_state.jac has unexpected offset % instead of 120", ((cast(*void)(*instance.jac)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.jac)) == 8, "gsl_monte_vegas_state.jac has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_state.jac)));
+    assert(((cast(*void)(*instance.wtd_int_sum)) - cast(*void)(*instance)) == 128, "gsl_monte_vegas_state.wtd_int_sum has unexpected offset % instead of 128", ((cast(*void)(*instance.wtd_int_sum)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.wtd_int_sum)) == 8, "gsl_monte_vegas_state.wtd_int_sum has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_state.wtd_int_sum)));
+    assert(((cast(*void)(*instance.sum_wgts)) - cast(*void)(*instance)) == 136, "gsl_monte_vegas_state.sum_wgts has unexpected offset % instead of 136", ((cast(*void)(*instance.sum_wgts)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.sum_wgts)) == 8, "gsl_monte_vegas_state.sum_wgts has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_state.sum_wgts)));
+    assert(((cast(*void)(*instance.chi_sum)) - cast(*void)(*instance)) == 144, "gsl_monte_vegas_state.chi_sum has unexpected offset % instead of 144", ((cast(*void)(*instance.chi_sum)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.chi_sum)) == 8, "gsl_monte_vegas_state.chi_sum has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_state.chi_sum)));
+    assert(((cast(*void)(*instance.chisq)) - cast(*void)(*instance)) == 152, "gsl_monte_vegas_state.chisq has unexpected offset % instead of 152", ((cast(*void)(*instance.chisq)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.chisq)) == 8, "gsl_monte_vegas_state.chisq has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_state.chisq)));
+    assert(((cast(*void)(*instance.result)) - cast(*void)(*instance)) == 160, "gsl_monte_vegas_state.result has unexpected offset % instead of 160", ((cast(*void)(*instance.result)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.result)) == 8, "gsl_monte_vegas_state.result has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_state.result)));
+    assert(((cast(*void)(*instance.sigma)) - cast(*void)(*instance)) == 168, "gsl_monte_vegas_state.sigma has unexpected offset % instead of 168", ((cast(*void)(*instance.sigma)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.sigma)) == 8, "gsl_monte_vegas_state.sigma has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_state.sigma)));
+    assert(((cast(*void)(*instance.it_start)) - cast(*void)(*instance)) == 176, "gsl_monte_vegas_state.it_start has unexpected offset % instead of 176", ((cast(*void)(*instance.it_start)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.it_start)) == 4, "gsl_monte_vegas_state.it_start has unexpected size % instead of 4", size_of(type_of(gsl_monte_vegas_state.it_start)));
+    assert(((cast(*void)(*instance.it_num)) - cast(*void)(*instance)) == 180, "gsl_monte_vegas_state.it_num has unexpected offset % instead of 180", ((cast(*void)(*instance.it_num)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.it_num)) == 4, "gsl_monte_vegas_state.it_num has unexpected size % instead of 4", size_of(type_of(gsl_monte_vegas_state.it_num)));
+    assert(((cast(*void)(*instance.samples)) - cast(*void)(*instance)) == 184, "gsl_monte_vegas_state.samples has unexpected offset % instead of 184", ((cast(*void)(*instance.samples)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.samples)) == 4, "gsl_monte_vegas_state.samples has unexpected size % instead of 4", size_of(type_of(gsl_monte_vegas_state.samples)));
+    assert(((cast(*void)(*instance.calls_per_box)) - cast(*void)(*instance)) == 188, "gsl_monte_vegas_state.calls_per_box has unexpected offset % instead of 188", ((cast(*void)(*instance.calls_per_box)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.calls_per_box)) == 4, "gsl_monte_vegas_state.calls_per_box has unexpected size % instead of 4", size_of(type_of(gsl_monte_vegas_state.calls_per_box)));
+    assert(((cast(*void)(*instance.ostream)) - cast(*void)(*instance)) == 192, "gsl_monte_vegas_state.ostream has unexpected offset % instead of 192", ((cast(*void)(*instance.ostream)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_state.ostream)) == 8, "gsl_monte_vegas_state.ostream has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_state.ostream)));
+    assert(size_of(gsl_monte_vegas_state) == 200, "gsl_monte_vegas_state has size % instead of 200", size_of(gsl_monte_vegas_state));
+}
 
 gsl_monte_vegas_integrate :: (f: *gsl_monte_function, xl: *float64, xu: *float64, dim: size_t, calls: size_t, r: *gsl_rng, state: *gsl_monte_vegas_state, result: *float64, abserr: *float64) -> s32 #foreign libgsl;
 
@@ -1859,7 +2679,7 @@ gsl_monte_vegas_free :: (state: *gsl_monte_vegas_state) -> void #foreign libgsl;
 gsl_monte_vegas_chisq :: (state: *gsl_monte_vegas_state) -> float64 #foreign libgsl;
 gsl_monte_vegas_runval :: (state: *gsl_monte_vegas_state, result: *float64, sigma: *float64) -> void #foreign libgsl;
 
-anon_struct_42 :: struct {
+gsl_monte_vegas_params :: struct {
     alpha:      float64;
     iterations: size_t;
     stage:      s32;
@@ -1867,13 +2687,28 @@ anon_struct_42 :: struct {
     verbose:    s32;
     ostream:    *FILE;
 }
-
-gsl_monte_vegas_params :: anon_struct_42;
+#run {
+    instance: gsl_monte_vegas_params;
+    assert(((cast(*void)(*instance.alpha)) - cast(*void)(*instance)) == 0, "gsl_monte_vegas_params.alpha has unexpected offset % instead of 0", ((cast(*void)(*instance.alpha)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_params.alpha)) == 8, "gsl_monte_vegas_params.alpha has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_params.alpha)));
+    assert(((cast(*void)(*instance.iterations)) - cast(*void)(*instance)) == 8, "gsl_monte_vegas_params.iterations has unexpected offset % instead of 8", ((cast(*void)(*instance.iterations)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_params.iterations)) == 8, "gsl_monte_vegas_params.iterations has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_params.iterations)));
+    assert(((cast(*void)(*instance.stage)) - cast(*void)(*instance)) == 16, "gsl_monte_vegas_params.stage has unexpected offset % instead of 16", ((cast(*void)(*instance.stage)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_params.stage)) == 4, "gsl_monte_vegas_params.stage has unexpected size % instead of 4", size_of(type_of(gsl_monte_vegas_params.stage)));
+    assert(((cast(*void)(*instance.mode)) - cast(*void)(*instance)) == 20, "gsl_monte_vegas_params.mode has unexpected offset % instead of 20", ((cast(*void)(*instance.mode)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_params.mode)) == 4, "gsl_monte_vegas_params.mode has unexpected size % instead of 4", size_of(type_of(gsl_monte_vegas_params.mode)));
+    assert(((cast(*void)(*instance.verbose)) - cast(*void)(*instance)) == 24, "gsl_monte_vegas_params.verbose has unexpected offset % instead of 24", ((cast(*void)(*instance.verbose)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_params.verbose)) == 4, "gsl_monte_vegas_params.verbose has unexpected size % instead of 4", size_of(type_of(gsl_monte_vegas_params.verbose)));
+    assert(((cast(*void)(*instance.ostream)) - cast(*void)(*instance)) == 32, "gsl_monte_vegas_params.ostream has unexpected offset % instead of 32", ((cast(*void)(*instance.ostream)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_monte_vegas_params.ostream)) == 8, "gsl_monte_vegas_params.ostream has unexpected size % instead of 8", size_of(type_of(gsl_monte_vegas_params.ostream)));
+    assert(size_of(gsl_monte_vegas_params) == 40, "gsl_monte_vegas_params has size % instead of 40", size_of(gsl_monte_vegas_params));
+}
 
 gsl_monte_vegas_params_get :: (state: *gsl_monte_vegas_state, params: *gsl_monte_vegas_params) -> void #foreign libgsl;
 
 gsl_monte_vegas_params_set :: (state: *gsl_monte_vegas_state, params: *gsl_monte_vegas_params) -> void #foreign libgsl;
 
+/* types for the function pointers passed to gsl_siman_solve */
 gsl_siman_Efunc_t :: #type (a0: *void) -> float64 #c_call;
 gsl_siman_step_t :: #type (a0: *gsl_rng, a1: *void, a2: float64) -> void #c_call;
 gsl_siman_metric_t :: #type (a0: *void, a1: *void) -> float64 #c_call;
@@ -1882,33 +2717,88 @@ gsl_siman_copy_t :: #type (a0: *void, a1: *void) -> void #c_call;
 gsl_siman_copy_construct_t :: #type (a0: *void) -> *void #c_call;
 gsl_siman_destroy_t :: #type (a0: *void) -> void #c_call;
 
-anon_struct_43 :: struct {
-    n_tries:       s32;
-    iters_fixed_T: s32;
-    step_size:     float64;
+/* this structure contains all the information needed to structure the
+search, beyond the energy function, the step function and the
+initial guess. */
+gsl_siman_params_t :: struct {
+    n_tries:       s32; /* how many points to try for each step */
+    iters_fixed_T: s32; /* how many iterations at each temperature? */
+    step_size:     float64; /* max step size in the random walk */
 
+    /* the following parameters are for the Boltzmann distribution */
     k:             float64;
+    /* the following parameters are for the Boltzmann distribution */
     t_initial:     float64;
+    /* the following parameters are for the Boltzmann distribution */
     mu_t:          float64;
+    /* the following parameters are for the Boltzmann distribution */
     t_min:         float64;
 }
+#run {
+    instance: gsl_siman_params_t;
+    assert(((cast(*void)(*instance.n_tries)) - cast(*void)(*instance)) == 0, "gsl_siman_params_t.n_tries has unexpected offset % instead of 0", ((cast(*void)(*instance.n_tries)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_siman_params_t.n_tries)) == 4, "gsl_siman_params_t.n_tries has unexpected size % instead of 4", size_of(type_of(gsl_siman_params_t.n_tries)));
+    assert(((cast(*void)(*instance.iters_fixed_T)) - cast(*void)(*instance)) == 4, "gsl_siman_params_t.iters_fixed_T has unexpected offset % instead of 4", ((cast(*void)(*instance.iters_fixed_T)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_siman_params_t.iters_fixed_T)) == 4, "gsl_siman_params_t.iters_fixed_T has unexpected size % instead of 4", size_of(type_of(gsl_siman_params_t.iters_fixed_T)));
+    assert(((cast(*void)(*instance.step_size)) - cast(*void)(*instance)) == 8, "gsl_siman_params_t.step_size has unexpected offset % instead of 8", ((cast(*void)(*instance.step_size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_siman_params_t.step_size)) == 8, "gsl_siman_params_t.step_size has unexpected size % instead of 8", size_of(type_of(gsl_siman_params_t.step_size)));
+    assert(((cast(*void)(*instance.k)) - cast(*void)(*instance)) == 16, "gsl_siman_params_t.k has unexpected offset % instead of 16", ((cast(*void)(*instance.k)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_siman_params_t.k)) == 8, "gsl_siman_params_t.k has unexpected size % instead of 8", size_of(type_of(gsl_siman_params_t.k)));
+    assert(((cast(*void)(*instance.t_initial)) - cast(*void)(*instance)) == 24, "gsl_siman_params_t.t_initial has unexpected offset % instead of 24", ((cast(*void)(*instance.t_initial)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_siman_params_t.t_initial)) == 8, "gsl_siman_params_t.t_initial has unexpected size % instead of 8", size_of(type_of(gsl_siman_params_t.t_initial)));
+    assert(((cast(*void)(*instance.mu_t)) - cast(*void)(*instance)) == 32, "gsl_siman_params_t.mu_t has unexpected offset % instead of 32", ((cast(*void)(*instance.mu_t)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_siman_params_t.mu_t)) == 8, "gsl_siman_params_t.mu_t has unexpected size % instead of 8", size_of(type_of(gsl_siman_params_t.mu_t)));
+    assert(((cast(*void)(*instance.t_min)) - cast(*void)(*instance)) == 40, "gsl_siman_params_t.t_min has unexpected offset % instead of 40", ((cast(*void)(*instance.t_min)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_siman_params_t.t_min)) == 8, "gsl_siman_params_t.t_min has unexpected size % instead of 8", size_of(type_of(gsl_siman_params_t.t_min)));
+    assert(size_of(gsl_siman_params_t) == 48, "gsl_siman_params_t has size % instead of 48", size_of(gsl_siman_params_t));
+}
 
-gsl_siman_params_t :: anon_struct_43;
-
+/* prototype for the workhorse function */
 gsl_siman_solve :: (r: *gsl_rng, x0_p: *void, Ef: gsl_siman_Efunc_t, take_step: gsl_siman_step_t, distance: gsl_siman_metric_t, print_position: gsl_siman_print_t, copyfunc: gsl_siman_copy_t, copy_constructor: gsl_siman_copy_construct_t, destructor: gsl_siman_destroy_t, element_size: size_t, params: gsl_siman_params_t) -> void #foreign libgsl;
 
 gsl_siman_solve_many :: (r: *gsl_rng, x0_p: *void, Ef: gsl_siman_Efunc_t, take_step: gsl_siman_step_t, distance: gsl_siman_metric_t, print_position: gsl_siman_print_t, element_size: size_t, params: gsl_siman_params_t) -> void #foreign libgsl;
 
-anon_struct_44 :: struct {
+/* Description of a system of ODEs.
+*
+* y' = f(t,y) = dydt(t, y)
+*
+* The system is specified by giving the right-hand-side
+* of the equation and possibly a jacobian function.
+*
+* Some methods require the jacobian function, which calculates
+* the matrix dfdy and the vector dfdt. The matrix dfdy conforms
+* to the GSL standard, being a continuous range of floating point
+* values, in row-order.
+*
+* As with GSL function objects, user-supplied parameter
+* data is also present. 
+*/
+gsl_odeiv_system :: struct {
     function:  #type (a0: float64, a1: *float64, a2: *float64, a3: *void) -> s32 #c_call;
     jacobian:  #type (a0: float64, a1: *float64, a2: *float64, a3: *float64, a4: *void) -> s32 #c_call;
     dimension: size_t;
     params:    *void;
 }
+#run {
+    instance: gsl_odeiv_system;
+    assert(((cast(*void)(*instance.function)) - cast(*void)(*instance)) == 0, "gsl_odeiv_system.function has unexpected offset % instead of 0", ((cast(*void)(*instance.function)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_system.function)) == 8, "gsl_odeiv_system.function has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_system.function)));
+    assert(((cast(*void)(*instance.jacobian)) - cast(*void)(*instance)) == 8, "gsl_odeiv_system.jacobian has unexpected offset % instead of 8", ((cast(*void)(*instance.jacobian)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_system.jacobian)) == 8, "gsl_odeiv_system.jacobian has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_system.jacobian)));
+    assert(((cast(*void)(*instance.dimension)) - cast(*void)(*instance)) == 16, "gsl_odeiv_system.dimension has unexpected offset % instead of 16", ((cast(*void)(*instance.dimension)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_system.dimension)) == 8, "gsl_odeiv_system.dimension has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_system.dimension)));
+    assert(((cast(*void)(*instance.params)) - cast(*void)(*instance)) == 24, "gsl_odeiv_system.params has unexpected offset % instead of 24", ((cast(*void)(*instance.params)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_system.params)) == 8, "gsl_odeiv_system.params has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_system.params)));
+    assert(size_of(gsl_odeiv_system) == 32, "gsl_odeiv_system has size % instead of 32", size_of(gsl_odeiv_system));
+}
 
-gsl_odeiv_system :: anon_struct_44;
-
-anon_struct_45 :: struct {
+/* General stepper object.
+*
+* Opaque object for stepping an ODE system from t to t+h.
+* In general the object has some state which facilitates
+* iterating the stepping operation.
+*/
+gsl_odeiv_step_type :: struct {
     name:                 *u8;
     can_use_dydt_in:      s32;
     gives_exact_dydt_out: s32;
@@ -1918,54 +2808,122 @@ anon_struct_45 :: struct {
     order:                #type (a0: *void) -> u32 #c_call;
     free:                 #type (a0: *void) -> void #c_call;
 }
+#run {
+    instance: gsl_odeiv_step_type;
+    assert(((cast(*void)(*instance.name)) - cast(*void)(*instance)) == 0, "gsl_odeiv_step_type.name has unexpected offset % instead of 0", ((cast(*void)(*instance.name)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_step_type.name)) == 8, "gsl_odeiv_step_type.name has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_step_type.name)));
+    assert(((cast(*void)(*instance.can_use_dydt_in)) - cast(*void)(*instance)) == 8, "gsl_odeiv_step_type.can_use_dydt_in has unexpected offset % instead of 8", ((cast(*void)(*instance.can_use_dydt_in)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_step_type.can_use_dydt_in)) == 4, "gsl_odeiv_step_type.can_use_dydt_in has unexpected size % instead of 4", size_of(type_of(gsl_odeiv_step_type.can_use_dydt_in)));
+    assert(((cast(*void)(*instance.gives_exact_dydt_out)) - cast(*void)(*instance)) == 12, "gsl_odeiv_step_type.gives_exact_dydt_out has unexpected offset % instead of 12", ((cast(*void)(*instance.gives_exact_dydt_out)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_step_type.gives_exact_dydt_out)) == 4, "gsl_odeiv_step_type.gives_exact_dydt_out has unexpected size % instead of 4", size_of(type_of(gsl_odeiv_step_type.gives_exact_dydt_out)));
+    assert(((cast(*void)(*instance.alloc)) - cast(*void)(*instance)) == 16, "gsl_odeiv_step_type.alloc has unexpected offset % instead of 16", ((cast(*void)(*instance.alloc)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_step_type.alloc)) == 8, "gsl_odeiv_step_type.alloc has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_step_type.alloc)));
+    assert(((cast(*void)(*instance.apply)) - cast(*void)(*instance)) == 24, "gsl_odeiv_step_type.apply has unexpected offset % instead of 24", ((cast(*void)(*instance.apply)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_step_type.apply)) == 8, "gsl_odeiv_step_type.apply has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_step_type.apply)));
+    assert(((cast(*void)(*instance.reset)) - cast(*void)(*instance)) == 32, "gsl_odeiv_step_type.reset has unexpected offset % instead of 32", ((cast(*void)(*instance.reset)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_step_type.reset)) == 8, "gsl_odeiv_step_type.reset has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_step_type.reset)));
+    assert(((cast(*void)(*instance.order)) - cast(*void)(*instance)) == 40, "gsl_odeiv_step_type.order has unexpected offset % instead of 40", ((cast(*void)(*instance.order)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_step_type.order)) == 8, "gsl_odeiv_step_type.order has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_step_type.order)));
+    assert(((cast(*void)(*instance.free)) - cast(*void)(*instance)) == 48, "gsl_odeiv_step_type.free has unexpected offset % instead of 48", ((cast(*void)(*instance.free)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_step_type.free)) == 8, "gsl_odeiv_step_type.free has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_step_type.free)));
+    assert(size_of(gsl_odeiv_step_type) == 56, "gsl_odeiv_step_type has size % instead of 56", size_of(gsl_odeiv_step_type));
+}
 
-gsl_odeiv_step_type :: anon_struct_45;
-
-anon_struct_46 :: struct {
+gsl_odeiv_step :: struct {
     type:      *gsl_odeiv_step_type;
     dimension: size_t;
     state:     *void;
 }
+#run {
+    instance: gsl_odeiv_step;
+    assert(((cast(*void)(*instance.type)) - cast(*void)(*instance)) == 0, "gsl_odeiv_step.type has unexpected offset % instead of 0", ((cast(*void)(*instance.type)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_step.type)) == 8, "gsl_odeiv_step.type has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_step.type)));
+    assert(((cast(*void)(*instance.dimension)) - cast(*void)(*instance)) == 8, "gsl_odeiv_step.dimension has unexpected offset % instead of 8", ((cast(*void)(*instance.dimension)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_step.dimension)) == 8, "gsl_odeiv_step.dimension has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_step.dimension)));
+    assert(((cast(*void)(*instance.state)) - cast(*void)(*instance)) == 16, "gsl_odeiv_step.state has unexpected offset % instead of 16", ((cast(*void)(*instance.state)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_step.state)) == 8, "gsl_odeiv_step.state has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_step.state)));
+    assert(size_of(gsl_odeiv_step) == 24, "gsl_odeiv_step has size % instead of 24", size_of(gsl_odeiv_step));
+}
 
-gsl_odeiv_step :: anon_struct_46;
+/* Available stepper types.
+*
+* rk2    : embedded 2nd(3rd) Runge-Kutta
+* rk4    : 4th order (classical) Runge-Kutta
+* rkck   : embedded 4th(5th) Runge-Kutta, Cash-Karp
+* rk8pd  : embedded 8th(9th) Runge-Kutta, Prince-Dormand
+* rk2imp : implicit 2nd order Runge-Kutta at Gaussian points
+* rk4imp : implicit 4th order Runge-Kutta at Gaussian points
+* gear1  : M=1 implicit Gear method
+* gear2  : M=2 implicit Gear method
+*/
+gsl_odeiv_step_rk2: *gsl_odeiv_step_type;
+gsl_odeiv_step_rk4: *gsl_odeiv_step_type;
+gsl_odeiv_step_rkf45: *gsl_odeiv_step_type;
+gsl_odeiv_step_rkck: *gsl_odeiv_step_type;
+gsl_odeiv_step_rk8pd: *gsl_odeiv_step_type;
+gsl_odeiv_step_rk2imp: *gsl_odeiv_step_type;
+gsl_odeiv_step_rk2simp: *gsl_odeiv_step_type;
+gsl_odeiv_step_rk4imp: *gsl_odeiv_step_type;
+gsl_odeiv_step_bsimp: *gsl_odeiv_step_type;
+gsl_odeiv_step_gear1: *gsl_odeiv_step_type;
+gsl_odeiv_step_gear2: *gsl_odeiv_step_type;
 
-gsl_odeiv_step_rk2_: *gsl_odeiv_step_type;
-gsl_odeiv_step_rk4_: *gsl_odeiv_step_type;
-gsl_odeiv_step_rkf45_: *gsl_odeiv_step_type;
-gsl_odeiv_step_rkck_: *gsl_odeiv_step_type;
-gsl_odeiv_step_rk8pd_: *gsl_odeiv_step_type;
-gsl_odeiv_step_rk2imp_: *gsl_odeiv_step_type;
-gsl_odeiv_step_rk2simp_: *gsl_odeiv_step_type;
-gsl_odeiv_step_rk4imp_: *gsl_odeiv_step_type;
-gsl_odeiv_step_bsimp_: *gsl_odeiv_step_type;
-gsl_odeiv_step_gear1_: *gsl_odeiv_step_type;
-gsl_odeiv_step_gear2_: *gsl_odeiv_step_type;
-
+/* Constructor for specialized stepper objects.
+*/
 gsl_odeiv_step_alloc :: (T: *gsl_odeiv_step_type, dim: size_t) -> *gsl_odeiv_step #foreign libgsl;
 gsl_odeiv_step_reset :: (s: *gsl_odeiv_step) -> s32 #foreign libgsl;
 gsl_odeiv_step_free :: (s: *gsl_odeiv_step) -> void #foreign libgsl;
 
+/* General stepper object methods.
+*/
 gsl_odeiv_step_name :: (s: *gsl_odeiv_step) -> *u8 #foreign libgsl;
 gsl_odeiv_step_order :: (s: *gsl_odeiv_step) -> u32 #foreign libgsl;
 
 gsl_odeiv_step_apply :: (s: *gsl_odeiv_step, t: float64, h: float64, y: *float64, yerr: *float64, dydt_in: *float64, dydt_out: *float64, dydt: *gsl_odeiv_system) -> s32 #foreign libgsl;
 
-anon_struct_47 :: struct {
+/* General step size control object.
+*
+* The hadjust() method controls the adjustment of
+* step size given the result of a step and the error.
+* Valid hadjust() methods must return one of the codes below.
+*
+* The general data can be used by specializations
+* to store state and control their heuristics.
+*/
+gsl_odeiv_control_type :: struct {
     name:    *u8;
     alloc:   #type () -> *void #c_call;
     init:    #type (a0: *void, a1: float64, a2: float64, a3: float64, a4: float64) -> s32 #c_call;
     hadjust: #type (a0: *void, a1: size_t, a2: u32, a3: *float64, a4: *float64, a5: *float64, a6: *float64) -> s32 #c_call;
     free:    #type (a0: *void) -> void #c_call;
 }
+#run {
+    instance: gsl_odeiv_control_type;
+    assert(((cast(*void)(*instance.name)) - cast(*void)(*instance)) == 0, "gsl_odeiv_control_type.name has unexpected offset % instead of 0", ((cast(*void)(*instance.name)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_control_type.name)) == 8, "gsl_odeiv_control_type.name has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_control_type.name)));
+    assert(((cast(*void)(*instance.alloc)) - cast(*void)(*instance)) == 8, "gsl_odeiv_control_type.alloc has unexpected offset % instead of 8", ((cast(*void)(*instance.alloc)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_control_type.alloc)) == 8, "gsl_odeiv_control_type.alloc has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_control_type.alloc)));
+    assert(((cast(*void)(*instance.init)) - cast(*void)(*instance)) == 16, "gsl_odeiv_control_type.init has unexpected offset % instead of 16", ((cast(*void)(*instance.init)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_control_type.init)) == 8, "gsl_odeiv_control_type.init has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_control_type.init)));
+    assert(((cast(*void)(*instance.hadjust)) - cast(*void)(*instance)) == 24, "gsl_odeiv_control_type.hadjust has unexpected offset % instead of 24", ((cast(*void)(*instance.hadjust)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_control_type.hadjust)) == 8, "gsl_odeiv_control_type.hadjust has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_control_type.hadjust)));
+    assert(((cast(*void)(*instance.free)) - cast(*void)(*instance)) == 32, "gsl_odeiv_control_type.free has unexpected offset % instead of 32", ((cast(*void)(*instance.free)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_control_type.free)) == 8, "gsl_odeiv_control_type.free has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_control_type.free)));
+    assert(size_of(gsl_odeiv_control_type) == 40, "gsl_odeiv_control_type has size % instead of 40", size_of(gsl_odeiv_control_type));
+}
 
-gsl_odeiv_control_type :: anon_struct_47;
-
-anon_struct_48 :: struct {
+gsl_odeiv_control :: struct {
     type:  *gsl_odeiv_control_type;
     state: *void;
 }
-
-gsl_odeiv_control :: anon_struct_48;
+#run {
+    instance: gsl_odeiv_control;
+    assert(((cast(*void)(*instance.type)) - cast(*void)(*instance)) == 0, "gsl_odeiv_control.type has unexpected offset % instead of 0", ((cast(*void)(*instance.type)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_control.type)) == 8, "gsl_odeiv_control.type has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_control.type)));
+    assert(((cast(*void)(*instance.state)) - cast(*void)(*instance)) == 8, "gsl_odeiv_control.state has unexpected offset % instead of 8", ((cast(*void)(*instance.state)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_control.state)) == 8, "gsl_odeiv_control.state has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_control.state)));
+    assert(size_of(gsl_odeiv_control) == 16, "gsl_odeiv_control has size % instead of 16", size_of(gsl_odeiv_control));
+}
 
 gsl_odeiv_control_alloc :: (T: *gsl_odeiv_control_type) -> *gsl_odeiv_control #foreign libgsl;
 gsl_odeiv_control_init :: (c: *gsl_odeiv_control, eps_abs: float64, eps_rel: float64, a_y: float64, a_dydt: float64) -> s32 #foreign libgsl;
@@ -1973,13 +2931,38 @@ gsl_odeiv_control_free :: (c: *gsl_odeiv_control) -> void #foreign libgsl;
 gsl_odeiv_control_hadjust :: (c: *gsl_odeiv_control, s: *gsl_odeiv_step, y: *float64, yerr: *float64, dydt: *float64, h: *float64) -> s32 #foreign libgsl;
 gsl_odeiv_control_name :: (c: *gsl_odeiv_control) -> *u8 #foreign libgsl;
 
+/* Available control object constructors.
+*
+* The standard control object is a four parameter heuristic
+* defined as follows:
+*    D0 = eps_abs + eps_rel * (a_y |y| + a_dydt h |y'|)
+*    D1 = |yerr|
+*    q  = consistency order of method (q=4 for 4(5) embedded RK)
+*    S  = safety factor (0.9 say)
+*
+*                      /  (D0/D1)^(1/(q+1))  D0 >= D1
+*    h_NEW = S h_OLD * |
+*                      \  (D0/D1)^(1/q)      D0 < D1
+*
+* This encompasses all the standard error scaling methods.
+*
+* The y method is the standard method with a_y=1, a_dydt=0.
+* The yp method is the standard method with a_y=0, a_dydt=1.
+*/
 gsl_odeiv_control_standard_new :: (eps_abs: float64, eps_rel: float64, a_y: float64, a_dydt: float64) -> *gsl_odeiv_control #foreign libgsl;
 gsl_odeiv_control_y_new :: (eps_abs: float64, eps_rel: float64) -> *gsl_odeiv_control #foreign libgsl;
 gsl_odeiv_control_yp_new :: (eps_abs: float64, eps_rel: float64) -> *gsl_odeiv_control #foreign libgsl;
 
+/* This controller computes errors using different absolute errors for
+* each component
+*
+*    D0 = eps_abs * scale_abs[i] + eps_rel * (a_y |y| + a_dydt h |y'|)
+*/
 gsl_odeiv_control_scaled_new :: (eps_abs: float64, eps_rel: float64, a_y: float64, a_dydt: float64, scale_abs: *float64, dim: size_t) -> *gsl_odeiv_control #foreign libgsl;
 
-anon_struct_49 :: struct {
+/* General evolution object.
+*/
+gsl_odeiv_evolve :: struct {
     dimension:    size_t;
     y0:           *float64;
     yerr:         *float64;
@@ -1989,23 +2972,53 @@ anon_struct_49 :: struct {
     count:        u64;
     failed_steps: u64;
 }
+#run {
+    instance: gsl_odeiv_evolve;
+    assert(((cast(*void)(*instance.dimension)) - cast(*void)(*instance)) == 0, "gsl_odeiv_evolve.dimension has unexpected offset % instead of 0", ((cast(*void)(*instance.dimension)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_evolve.dimension)) == 8, "gsl_odeiv_evolve.dimension has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_evolve.dimension)));
+    assert(((cast(*void)(*instance.y0)) - cast(*void)(*instance)) == 8, "gsl_odeiv_evolve.y0 has unexpected offset % instead of 8", ((cast(*void)(*instance.y0)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_evolve.y0)) == 8, "gsl_odeiv_evolve.y0 has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_evolve.y0)));
+    assert(((cast(*void)(*instance.yerr)) - cast(*void)(*instance)) == 16, "gsl_odeiv_evolve.yerr has unexpected offset % instead of 16", ((cast(*void)(*instance.yerr)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_evolve.yerr)) == 8, "gsl_odeiv_evolve.yerr has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_evolve.yerr)));
+    assert(((cast(*void)(*instance.dydt_in)) - cast(*void)(*instance)) == 24, "gsl_odeiv_evolve.dydt_in has unexpected offset % instead of 24", ((cast(*void)(*instance.dydt_in)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_evolve.dydt_in)) == 8, "gsl_odeiv_evolve.dydt_in has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_evolve.dydt_in)));
+    assert(((cast(*void)(*instance.dydt_out)) - cast(*void)(*instance)) == 32, "gsl_odeiv_evolve.dydt_out has unexpected offset % instead of 32", ((cast(*void)(*instance.dydt_out)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_evolve.dydt_out)) == 8, "gsl_odeiv_evolve.dydt_out has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_evolve.dydt_out)));
+    assert(((cast(*void)(*instance.last_step)) - cast(*void)(*instance)) == 40, "gsl_odeiv_evolve.last_step has unexpected offset % instead of 40", ((cast(*void)(*instance.last_step)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_evolve.last_step)) == 8, "gsl_odeiv_evolve.last_step has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_evolve.last_step)));
+    assert(((cast(*void)(*instance.count)) - cast(*void)(*instance)) == 48, "gsl_odeiv_evolve.count has unexpected offset % instead of 48", ((cast(*void)(*instance.count)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_evolve.count)) == 8, "gsl_odeiv_evolve.count has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_evolve.count)));
+    assert(((cast(*void)(*instance.failed_steps)) - cast(*void)(*instance)) == 56, "gsl_odeiv_evolve.failed_steps has unexpected offset % instead of 56", ((cast(*void)(*instance.failed_steps)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_odeiv_evolve.failed_steps)) == 8, "gsl_odeiv_evolve.failed_steps has unexpected size % instead of 8", size_of(type_of(gsl_odeiv_evolve.failed_steps)));
+    assert(size_of(gsl_odeiv_evolve) == 64, "gsl_odeiv_evolve has size % instead of 64", size_of(gsl_odeiv_evolve));
+}
 
-gsl_odeiv_evolve :: anon_struct_49;
-
+/* Evolution object methods.
+*/
 gsl_odeiv_evolve_alloc :: (dim: size_t) -> *gsl_odeiv_evolve #foreign libgsl;
 gsl_odeiv_evolve_apply :: (e: *gsl_odeiv_evolve, con: *gsl_odeiv_control, step: *gsl_odeiv_step, dydt: *gsl_odeiv_system, t: *float64, t1: float64, h: *float64, y: *float64) -> s32 #foreign libgsl;
 gsl_odeiv_evolve_reset :: (e: *gsl_odeiv_evolve) -> s32 #foreign libgsl;
 gsl_odeiv_evolve_free :: (e: *gsl_odeiv_evolve) -> void #foreign libgsl;
 
-anon_struct_50 :: struct {
-    cache:      size_t;
-    miss_count: size_t;
+/* evaluation accelerator */
+gsl_interp_accel :: struct {
+    cache:      size_t; /* cache of index   */
+    miss_count: size_t; /* keep statistics  */
     hit_count:  size_t;
 }
+#run {
+    instance: gsl_interp_accel;
+    assert(((cast(*void)(*instance.cache)) - cast(*void)(*instance)) == 0, "gsl_interp_accel.cache has unexpected offset % instead of 0", ((cast(*void)(*instance.cache)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_interp_accel.cache)) == 8, "gsl_interp_accel.cache has unexpected size % instead of 8", size_of(type_of(gsl_interp_accel.cache)));
+    assert(((cast(*void)(*instance.miss_count)) - cast(*void)(*instance)) == 8, "gsl_interp_accel.miss_count has unexpected offset % instead of 8", ((cast(*void)(*instance.miss_count)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_interp_accel.miss_count)) == 8, "gsl_interp_accel.miss_count has unexpected size % instead of 8", size_of(type_of(gsl_interp_accel.miss_count)));
+    assert(((cast(*void)(*instance.hit_count)) - cast(*void)(*instance)) == 16, "gsl_interp_accel.hit_count has unexpected offset % instead of 16", ((cast(*void)(*instance.hit_count)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_interp_accel.hit_count)) == 8, "gsl_interp_accel.hit_count has unexpected size % instead of 8", size_of(type_of(gsl_interp_accel.hit_count)));
+    assert(size_of(gsl_interp_accel) == 24, "gsl_interp_accel has size % instead of 24", size_of(gsl_interp_accel));
+}
 
-gsl_interp_accel :: anon_struct_50;
-
-anon_struct_51 :: struct {
+/* interpolation object type */
+gsl_interp_type :: struct {
     name:        *u8;
     min_size:    u32;
     alloc:       #type (a0: size_t) -> *void #c_call;
@@ -2016,26 +3029,60 @@ anon_struct_51 :: struct {
     eval_integ:  #type (a0: *void, a1: *float64, a2: *float64, a3: size_t, a4: *gsl_interp_accel, a5: float64, a6: float64, a7: *float64) -> s32 #c_call;
     free:        #type (a0: *void) -> void #c_call;
 }
+#run {
+    instance: gsl_interp_type;
+    assert(((cast(*void)(*instance.name)) - cast(*void)(*instance)) == 0, "gsl_interp_type.name has unexpected offset % instead of 0", ((cast(*void)(*instance.name)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_interp_type.name)) == 8, "gsl_interp_type.name has unexpected size % instead of 8", size_of(type_of(gsl_interp_type.name)));
+    assert(((cast(*void)(*instance.min_size)) - cast(*void)(*instance)) == 8, "gsl_interp_type.min_size has unexpected offset % instead of 8", ((cast(*void)(*instance.min_size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_interp_type.min_size)) == 4, "gsl_interp_type.min_size has unexpected size % instead of 4", size_of(type_of(gsl_interp_type.min_size)));
+    assert(((cast(*void)(*instance.alloc)) - cast(*void)(*instance)) == 16, "gsl_interp_type.alloc has unexpected offset % instead of 16", ((cast(*void)(*instance.alloc)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_interp_type.alloc)) == 8, "gsl_interp_type.alloc has unexpected size % instead of 8", size_of(type_of(gsl_interp_type.alloc)));
+    assert(((cast(*void)(*instance.init)) - cast(*void)(*instance)) == 24, "gsl_interp_type.init has unexpected offset % instead of 24", ((cast(*void)(*instance.init)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_interp_type.init)) == 8, "gsl_interp_type.init has unexpected size % instead of 8", size_of(type_of(gsl_interp_type.init)));
+    assert(((cast(*void)(*instance.eval)) - cast(*void)(*instance)) == 32, "gsl_interp_type.eval has unexpected offset % instead of 32", ((cast(*void)(*instance.eval)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_interp_type.eval)) == 8, "gsl_interp_type.eval has unexpected size % instead of 8", size_of(type_of(gsl_interp_type.eval)));
+    assert(((cast(*void)(*instance.eval_deriv)) - cast(*void)(*instance)) == 40, "gsl_interp_type.eval_deriv has unexpected offset % instead of 40", ((cast(*void)(*instance.eval_deriv)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_interp_type.eval_deriv)) == 8, "gsl_interp_type.eval_deriv has unexpected size % instead of 8", size_of(type_of(gsl_interp_type.eval_deriv)));
+    assert(((cast(*void)(*instance.eval_deriv2)) - cast(*void)(*instance)) == 48, "gsl_interp_type.eval_deriv2 has unexpected offset % instead of 48", ((cast(*void)(*instance.eval_deriv2)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_interp_type.eval_deriv2)) == 8, "gsl_interp_type.eval_deriv2 has unexpected size % instead of 8", size_of(type_of(gsl_interp_type.eval_deriv2)));
+    assert(((cast(*void)(*instance.eval_integ)) - cast(*void)(*instance)) == 56, "gsl_interp_type.eval_integ has unexpected offset % instead of 56", ((cast(*void)(*instance.eval_integ)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_interp_type.eval_integ)) == 8, "gsl_interp_type.eval_integ has unexpected size % instead of 8", size_of(type_of(gsl_interp_type.eval_integ)));
+    assert(((cast(*void)(*instance.free)) - cast(*void)(*instance)) == 64, "gsl_interp_type.free has unexpected offset % instead of 64", ((cast(*void)(*instance.free)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_interp_type.free)) == 8, "gsl_interp_type.free has unexpected size % instead of 8", size_of(type_of(gsl_interp_type.free)));
+    assert(size_of(gsl_interp_type) == 72, "gsl_interp_type has size % instead of 72", size_of(gsl_interp_type));
+}
 
-gsl_interp_type :: anon_struct_51;
-
-anon_struct_52 :: struct {
+/* general interpolation object */
+gsl_interp :: struct {
     type:  *gsl_interp_type;
     xmin:  float64;
     xmax:  float64;
     size:  size_t;
     state: *void;
 }
+#run {
+    instance: gsl_interp;
+    assert(((cast(*void)(*instance.type)) - cast(*void)(*instance)) == 0, "gsl_interp.type has unexpected offset % instead of 0", ((cast(*void)(*instance.type)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_interp.type)) == 8, "gsl_interp.type has unexpected size % instead of 8", size_of(type_of(gsl_interp.type)));
+    assert(((cast(*void)(*instance.xmin)) - cast(*void)(*instance)) == 8, "gsl_interp.xmin has unexpected offset % instead of 8", ((cast(*void)(*instance.xmin)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_interp.xmin)) == 8, "gsl_interp.xmin has unexpected size % instead of 8", size_of(type_of(gsl_interp.xmin)));
+    assert(((cast(*void)(*instance.xmax)) - cast(*void)(*instance)) == 16, "gsl_interp.xmax has unexpected offset % instead of 16", ((cast(*void)(*instance.xmax)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_interp.xmax)) == 8, "gsl_interp.xmax has unexpected size % instead of 8", size_of(type_of(gsl_interp.xmax)));
+    assert(((cast(*void)(*instance.size)) - cast(*void)(*instance)) == 24, "gsl_interp.size has unexpected offset % instead of 24", ((cast(*void)(*instance.size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_interp.size)) == 8, "gsl_interp.size has unexpected size % instead of 8", size_of(type_of(gsl_interp.size)));
+    assert(((cast(*void)(*instance.state)) - cast(*void)(*instance)) == 32, "gsl_interp.state has unexpected offset % instead of 32", ((cast(*void)(*instance.state)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_interp.state)) == 8, "gsl_interp.state has unexpected size % instead of 8", size_of(type_of(gsl_interp.state)));
+    assert(size_of(gsl_interp) == 40, "gsl_interp has size % instead of 40", size_of(gsl_interp));
+}
 
-gsl_interp :: anon_struct_52;
-
-gsl_interp_linear_: *gsl_interp_type;
-gsl_interp_polynomial_: *gsl_interp_type;
-gsl_interp_cspline_: *gsl_interp_type;
-gsl_interp_cspline_periodic_: *gsl_interp_type;
-gsl_interp_akima_: *gsl_interp_type;
-gsl_interp_akima_periodic_: *gsl_interp_type;
-gsl_interp_steffen_: *gsl_interp_type;
+/* available types */
+gsl_interp_linear: *gsl_interp_type;
+gsl_interp_polynomial: *gsl_interp_type;
+gsl_interp_cspline: *gsl_interp_type;
+gsl_interp_cspline_periodic: *gsl_interp_type;
+gsl_interp_akima: *gsl_interp_type;
+gsl_interp_akima_periodic: *gsl_interp_type;
+gsl_interp_steffen: *gsl_interp_type;
 
 gsl_interp_accel_alloc :: () -> *gsl_interp_accel #foreign libgsl;
 
@@ -2073,14 +3120,25 @@ gsl_interp_bsearch :: (x_array: *float64, x: float64, index_lo: size_t, index_hi
 
 gsl_interp_accel_find :: (a: *gsl_interp_accel, x_array: *float64, size: size_t, x: float64) -> size_t #foreign libgsl;
 
-anon_struct_53 :: struct {
+/* general interpolation object */
+gsl_spline :: struct {
     interp: *gsl_interp;
     x:      *float64;
     y:      *float64;
     size:   size_t;
 }
-
-gsl_spline :: anon_struct_53;
+#run {
+    instance: gsl_spline;
+    assert(((cast(*void)(*instance.interp)) - cast(*void)(*instance)) == 0, "gsl_spline.interp has unexpected offset % instead of 0", ((cast(*void)(*instance.interp)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_spline.interp)) == 8, "gsl_spline.interp has unexpected size % instead of 8", size_of(type_of(gsl_spline.interp)));
+    assert(((cast(*void)(*instance.x)) - cast(*void)(*instance)) == 8, "gsl_spline.x has unexpected offset % instead of 8", ((cast(*void)(*instance.x)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_spline.x)) == 8, "gsl_spline.x has unexpected size % instead of 8", size_of(type_of(gsl_spline.x)));
+    assert(((cast(*void)(*instance.y)) - cast(*void)(*instance)) == 16, "gsl_spline.y has unexpected offset % instead of 16", ((cast(*void)(*instance.y)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_spline.y)) == 8, "gsl_spline.y has unexpected size % instead of 8", size_of(type_of(gsl_spline.y)));
+    assert(((cast(*void)(*instance.size)) - cast(*void)(*instance)) == 24, "gsl_spline.size has unexpected offset % instead of 24", ((cast(*void)(*instance.size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_spline.size)) == 8, "gsl_spline.size has unexpected size % instead of 8", size_of(type_of(gsl_spline.size)));
+    assert(size_of(gsl_spline) == 32, "gsl_spline has size % instead of 32", size_of(gsl_spline));
+}
 
 gsl_spline_alloc :: (T: *gsl_interp_type, size: size_t) -> *gsl_spline #foreign libgsl;
 
@@ -2113,47 +3171,114 @@ gsl_deriv_backward :: (f: *gsl_function, x: float64, h: float64, result: *float6
 
 gsl_deriv_forward :: (f: *gsl_function, x: float64, h: float64, result: *float64, abserr: *float64) -> s32 #foreign libgsl;
 
+/* data for a Chebyshev series over a given interval */
 gsl_cheb_series_struct :: struct {
-    c:        *float64;
-    order:    size_t;
-    a:        float64;
-    b:        float64;
+    c:        *float64; /* coefficients                */
+    order:    size_t; /* order of expansion          */
+    a:        float64; /* lower interval point        */
+    b:        float64; /* upper interval point        */
 
+    /* The following exists (mostly) for the benefit
+    * of the implementation. It is an effective single
+    * precision order, for use in single precision
+    * evaluation. Users can use it if they like, but
+    * only they know how to calculate it, since it is
+    * specific to the approximated function. By default,
+    * order_sp = order.
+    * It is used explicitly only by the gsl_cheb_eval_mode
+    * functions, which are not meant for casual use.
+    */
     order_sp: size_t;
 
-    f:        *float64;
+    f:        *float64; /* function evaluated at chebyschev points  */
+}
+#run {
+    instance: gsl_cheb_series_struct;
+    assert(((cast(*void)(*instance.c)) - cast(*void)(*instance)) == 0, "gsl_cheb_series_struct.c has unexpected offset % instead of 0", ((cast(*void)(*instance.c)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_cheb_series_struct.c)) == 8, "gsl_cheb_series_struct.c has unexpected size % instead of 8", size_of(type_of(gsl_cheb_series_struct.c)));
+    assert(((cast(*void)(*instance.order)) - cast(*void)(*instance)) == 8, "gsl_cheb_series_struct.order has unexpected offset % instead of 8", ((cast(*void)(*instance.order)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_cheb_series_struct.order)) == 8, "gsl_cheb_series_struct.order has unexpected size % instead of 8", size_of(type_of(gsl_cheb_series_struct.order)));
+    assert(((cast(*void)(*instance.a)) - cast(*void)(*instance)) == 16, "gsl_cheb_series_struct.a has unexpected offset % instead of 16", ((cast(*void)(*instance.a)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_cheb_series_struct.a)) == 8, "gsl_cheb_series_struct.a has unexpected size % instead of 8", size_of(type_of(gsl_cheb_series_struct.a)));
+    assert(((cast(*void)(*instance.b)) - cast(*void)(*instance)) == 24, "gsl_cheb_series_struct.b has unexpected offset % instead of 24", ((cast(*void)(*instance.b)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_cheb_series_struct.b)) == 8, "gsl_cheb_series_struct.b has unexpected size % instead of 8", size_of(type_of(gsl_cheb_series_struct.b)));
+    assert(((cast(*void)(*instance.order_sp)) - cast(*void)(*instance)) == 32, "gsl_cheb_series_struct.order_sp has unexpected offset % instead of 32", ((cast(*void)(*instance.order_sp)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_cheb_series_struct.order_sp)) == 8, "gsl_cheb_series_struct.order_sp has unexpected size % instead of 8", size_of(type_of(gsl_cheb_series_struct.order_sp)));
+    assert(((cast(*void)(*instance.f)) - cast(*void)(*instance)) == 40, "gsl_cheb_series_struct.f has unexpected offset % instead of 40", ((cast(*void)(*instance.f)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_cheb_series_struct.f)) == 8, "gsl_cheb_series_struct.f has unexpected size % instead of 8", size_of(type_of(gsl_cheb_series_struct.f)));
+    assert(size_of(gsl_cheb_series_struct) == 48, "gsl_cheb_series_struct has size % instead of 48", size_of(gsl_cheb_series_struct));
 }
 
 gsl_cheb_series :: gsl_cheb_series_struct;
 
+/* Calculate a Chebyshev series of specified order over
+* a specified interval, for a given function.
+* Return 0 on failure.
+*/
 gsl_cheb_alloc :: (order: size_t) -> *gsl_cheb_series #foreign libgsl;
 
+/* Free a Chebyshev series previously calculated with gsl_cheb_alloc().
+*/
 gsl_cheb_free :: (cs: *gsl_cheb_series) -> void #foreign libgsl;
 
+/* Calculate a Chebyshev series using the storage provided.
+* Uses the interval (a,b) and the order with which it
+* was initially created.
+*
+*/
 gsl_cheb_init :: (cs: *gsl_cheb_series, func: *gsl_function, a: float64, b: float64) -> s32 #foreign libgsl;
 
+/* Return the order, size of coefficient array and coefficient array ptr */
 gsl_cheb_order :: (cs: *gsl_cheb_series) -> size_t #foreign libgsl;
 gsl_cheb_size :: (cs: *gsl_cheb_series) -> size_t #foreign libgsl;
 gsl_cheb_coeffs :: (cs: *gsl_cheb_series) -> *float64 #foreign libgsl;
 
+/* Evaluate a Chebyshev series at a given point.
+* No errors can occur for a struct obtained from gsl_cheb_new().
+*/
 gsl_cheb_eval :: (cs: *gsl_cheb_series, x: float64) -> float64 #foreign libgsl;
 gsl_cheb_eval_err :: (cs: *gsl_cheb_series, x: float64, result: *float64, abserr: *float64) -> s32 #foreign libgsl;
 
+/* Evaluate a Chebyshev series at a given point, to (at most) the given order.
+* No errors can occur for a struct obtained from gsl_cheb_new().
+*/
 gsl_cheb_eval_n :: (cs: *gsl_cheb_series, order: size_t, x: float64) -> float64 #foreign libgsl;
 
 gsl_cheb_eval_n_err :: (cs: *gsl_cheb_series, order: size_t, x: float64, result: *float64, abserr: *float64) -> s32 #foreign libgsl;
 
+/* Evaluate a Chebyshev series at a given point, using the default
+* order for double precision mode(s) and the single precision
+* order for other modes.
+* No errors can occur for a struct obtained from gsl_cheb_new().
+*/
 gsl_cheb_eval_mode :: (cs: *gsl_cheb_series, x: float64, mode: gsl_mode_t) -> float64 #foreign libgsl;
 gsl_cheb_eval_mode_e :: (cs: *gsl_cheb_series, x: float64, mode: gsl_mode_t, result: *float64, abserr: *float64) -> s32 #foreign libgsl;
 
+/* Compute the derivative of a Chebyshev series.
+*/
 gsl_cheb_calc_deriv :: (deriv: *gsl_cheb_series, cs: *gsl_cheb_series) -> s32 #foreign libgsl;
 
+/* Compute the integral of a Chebyshev series. The
+* integral is fixed by the condition that it equals zero at
+* the left end-point, ie it is precisely
+*       Integrate[cs(t; a,b), {t, a, x}]
+*/
 gsl_cheb_calc_integ :: (integ: *gsl_cheb_series, cs: *gsl_cheb_series) -> s32 #foreign libgsl;
 
-anon_struct_54 :: struct {
+/*  Workspace for Levin U Transform with error estimation,
+*   
+*   size        = number of terms the workspace can handle
+*   sum_plain   = simple sum of series
+*   q_num       = backward diagonal of numerator; length = size
+*   q_den       = backward diagonal of denominator; length = size
+*   dq_num      = table of numerator derivatives; length = size**2
+*   dq_den      = table of denominator derivatives; length = size**2
+*   dsum        = derivative of sum wrt term i; length = size
+*/
+gsl_sum_levin_u_workspace :: struct {
     size:       size_t;
-    i:          size_t;
-    terms_used: size_t;
+    i:          size_t; /* position in array */
+    terms_used: size_t; /* number of calls */
     sum_plain:  float64;
     q_num:      *float64;
     q_den:      *float64;
@@ -2161,29 +3286,102 @@ anon_struct_54 :: struct {
     dq_den:     *float64;
     dsum:       *float64;
 }
-
-gsl_sum_levin_u_workspace :: anon_struct_54;
+#run {
+    instance: gsl_sum_levin_u_workspace;
+    assert(((cast(*void)(*instance.size)) - cast(*void)(*instance)) == 0, "gsl_sum_levin_u_workspace.size has unexpected offset % instead of 0", ((cast(*void)(*instance.size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_sum_levin_u_workspace.size)) == 8, "gsl_sum_levin_u_workspace.size has unexpected size % instead of 8", size_of(type_of(gsl_sum_levin_u_workspace.size)));
+    assert(((cast(*void)(*instance.i)) - cast(*void)(*instance)) == 8, "gsl_sum_levin_u_workspace.i has unexpected offset % instead of 8", ((cast(*void)(*instance.i)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_sum_levin_u_workspace.i)) == 8, "gsl_sum_levin_u_workspace.i has unexpected size % instead of 8", size_of(type_of(gsl_sum_levin_u_workspace.i)));
+    assert(((cast(*void)(*instance.terms_used)) - cast(*void)(*instance)) == 16, "gsl_sum_levin_u_workspace.terms_used has unexpected offset % instead of 16", ((cast(*void)(*instance.terms_used)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_sum_levin_u_workspace.terms_used)) == 8, "gsl_sum_levin_u_workspace.terms_used has unexpected size % instead of 8", size_of(type_of(gsl_sum_levin_u_workspace.terms_used)));
+    assert(((cast(*void)(*instance.sum_plain)) - cast(*void)(*instance)) == 24, "gsl_sum_levin_u_workspace.sum_plain has unexpected offset % instead of 24", ((cast(*void)(*instance.sum_plain)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_sum_levin_u_workspace.sum_plain)) == 8, "gsl_sum_levin_u_workspace.sum_plain has unexpected size % instead of 8", size_of(type_of(gsl_sum_levin_u_workspace.sum_plain)));
+    assert(((cast(*void)(*instance.q_num)) - cast(*void)(*instance)) == 32, "gsl_sum_levin_u_workspace.q_num has unexpected offset % instead of 32", ((cast(*void)(*instance.q_num)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_sum_levin_u_workspace.q_num)) == 8, "gsl_sum_levin_u_workspace.q_num has unexpected size % instead of 8", size_of(type_of(gsl_sum_levin_u_workspace.q_num)));
+    assert(((cast(*void)(*instance.q_den)) - cast(*void)(*instance)) == 40, "gsl_sum_levin_u_workspace.q_den has unexpected offset % instead of 40", ((cast(*void)(*instance.q_den)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_sum_levin_u_workspace.q_den)) == 8, "gsl_sum_levin_u_workspace.q_den has unexpected size % instead of 8", size_of(type_of(gsl_sum_levin_u_workspace.q_den)));
+    assert(((cast(*void)(*instance.dq_num)) - cast(*void)(*instance)) == 48, "gsl_sum_levin_u_workspace.dq_num has unexpected offset % instead of 48", ((cast(*void)(*instance.dq_num)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_sum_levin_u_workspace.dq_num)) == 8, "gsl_sum_levin_u_workspace.dq_num has unexpected size % instead of 8", size_of(type_of(gsl_sum_levin_u_workspace.dq_num)));
+    assert(((cast(*void)(*instance.dq_den)) - cast(*void)(*instance)) == 56, "gsl_sum_levin_u_workspace.dq_den has unexpected offset % instead of 56", ((cast(*void)(*instance.dq_den)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_sum_levin_u_workspace.dq_den)) == 8, "gsl_sum_levin_u_workspace.dq_den has unexpected size % instead of 8", size_of(type_of(gsl_sum_levin_u_workspace.dq_den)));
+    assert(((cast(*void)(*instance.dsum)) - cast(*void)(*instance)) == 64, "gsl_sum_levin_u_workspace.dsum has unexpected offset % instead of 64", ((cast(*void)(*instance.dsum)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_sum_levin_u_workspace.dsum)) == 8, "gsl_sum_levin_u_workspace.dsum has unexpected size % instead of 8", size_of(type_of(gsl_sum_levin_u_workspace.dsum)));
+    assert(size_of(gsl_sum_levin_u_workspace) == 72, "gsl_sum_levin_u_workspace has size % instead of 72", size_of(gsl_sum_levin_u_workspace));
+}
 
 gsl_sum_levin_u_alloc :: (n: size_t) -> *gsl_sum_levin_u_workspace #foreign libgsl;
 gsl_sum_levin_u_free :: (w: *gsl_sum_levin_u_workspace) -> void #foreign libgsl;
 
+/* Basic Levin-u acceleration method.
+*
+*   array       = array of series elements
+*   n           = size of array
+*   sum_accel   = result of summation acceleration
+*   err         = estimated error   
+*
+* See [Fessler et al., ACM TOMS 9, 346 (1983) and TOMS-602]
+*/
 gsl_sum_levin_u_accel :: (array: *float64, n: size_t, w: *gsl_sum_levin_u_workspace, sum_accel: *float64, abserr: *float64) -> s32 #foreign libgsl;
 
+/* Basic Levin-u acceleration method with constraints on the terms
+* used,
+*
+*   array       = array of series elements
+*   n           = size of array
+*   min_terms   = minimum number of terms to sum
+*   max_terms   = maximum number of terms to sum
+*   sum_accel   = result of summation acceleration
+*   err         = estimated error   
+*
+* See [Fessler et al., ACM TOMS 9, 346 (1983) and TOMS-602] 
+*/
 gsl_sum_levin_u_minmax :: (array: *float64, n: size_t, min_terms: size_t, max_terms: size_t, w: *gsl_sum_levin_u_workspace, sum_accel: *float64, abserr: *float64) -> s32 #foreign libgsl;
 
+/* Basic Levin-u step w/o reference to the array of terms.
+* We only need to specify the value of the current term
+* to execute the step. See TOMS-745.
+*
+* sum = t0 + ... + t_{n-1} + term;  term = t_{n}
+*
+*   term   = value of the series term to be added
+*   n      = position of term in series (starting from 0)
+*   sum_accel = result of summation acceleration
+*   sum_plain = simple sum of series
+*/
 gsl_sum_levin_u_step :: (term: float64, n: size_t, nmax: size_t, w: *gsl_sum_levin_u_workspace, sum_accel: *float64) -> s32 #foreign libgsl;
 
-anon_struct_55 :: struct {
+/* The following functions perform the same calculation without
+estimating the errors. They require O(N) storage instead of O(N^2).
+This may be useful for summing many similar series where the size
+of the error has already been estimated reliably and is not
+expected to change.  */
+gsl_sum_levin_utrunc_workspace :: struct {
     size:       size_t;
-    i:          size_t;
-    terms_used: size_t;
+    i:          size_t; /* position in array */
+    terms_used: size_t; /* number of calls */
     sum_plain:  float64;
     q_num:      *float64;
     q_den:      *float64;
     dsum:       *float64;
 }
-
-gsl_sum_levin_utrunc_workspace :: anon_struct_55;
+#run {
+    instance: gsl_sum_levin_utrunc_workspace;
+    assert(((cast(*void)(*instance.size)) - cast(*void)(*instance)) == 0, "gsl_sum_levin_utrunc_workspace.size has unexpected offset % instead of 0", ((cast(*void)(*instance.size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_sum_levin_utrunc_workspace.size)) == 8, "gsl_sum_levin_utrunc_workspace.size has unexpected size % instead of 8", size_of(type_of(gsl_sum_levin_utrunc_workspace.size)));
+    assert(((cast(*void)(*instance.i)) - cast(*void)(*instance)) == 8, "gsl_sum_levin_utrunc_workspace.i has unexpected offset % instead of 8", ((cast(*void)(*instance.i)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_sum_levin_utrunc_workspace.i)) == 8, "gsl_sum_levin_utrunc_workspace.i has unexpected size % instead of 8", size_of(type_of(gsl_sum_levin_utrunc_workspace.i)));
+    assert(((cast(*void)(*instance.terms_used)) - cast(*void)(*instance)) == 16, "gsl_sum_levin_utrunc_workspace.terms_used has unexpected offset % instead of 16", ((cast(*void)(*instance.terms_used)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_sum_levin_utrunc_workspace.terms_used)) == 8, "gsl_sum_levin_utrunc_workspace.terms_used has unexpected size % instead of 8", size_of(type_of(gsl_sum_levin_utrunc_workspace.terms_used)));
+    assert(((cast(*void)(*instance.sum_plain)) - cast(*void)(*instance)) == 24, "gsl_sum_levin_utrunc_workspace.sum_plain has unexpected offset % instead of 24", ((cast(*void)(*instance.sum_plain)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_sum_levin_utrunc_workspace.sum_plain)) == 8, "gsl_sum_levin_utrunc_workspace.sum_plain has unexpected size % instead of 8", size_of(type_of(gsl_sum_levin_utrunc_workspace.sum_plain)));
+    assert(((cast(*void)(*instance.q_num)) - cast(*void)(*instance)) == 32, "gsl_sum_levin_utrunc_workspace.q_num has unexpected offset % instead of 32", ((cast(*void)(*instance.q_num)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_sum_levin_utrunc_workspace.q_num)) == 8, "gsl_sum_levin_utrunc_workspace.q_num has unexpected size % instead of 8", size_of(type_of(gsl_sum_levin_utrunc_workspace.q_num)));
+    assert(((cast(*void)(*instance.q_den)) - cast(*void)(*instance)) == 40, "gsl_sum_levin_utrunc_workspace.q_den has unexpected offset % instead of 40", ((cast(*void)(*instance.q_den)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_sum_levin_utrunc_workspace.q_den)) == 8, "gsl_sum_levin_utrunc_workspace.q_den has unexpected size % instead of 8", size_of(type_of(gsl_sum_levin_utrunc_workspace.q_den)));
+    assert(((cast(*void)(*instance.dsum)) - cast(*void)(*instance)) == 48, "gsl_sum_levin_utrunc_workspace.dsum has unexpected offset % instead of 48", ((cast(*void)(*instance.dsum)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_sum_levin_utrunc_workspace.dsum)) == 8, "gsl_sum_levin_utrunc_workspace.dsum has unexpected size % instead of 8", size_of(type_of(gsl_sum_levin_utrunc_workspace.dsum)));
+    assert(size_of(gsl_sum_levin_utrunc_workspace) == 56, "gsl_sum_levin_utrunc_workspace has size % instead of 56", size_of(gsl_sum_levin_utrunc_workspace));
+}
 
 gsl_sum_levin_utrunc_alloc :: (n: size_t) -> *gsl_sum_levin_utrunc_workspace #foreign libgsl;
 gsl_sum_levin_utrunc_free :: (w: *gsl_sum_levin_utrunc_workspace) -> void #foreign libgsl;
@@ -2194,21 +3392,25 @@ gsl_sum_levin_utrunc_minmax :: (array: *float64, n: size_t, min_terms: size_t, m
 
 gsl_sum_levin_utrunc_step :: (term: float64, n: size_t, w: *gsl_sum_levin_utrunc_workspace, sum_accel: *float64) -> s32 #foreign libgsl;
 
-anon_enum_56 :: enum s32 {
+gsl_wavelet_direction :: enum s32 {
     gsl_wavelet_forward  :: 1;
     gsl_wavelet_backward :: -1;
 }
 
-gsl_wavelet_direction :: anon_enum_56;
-
-anon_struct_57 :: struct {
+gsl_wavelet_type :: struct {
     name: *u8;
     init: #type (a0: **float64, a1: **float64, a2: **float64, a3: **float64, a4: *size_t, a5: *size_t, a6: size_t) -> s32 #c_call;
 }
+#run {
+    instance: gsl_wavelet_type;
+    assert(((cast(*void)(*instance.name)) - cast(*void)(*instance)) == 0, "gsl_wavelet_type.name has unexpected offset % instead of 0", ((cast(*void)(*instance.name)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_wavelet_type.name)) == 8, "gsl_wavelet_type.name has unexpected size % instead of 8", size_of(type_of(gsl_wavelet_type.name)));
+    assert(((cast(*void)(*instance.init)) - cast(*void)(*instance)) == 8, "gsl_wavelet_type.init has unexpected offset % instead of 8", ((cast(*void)(*instance.init)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_wavelet_type.init)) == 8, "gsl_wavelet_type.init has unexpected size % instead of 8", size_of(type_of(gsl_wavelet_type.init)));
+    assert(size_of(gsl_wavelet_type) == 16, "gsl_wavelet_type has size % instead of 16", size_of(gsl_wavelet_type));
+}
 
-gsl_wavelet_type :: anon_struct_57;
-
-anon_struct_58 :: struct {
+gsl_wavelet :: struct {
     type:   *gsl_wavelet_type;
     h1:     *float64;
     g1:     *float64;
@@ -2217,22 +3419,44 @@ anon_struct_58 :: struct {
     nc:     size_t;
     offset: size_t;
 }
+#run {
+    instance: gsl_wavelet;
+    assert(((cast(*void)(*instance.type)) - cast(*void)(*instance)) == 0, "gsl_wavelet.type has unexpected offset % instead of 0", ((cast(*void)(*instance.type)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_wavelet.type)) == 8, "gsl_wavelet.type has unexpected size % instead of 8", size_of(type_of(gsl_wavelet.type)));
+    assert(((cast(*void)(*instance.h1)) - cast(*void)(*instance)) == 8, "gsl_wavelet.h1 has unexpected offset % instead of 8", ((cast(*void)(*instance.h1)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_wavelet.h1)) == 8, "gsl_wavelet.h1 has unexpected size % instead of 8", size_of(type_of(gsl_wavelet.h1)));
+    assert(((cast(*void)(*instance.g1)) - cast(*void)(*instance)) == 16, "gsl_wavelet.g1 has unexpected offset % instead of 16", ((cast(*void)(*instance.g1)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_wavelet.g1)) == 8, "gsl_wavelet.g1 has unexpected size % instead of 8", size_of(type_of(gsl_wavelet.g1)));
+    assert(((cast(*void)(*instance.h2)) - cast(*void)(*instance)) == 24, "gsl_wavelet.h2 has unexpected offset % instead of 24", ((cast(*void)(*instance.h2)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_wavelet.h2)) == 8, "gsl_wavelet.h2 has unexpected size % instead of 8", size_of(type_of(gsl_wavelet.h2)));
+    assert(((cast(*void)(*instance.g2)) - cast(*void)(*instance)) == 32, "gsl_wavelet.g2 has unexpected offset % instead of 32", ((cast(*void)(*instance.g2)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_wavelet.g2)) == 8, "gsl_wavelet.g2 has unexpected size % instead of 8", size_of(type_of(gsl_wavelet.g2)));
+    assert(((cast(*void)(*instance.nc)) - cast(*void)(*instance)) == 40, "gsl_wavelet.nc has unexpected offset % instead of 40", ((cast(*void)(*instance.nc)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_wavelet.nc)) == 8, "gsl_wavelet.nc has unexpected size % instead of 8", size_of(type_of(gsl_wavelet.nc)));
+    assert(((cast(*void)(*instance.offset)) - cast(*void)(*instance)) == 48, "gsl_wavelet.offset has unexpected offset % instead of 48", ((cast(*void)(*instance.offset)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_wavelet.offset)) == 8, "gsl_wavelet.offset has unexpected size % instead of 8", size_of(type_of(gsl_wavelet.offset)));
+    assert(size_of(gsl_wavelet) == 56, "gsl_wavelet has size % instead of 56", size_of(gsl_wavelet));
+}
 
-gsl_wavelet :: anon_struct_58;
-
-anon_struct_59 :: struct {
+gsl_wavelet_workspace :: struct {
     scratch: *float64;
     n:       size_t;
 }
+#run {
+    instance: gsl_wavelet_workspace;
+    assert(((cast(*void)(*instance.scratch)) - cast(*void)(*instance)) == 0, "gsl_wavelet_workspace.scratch has unexpected offset % instead of 0", ((cast(*void)(*instance.scratch)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_wavelet_workspace.scratch)) == 8, "gsl_wavelet_workspace.scratch has unexpected size % instead of 8", size_of(type_of(gsl_wavelet_workspace.scratch)));
+    assert(((cast(*void)(*instance.n)) - cast(*void)(*instance)) == 8, "gsl_wavelet_workspace.n has unexpected offset % instead of 8", ((cast(*void)(*instance.n)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_wavelet_workspace.n)) == 8, "gsl_wavelet_workspace.n has unexpected size % instead of 8", size_of(type_of(gsl_wavelet_workspace.n)));
+    assert(size_of(gsl_wavelet_workspace) == 16, "gsl_wavelet_workspace has size % instead of 16", size_of(gsl_wavelet_workspace));
+}
 
-gsl_wavelet_workspace :: anon_struct_59;
-
-gsl_wavelet_daubechies_: *gsl_wavelet_type;
-gsl_wavelet_daubechies_centered_: *gsl_wavelet_type;
-gsl_wavelet_haar_: *gsl_wavelet_type;
-gsl_wavelet_haar_centered_: *gsl_wavelet_type;
-gsl_wavelet_bspline_: *gsl_wavelet_type;
-gsl_wavelet_bspline_centered_: *gsl_wavelet_type;
+gsl_wavelet_daubechies: *gsl_wavelet_type;
+gsl_wavelet_daubechies_centered: *gsl_wavelet_type;
+gsl_wavelet_haar: *gsl_wavelet_type;
+gsl_wavelet_haar_centered: *gsl_wavelet_type;
+gsl_wavelet_bspline: *gsl_wavelet_type;
+gsl_wavelet_bspline_centered: *gsl_wavelet_type;
 
 gsl_wavelet_alloc :: (T: *gsl_wavelet_type, k: size_t) -> *gsl_wavelet #foreign libgsl;
 gsl_wavelet_free :: (w: *gsl_wavelet) -> void #foreign libgsl;
@@ -2272,40 +3496,86 @@ gsl_wavelet2d_nstransform_matrix_forward :: (w: *gsl_wavelet, a: *gsl_matrix, wo
 gsl_wavelet2d_nstransform_matrix_inverse :: (w: *gsl_wavelet, a: *gsl_matrix, work: *gsl_wavelet_workspace) -> s32 #foreign libgsl;
 
 gsl_dht_struct :: struct {
-    size: size_t;
-    nu:   float64;
-    xmax: float64;
-    kmax: float64;
-    j:    *float64;
-    Jjj:  *float64;
-    J2:   *float64;
+    size: size_t; /* size of the sample arrays to be transformed    */
+    nu:   float64; /* Bessel function order                          */
+    xmax: float64; /* the upper limit to the x-sampling domain       */
+    kmax: float64; /* the upper limit to the k-sampling domain       */
+    j:    *float64; /* array of computed J_nu zeros, j_{nu,s} = j[s]  */
+    Jjj:  *float64; /* transform numerator, J_nu(j_i j_m / j_N)       */
+    J2:   *float64; /* transform denominator, J_{nu+1}^2(j_m)         */
+}
+#run {
+    instance: gsl_dht_struct;
+    assert(((cast(*void)(*instance.size)) - cast(*void)(*instance)) == 0, "gsl_dht_struct.size has unexpected offset % instead of 0", ((cast(*void)(*instance.size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_dht_struct.size)) == 8, "gsl_dht_struct.size has unexpected size % instead of 8", size_of(type_of(gsl_dht_struct.size)));
+    assert(((cast(*void)(*instance.nu)) - cast(*void)(*instance)) == 8, "gsl_dht_struct.nu has unexpected offset % instead of 8", ((cast(*void)(*instance.nu)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_dht_struct.nu)) == 8, "gsl_dht_struct.nu has unexpected size % instead of 8", size_of(type_of(gsl_dht_struct.nu)));
+    assert(((cast(*void)(*instance.xmax)) - cast(*void)(*instance)) == 16, "gsl_dht_struct.xmax has unexpected offset % instead of 16", ((cast(*void)(*instance.xmax)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_dht_struct.xmax)) == 8, "gsl_dht_struct.xmax has unexpected size % instead of 8", size_of(type_of(gsl_dht_struct.xmax)));
+    assert(((cast(*void)(*instance.kmax)) - cast(*void)(*instance)) == 24, "gsl_dht_struct.kmax has unexpected offset % instead of 24", ((cast(*void)(*instance.kmax)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_dht_struct.kmax)) == 8, "gsl_dht_struct.kmax has unexpected size % instead of 8", size_of(type_of(gsl_dht_struct.kmax)));
+    assert(((cast(*void)(*instance.j)) - cast(*void)(*instance)) == 32, "gsl_dht_struct.j has unexpected offset % instead of 32", ((cast(*void)(*instance.j)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_dht_struct.j)) == 8, "gsl_dht_struct.j has unexpected size % instead of 8", size_of(type_of(gsl_dht_struct.j)));
+    assert(((cast(*void)(*instance.Jjj)) - cast(*void)(*instance)) == 40, "gsl_dht_struct.Jjj has unexpected offset % instead of 40", ((cast(*void)(*instance.Jjj)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_dht_struct.Jjj)) == 8, "gsl_dht_struct.Jjj has unexpected size % instead of 8", size_of(type_of(gsl_dht_struct.Jjj)));
+    assert(((cast(*void)(*instance.J2)) - cast(*void)(*instance)) == 48, "gsl_dht_struct.J2 has unexpected offset % instead of 48", ((cast(*void)(*instance.J2)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_dht_struct.J2)) == 8, "gsl_dht_struct.J2 has unexpected size % instead of 8", size_of(type_of(gsl_dht_struct.J2)));
+    assert(size_of(gsl_dht_struct) == 56, "gsl_dht_struct has size % instead of 56", size_of(gsl_dht_struct));
 }
 
 gsl_dht :: gsl_dht_struct;
 
+/* Create a new transform object for a given size
+* sampling array on the domain [0, xmax].
+*/
 gsl_dht_alloc :: (size: size_t) -> *gsl_dht #foreign libgsl;
 gsl_dht_new :: (size: size_t, nu: float64, xmax: float64) -> *gsl_dht #foreign libgsl;
 
+/* Recalculate a transform object for given values of nu, xmax.
+* You cannot change the size of the object since the internal
+* allocation is reused.
+*/
 gsl_dht_init :: (t: *gsl_dht, nu: float64, xmax: float64) -> s32 #foreign libgsl;
 
+/* The n'th computed x sample point for a given transform.
+* 0 <= n <= size-1
+*/
 gsl_dht_x_sample :: (t: *gsl_dht, n: s32) -> float64 #foreign libgsl;
 
+/* The n'th computed k sample point for a given transform.
+* 0 <= n <= size-1
+*/
 gsl_dht_k_sample :: (t: *gsl_dht, n: s32) -> float64 #foreign libgsl;
 
+/* Free a transform object.
+*/
 gsl_dht_free :: (t: *gsl_dht) -> void #foreign libgsl;
 
+/* Perform a transform on a sampled array.
+* f_in[0] ... f_in[size-1] and similarly for f_out[]
+*/
 gsl_dht_apply :: (t: *gsl_dht, f_in: *float64, f_out: *float64) -> s32 #foreign libgsl;
 
-anon_struct_60 :: struct {
+gsl_root_fsolver_type :: struct {
     name:    *u8;
     size:    size_t;
     set:     #type (a0: *void, a1: *gsl_function, a2: *float64, a3: float64, a4: float64) -> s32 #c_call;
     iterate: #type (a0: *void, a1: *gsl_function, a2: *float64, a3: *float64, a4: *float64) -> s32 #c_call;
 }
+#run {
+    instance: gsl_root_fsolver_type;
+    assert(((cast(*void)(*instance.name)) - cast(*void)(*instance)) == 0, "gsl_root_fsolver_type.name has unexpected offset % instead of 0", ((cast(*void)(*instance.name)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_root_fsolver_type.name)) == 8, "gsl_root_fsolver_type.name has unexpected size % instead of 8", size_of(type_of(gsl_root_fsolver_type.name)));
+    assert(((cast(*void)(*instance.size)) - cast(*void)(*instance)) == 8, "gsl_root_fsolver_type.size has unexpected offset % instead of 8", ((cast(*void)(*instance.size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_root_fsolver_type.size)) == 8, "gsl_root_fsolver_type.size has unexpected size % instead of 8", size_of(type_of(gsl_root_fsolver_type.size)));
+    assert(((cast(*void)(*instance.set)) - cast(*void)(*instance)) == 16, "gsl_root_fsolver_type.set has unexpected offset % instead of 16", ((cast(*void)(*instance.set)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_root_fsolver_type.set)) == 8, "gsl_root_fsolver_type.set has unexpected size % instead of 8", size_of(type_of(gsl_root_fsolver_type.set)));
+    assert(((cast(*void)(*instance.iterate)) - cast(*void)(*instance)) == 24, "gsl_root_fsolver_type.iterate has unexpected offset % instead of 24", ((cast(*void)(*instance.iterate)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_root_fsolver_type.iterate)) == 8, "gsl_root_fsolver_type.iterate has unexpected size % instead of 8", size_of(type_of(gsl_root_fsolver_type.iterate)));
+    assert(size_of(gsl_root_fsolver_type) == 32, "gsl_root_fsolver_type has size % instead of 32", size_of(gsl_root_fsolver_type));
+}
 
-gsl_root_fsolver_type :: anon_struct_60;
-
-anon_struct_61 :: struct {
+gsl_root_fsolver :: struct {
     type:     *gsl_root_fsolver_type;
     function: *gsl_function;
     root:     float64;
@@ -2313,26 +3583,60 @@ anon_struct_61 :: struct {
     x_upper:  float64;
     state:    *void;
 }
+#run {
+    instance: gsl_root_fsolver;
+    assert(((cast(*void)(*instance.type)) - cast(*void)(*instance)) == 0, "gsl_root_fsolver.type has unexpected offset % instead of 0", ((cast(*void)(*instance.type)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_root_fsolver.type)) == 8, "gsl_root_fsolver.type has unexpected size % instead of 8", size_of(type_of(gsl_root_fsolver.type)));
+    assert(((cast(*void)(*instance.function)) - cast(*void)(*instance)) == 8, "gsl_root_fsolver.function has unexpected offset % instead of 8", ((cast(*void)(*instance.function)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_root_fsolver.function)) == 8, "gsl_root_fsolver.function has unexpected size % instead of 8", size_of(type_of(gsl_root_fsolver.function)));
+    assert(((cast(*void)(*instance.root)) - cast(*void)(*instance)) == 16, "gsl_root_fsolver.root has unexpected offset % instead of 16", ((cast(*void)(*instance.root)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_root_fsolver.root)) == 8, "gsl_root_fsolver.root has unexpected size % instead of 8", size_of(type_of(gsl_root_fsolver.root)));
+    assert(((cast(*void)(*instance.x_lower)) - cast(*void)(*instance)) == 24, "gsl_root_fsolver.x_lower has unexpected offset % instead of 24", ((cast(*void)(*instance.x_lower)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_root_fsolver.x_lower)) == 8, "gsl_root_fsolver.x_lower has unexpected size % instead of 8", size_of(type_of(gsl_root_fsolver.x_lower)));
+    assert(((cast(*void)(*instance.x_upper)) - cast(*void)(*instance)) == 32, "gsl_root_fsolver.x_upper has unexpected offset % instead of 32", ((cast(*void)(*instance.x_upper)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_root_fsolver.x_upper)) == 8, "gsl_root_fsolver.x_upper has unexpected size % instead of 8", size_of(type_of(gsl_root_fsolver.x_upper)));
+    assert(((cast(*void)(*instance.state)) - cast(*void)(*instance)) == 40, "gsl_root_fsolver.state has unexpected offset % instead of 40", ((cast(*void)(*instance.state)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_root_fsolver.state)) == 8, "gsl_root_fsolver.state has unexpected size % instead of 8", size_of(type_of(gsl_root_fsolver.state)));
+    assert(size_of(gsl_root_fsolver) == 48, "gsl_root_fsolver has size % instead of 48", size_of(gsl_root_fsolver));
+}
 
-gsl_root_fsolver :: anon_struct_61;
-
-anon_struct_62 :: struct {
+gsl_root_fdfsolver_type :: struct {
     name:    *u8;
     size:    size_t;
     set:     #type (a0: *void, a1: *gsl_function_fdf, a2: *float64) -> s32 #c_call;
     iterate: #type (a0: *void, a1: *gsl_function_fdf, a2: *float64) -> s32 #c_call;
 }
+#run {
+    instance: gsl_root_fdfsolver_type;
+    assert(((cast(*void)(*instance.name)) - cast(*void)(*instance)) == 0, "gsl_root_fdfsolver_type.name has unexpected offset % instead of 0", ((cast(*void)(*instance.name)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_root_fdfsolver_type.name)) == 8, "gsl_root_fdfsolver_type.name has unexpected size % instead of 8", size_of(type_of(gsl_root_fdfsolver_type.name)));
+    assert(((cast(*void)(*instance.size)) - cast(*void)(*instance)) == 8, "gsl_root_fdfsolver_type.size has unexpected offset % instead of 8", ((cast(*void)(*instance.size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_root_fdfsolver_type.size)) == 8, "gsl_root_fdfsolver_type.size has unexpected size % instead of 8", size_of(type_of(gsl_root_fdfsolver_type.size)));
+    assert(((cast(*void)(*instance.set)) - cast(*void)(*instance)) == 16, "gsl_root_fdfsolver_type.set has unexpected offset % instead of 16", ((cast(*void)(*instance.set)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_root_fdfsolver_type.set)) == 8, "gsl_root_fdfsolver_type.set has unexpected size % instead of 8", size_of(type_of(gsl_root_fdfsolver_type.set)));
+    assert(((cast(*void)(*instance.iterate)) - cast(*void)(*instance)) == 24, "gsl_root_fdfsolver_type.iterate has unexpected offset % instead of 24", ((cast(*void)(*instance.iterate)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_root_fdfsolver_type.iterate)) == 8, "gsl_root_fdfsolver_type.iterate has unexpected size % instead of 8", size_of(type_of(gsl_root_fdfsolver_type.iterate)));
+    assert(size_of(gsl_root_fdfsolver_type) == 32, "gsl_root_fdfsolver_type has size % instead of 32", size_of(gsl_root_fdfsolver_type));
+}
 
-gsl_root_fdfsolver_type :: anon_struct_62;
-
-anon_struct_63 :: struct {
+gsl_root_fdfsolver :: struct {
     type:  *gsl_root_fdfsolver_type;
     fdf:   *gsl_function_fdf;
     root:  float64;
     state: *void;
 }
-
-gsl_root_fdfsolver :: anon_struct_63;
+#run {
+    instance: gsl_root_fdfsolver;
+    assert(((cast(*void)(*instance.type)) - cast(*void)(*instance)) == 0, "gsl_root_fdfsolver.type has unexpected offset % instead of 0", ((cast(*void)(*instance.type)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_root_fdfsolver.type)) == 8, "gsl_root_fdfsolver.type has unexpected size % instead of 8", size_of(type_of(gsl_root_fdfsolver.type)));
+    assert(((cast(*void)(*instance.fdf)) - cast(*void)(*instance)) == 8, "gsl_root_fdfsolver.fdf has unexpected offset % instead of 8", ((cast(*void)(*instance.fdf)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_root_fdfsolver.fdf)) == 8, "gsl_root_fdfsolver.fdf has unexpected size % instead of 8", size_of(type_of(gsl_root_fdfsolver.fdf)));
+    assert(((cast(*void)(*instance.root)) - cast(*void)(*instance)) == 16, "gsl_root_fdfsolver.root has unexpected offset % instead of 16", ((cast(*void)(*instance.root)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_root_fdfsolver.root)) == 8, "gsl_root_fdfsolver.root has unexpected size % instead of 8", size_of(type_of(gsl_root_fdfsolver.root)));
+    assert(((cast(*void)(*instance.state)) - cast(*void)(*instance)) == 24, "gsl_root_fdfsolver.state has unexpected offset % instead of 24", ((cast(*void)(*instance.state)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_root_fdfsolver.state)) == 8, "gsl_root_fdfsolver.state has unexpected size % instead of 8", size_of(type_of(gsl_root_fdfsolver.state)));
+    assert(size_of(gsl_root_fdfsolver) == 32, "gsl_root_fdfsolver has size % instead of 32", size_of(gsl_root_fdfsolver));
+}
 
 gsl_root_fsolver_alloc :: (T: *gsl_root_fsolver_type) -> *gsl_root_fsolver #foreign libgsl;
 gsl_root_fsolver_free :: (s: *gsl_root_fsolver) -> void #foreign libgsl;
@@ -2363,23 +3667,33 @@ gsl_root_test_residual :: (f: float64, epsabs: float64) -> s32 #foreign libgsl;
 
 gsl_root_test_delta :: (x1: float64, x0: float64, epsabs: float64, epsrel: float64) -> s32 #foreign libgsl;
 
-gsl_root_fsolver_bisection_: *gsl_root_fsolver_type;
-gsl_root_fsolver_brent_: *gsl_root_fsolver_type;
-gsl_root_fsolver_falsepos_: *gsl_root_fsolver_type;
-gsl_root_fdfsolver_newton_: *gsl_root_fdfsolver_type;
-gsl_root_fdfsolver_secant_: *gsl_root_fdfsolver_type;
-gsl_root_fdfsolver_steffenson_: *gsl_root_fdfsolver_type;
+gsl_root_fsolver_bisection: *gsl_root_fsolver_type;
+gsl_root_fsolver_brent: *gsl_root_fsolver_type;
+gsl_root_fsolver_falsepos: *gsl_root_fsolver_type;
+gsl_root_fdfsolver_newton: *gsl_root_fdfsolver_type;
+gsl_root_fdfsolver_secant: *gsl_root_fdfsolver_type;
+gsl_root_fdfsolver_steffenson: *gsl_root_fdfsolver_type;
 
-anon_struct_64 :: struct {
+gsl_min_fminimizer_type :: struct {
     name:    *u8;
     size:    size_t;
     set:     #type (a0: *void, a1: *gsl_function, a2: float64, a3: float64, a4: float64, a5: float64, a6: float64, a7: float64) -> s32 #c_call;
     iterate: #type (a0: *void, a1: *gsl_function, a2: *float64, a3: *float64, a4: *float64, a5: *float64, a6: *float64, a7: *float64) -> s32 #c_call;
 }
+#run {
+    instance: gsl_min_fminimizer_type;
+    assert(((cast(*void)(*instance.name)) - cast(*void)(*instance)) == 0, "gsl_min_fminimizer_type.name has unexpected offset % instead of 0", ((cast(*void)(*instance.name)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_min_fminimizer_type.name)) == 8, "gsl_min_fminimizer_type.name has unexpected size % instead of 8", size_of(type_of(gsl_min_fminimizer_type.name)));
+    assert(((cast(*void)(*instance.size)) - cast(*void)(*instance)) == 8, "gsl_min_fminimizer_type.size has unexpected offset % instead of 8", ((cast(*void)(*instance.size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_min_fminimizer_type.size)) == 8, "gsl_min_fminimizer_type.size has unexpected size % instead of 8", size_of(type_of(gsl_min_fminimizer_type.size)));
+    assert(((cast(*void)(*instance.set)) - cast(*void)(*instance)) == 16, "gsl_min_fminimizer_type.set has unexpected offset % instead of 16", ((cast(*void)(*instance.set)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_min_fminimizer_type.set)) == 8, "gsl_min_fminimizer_type.set has unexpected size % instead of 8", size_of(type_of(gsl_min_fminimizer_type.set)));
+    assert(((cast(*void)(*instance.iterate)) - cast(*void)(*instance)) == 24, "gsl_min_fminimizer_type.iterate has unexpected offset % instead of 24", ((cast(*void)(*instance.iterate)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_min_fminimizer_type.iterate)) == 8, "gsl_min_fminimizer_type.iterate has unexpected size % instead of 8", size_of(type_of(gsl_min_fminimizer_type.iterate)));
+    assert(size_of(gsl_min_fminimizer_type) == 32, "gsl_min_fminimizer_type has size % instead of 32", size_of(gsl_min_fminimizer_type));
+}
 
-gsl_min_fminimizer_type :: anon_struct_64;
-
-anon_struct_65 :: struct {
+gsl_min_fminimizer :: struct {
     type:      *gsl_min_fminimizer_type;
     function:  *gsl_function;
     x_minimum: float64;
@@ -2390,8 +3704,28 @@ anon_struct_65 :: struct {
     f_upper:   float64;
     state:     *void;
 }
-
-gsl_min_fminimizer :: anon_struct_65;
+#run {
+    instance: gsl_min_fminimizer;
+    assert(((cast(*void)(*instance.type)) - cast(*void)(*instance)) == 0, "gsl_min_fminimizer.type has unexpected offset % instead of 0", ((cast(*void)(*instance.type)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_min_fminimizer.type)) == 8, "gsl_min_fminimizer.type has unexpected size % instead of 8", size_of(type_of(gsl_min_fminimizer.type)));
+    assert(((cast(*void)(*instance.function)) - cast(*void)(*instance)) == 8, "gsl_min_fminimizer.function has unexpected offset % instead of 8", ((cast(*void)(*instance.function)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_min_fminimizer.function)) == 8, "gsl_min_fminimizer.function has unexpected size % instead of 8", size_of(type_of(gsl_min_fminimizer.function)));
+    assert(((cast(*void)(*instance.x_minimum)) - cast(*void)(*instance)) == 16, "gsl_min_fminimizer.x_minimum has unexpected offset % instead of 16", ((cast(*void)(*instance.x_minimum)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_min_fminimizer.x_minimum)) == 8, "gsl_min_fminimizer.x_minimum has unexpected size % instead of 8", size_of(type_of(gsl_min_fminimizer.x_minimum)));
+    assert(((cast(*void)(*instance.x_lower)) - cast(*void)(*instance)) == 24, "gsl_min_fminimizer.x_lower has unexpected offset % instead of 24", ((cast(*void)(*instance.x_lower)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_min_fminimizer.x_lower)) == 8, "gsl_min_fminimizer.x_lower has unexpected size % instead of 8", size_of(type_of(gsl_min_fminimizer.x_lower)));
+    assert(((cast(*void)(*instance.x_upper)) - cast(*void)(*instance)) == 32, "gsl_min_fminimizer.x_upper has unexpected offset % instead of 32", ((cast(*void)(*instance.x_upper)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_min_fminimizer.x_upper)) == 8, "gsl_min_fminimizer.x_upper has unexpected size % instead of 8", size_of(type_of(gsl_min_fminimizer.x_upper)));
+    assert(((cast(*void)(*instance.f_minimum)) - cast(*void)(*instance)) == 40, "gsl_min_fminimizer.f_minimum has unexpected offset % instead of 40", ((cast(*void)(*instance.f_minimum)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_min_fminimizer.f_minimum)) == 8, "gsl_min_fminimizer.f_minimum has unexpected size % instead of 8", size_of(type_of(gsl_min_fminimizer.f_minimum)));
+    assert(((cast(*void)(*instance.f_lower)) - cast(*void)(*instance)) == 48, "gsl_min_fminimizer.f_lower has unexpected offset % instead of 48", ((cast(*void)(*instance.f_lower)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_min_fminimizer.f_lower)) == 8, "gsl_min_fminimizer.f_lower has unexpected size % instead of 8", size_of(type_of(gsl_min_fminimizer.f_lower)));
+    assert(((cast(*void)(*instance.f_upper)) - cast(*void)(*instance)) == 56, "gsl_min_fminimizer.f_upper has unexpected offset % instead of 56", ((cast(*void)(*instance.f_upper)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_min_fminimizer.f_upper)) == 8, "gsl_min_fminimizer.f_upper has unexpected size % instead of 8", size_of(type_of(gsl_min_fminimizer.f_upper)));
+    assert(((cast(*void)(*instance.state)) - cast(*void)(*instance)) == 64, "gsl_min_fminimizer.state has unexpected offset % instead of 64", ((cast(*void)(*instance.state)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_min_fminimizer.state)) == 8, "gsl_min_fminimizer.state has unexpected size % instead of 8", size_of(type_of(gsl_min_fminimizer.state)));
+    assert(size_of(gsl_min_fminimizer) == 72, "gsl_min_fminimizer has size % instead of 72", size_of(gsl_min_fminimizer));
+}
 
 gsl_min_fminimizer_alloc :: (T: *gsl_min_fminimizer_type) -> *gsl_min_fminimizer #foreign libgsl;
 
@@ -2412,29 +3746,41 @@ gsl_min_fminimizer_f_minimum :: (s: *gsl_min_fminimizer) -> float64 #foreign lib
 gsl_min_fminimizer_f_lower :: (s: *gsl_min_fminimizer) -> float64 #foreign libgsl;
 gsl_min_fminimizer_f_upper :: (s: *gsl_min_fminimizer) -> float64 #foreign libgsl;
 
+/* Deprecated, use x_minimum instead */
 gsl_min_fminimizer_minimum :: (s: *gsl_min_fminimizer) -> float64 #foreign libgsl;
 
 gsl_min_test_interval :: (x_lower: float64, x_upper: float64, epsabs: float64, epsrel: float64) -> s32 #foreign libgsl;
 
-gsl_min_fminimizer_goldensection_: *gsl_min_fminimizer_type;
-gsl_min_fminimizer_brent_: *gsl_min_fminimizer_type;
-gsl_min_fminimizer_quad_golden_: *gsl_min_fminimizer_type;
+gsl_min_fminimizer_goldensection: *gsl_min_fminimizer_type;
+gsl_min_fminimizer_brent: *gsl_min_fminimizer_type;
+gsl_min_fminimizer_quad_golden: *gsl_min_fminimizer_type;
 
 gsl_min_bracketing_function :: #type (a0: *gsl_function, a1: *float64, a2: *float64, a3: *float64, a4: *float64, a5: *float64, a6: *float64, a7: size_t) -> s32 #c_call;
 
 gsl_min_find_bracket :: (f: *gsl_function, x_minimum: *float64, f_minimum: *float64, x_lower: *float64, f_lower: *float64, x_upper: *float64, f_upper: *float64, eval_max: size_t) -> s32 #foreign libgsl;
 
+/* Definition of vector-valued functions with parameters based on gsl_vector */
 gsl_multiroot_function_struct :: struct {
     f:      #type (a0: *gsl_vector, a1: *void, a2: *gsl_vector) -> s32 #c_call;
     n:      size_t;
     params: *void;
+}
+#run {
+    instance: gsl_multiroot_function_struct;
+    assert(((cast(*void)(*instance.f)) - cast(*void)(*instance)) == 0, "gsl_multiroot_function_struct.f has unexpected offset % instead of 0", ((cast(*void)(*instance.f)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_function_struct.f)) == 8, "gsl_multiroot_function_struct.f has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_function_struct.f)));
+    assert(((cast(*void)(*instance.n)) - cast(*void)(*instance)) == 8, "gsl_multiroot_function_struct.n has unexpected offset % instead of 8", ((cast(*void)(*instance.n)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_function_struct.n)) == 8, "gsl_multiroot_function_struct.n has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_function_struct.n)));
+    assert(((cast(*void)(*instance.params)) - cast(*void)(*instance)) == 16, "gsl_multiroot_function_struct.params has unexpected offset % instead of 16", ((cast(*void)(*instance.params)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_function_struct.params)) == 8, "gsl_multiroot_function_struct.params has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_function_struct.params)));
+    assert(size_of(gsl_multiroot_function_struct) == 24, "gsl_multiroot_function_struct has size % instead of 24", size_of(gsl_multiroot_function_struct));
 }
 
 gsl_multiroot_function :: gsl_multiroot_function_struct;
 
 gsl_multiroot_fdjacobian :: (F: *gsl_multiroot_function, x: *gsl_vector, f: *gsl_vector, epsrel: float64, jacobian: *gsl_matrix) -> s32 #foreign libgsl;
 
-anon_struct_66 :: struct {
+gsl_multiroot_fsolver_type :: struct {
     name:    *u8;
     size:    size_t;
     alloc:   #type (a0: *void, a1: size_t) -> s32 #c_call;
@@ -2442,10 +3788,24 @@ anon_struct_66 :: struct {
     iterate: #type (a0: *void, a1: *gsl_multiroot_function, a2: *gsl_vector, a3: *gsl_vector, a4: *gsl_vector) -> s32 #c_call;
     free:    #type (a0: *void) -> void #c_call;
 }
+#run {
+    instance: gsl_multiroot_fsolver_type;
+    assert(((cast(*void)(*instance.name)) - cast(*void)(*instance)) == 0, "gsl_multiroot_fsolver_type.name has unexpected offset % instead of 0", ((cast(*void)(*instance.name)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fsolver_type.name)) == 8, "gsl_multiroot_fsolver_type.name has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fsolver_type.name)));
+    assert(((cast(*void)(*instance.size)) - cast(*void)(*instance)) == 8, "gsl_multiroot_fsolver_type.size has unexpected offset % instead of 8", ((cast(*void)(*instance.size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fsolver_type.size)) == 8, "gsl_multiroot_fsolver_type.size has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fsolver_type.size)));
+    assert(((cast(*void)(*instance.alloc)) - cast(*void)(*instance)) == 16, "gsl_multiroot_fsolver_type.alloc has unexpected offset % instead of 16", ((cast(*void)(*instance.alloc)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fsolver_type.alloc)) == 8, "gsl_multiroot_fsolver_type.alloc has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fsolver_type.alloc)));
+    assert(((cast(*void)(*instance.set)) - cast(*void)(*instance)) == 24, "gsl_multiroot_fsolver_type.set has unexpected offset % instead of 24", ((cast(*void)(*instance.set)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fsolver_type.set)) == 8, "gsl_multiroot_fsolver_type.set has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fsolver_type.set)));
+    assert(((cast(*void)(*instance.iterate)) - cast(*void)(*instance)) == 32, "gsl_multiroot_fsolver_type.iterate has unexpected offset % instead of 32", ((cast(*void)(*instance.iterate)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fsolver_type.iterate)) == 8, "gsl_multiroot_fsolver_type.iterate has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fsolver_type.iterate)));
+    assert(((cast(*void)(*instance.free)) - cast(*void)(*instance)) == 40, "gsl_multiroot_fsolver_type.free has unexpected offset % instead of 40", ((cast(*void)(*instance.free)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fsolver_type.free)) == 8, "gsl_multiroot_fsolver_type.free has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fsolver_type.free)));
+    assert(size_of(gsl_multiroot_fsolver_type) == 48, "gsl_multiroot_fsolver_type has size % instead of 48", size_of(gsl_multiroot_fsolver_type));
+}
 
-gsl_multiroot_fsolver_type :: anon_struct_66;
-
-anon_struct_67 :: struct {
+gsl_multiroot_fsolver :: struct {
     type:     *gsl_multiroot_fsolver_type;
     function: *gsl_multiroot_function;
     x:        *gsl_vector;
@@ -2453,8 +3813,22 @@ anon_struct_67 :: struct {
     dx:       *gsl_vector;
     state:    *void;
 }
-
-gsl_multiroot_fsolver :: anon_struct_67;
+#run {
+    instance: gsl_multiroot_fsolver;
+    assert(((cast(*void)(*instance.type)) - cast(*void)(*instance)) == 0, "gsl_multiroot_fsolver.type has unexpected offset % instead of 0", ((cast(*void)(*instance.type)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fsolver.type)) == 8, "gsl_multiroot_fsolver.type has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fsolver.type)));
+    assert(((cast(*void)(*instance.function)) - cast(*void)(*instance)) == 8, "gsl_multiroot_fsolver.function has unexpected offset % instead of 8", ((cast(*void)(*instance.function)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fsolver.function)) == 8, "gsl_multiroot_fsolver.function has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fsolver.function)));
+    assert(((cast(*void)(*instance.x)) - cast(*void)(*instance)) == 16, "gsl_multiroot_fsolver.x has unexpected offset % instead of 16", ((cast(*void)(*instance.x)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fsolver.x)) == 8, "gsl_multiroot_fsolver.x has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fsolver.x)));
+    assert(((cast(*void)(*instance.f)) - cast(*void)(*instance)) == 24, "gsl_multiroot_fsolver.f has unexpected offset % instead of 24", ((cast(*void)(*instance.f)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fsolver.f)) == 8, "gsl_multiroot_fsolver.f has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fsolver.f)));
+    assert(((cast(*void)(*instance.dx)) - cast(*void)(*instance)) == 32, "gsl_multiroot_fsolver.dx has unexpected offset % instead of 32", ((cast(*void)(*instance.dx)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fsolver.dx)) == 8, "gsl_multiroot_fsolver.dx has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fsolver.dx)));
+    assert(((cast(*void)(*instance.state)) - cast(*void)(*instance)) == 40, "gsl_multiroot_fsolver.state has unexpected offset % instead of 40", ((cast(*void)(*instance.state)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fsolver.state)) == 8, "gsl_multiroot_fsolver.state has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fsolver.state)));
+    assert(size_of(gsl_multiroot_fsolver) == 48, "gsl_multiroot_fsolver has size % instead of 48", size_of(gsl_multiroot_fsolver));
+}
 
 gsl_multiroot_fsolver_alloc :: (T: *gsl_multiroot_fsolver_type, n: size_t) -> *gsl_multiroot_fsolver #foreign libgsl;
 
@@ -2469,6 +3843,8 @@ gsl_multiroot_fsolver_root :: (s: *gsl_multiroot_fsolver) -> *gsl_vector #foreig
 gsl_multiroot_fsolver_dx :: (s: *gsl_multiroot_fsolver) -> *gsl_vector #foreign libgsl;
 gsl_multiroot_fsolver_f :: (s: *gsl_multiroot_fsolver) -> *gsl_vector #foreign libgsl;
 
+/* Definition of vector-valued functions and gradient with parameters
+based on gsl_vector */
 gsl_multiroot_function_fdf_struct :: struct {
     f:      #type (a0: *gsl_vector, a1: *void, a2: *gsl_vector) -> s32 #c_call;
     df:     #type (a0: *gsl_vector, a1: *void, a2: *gsl_matrix) -> s32 #c_call;
@@ -2476,10 +3852,24 @@ gsl_multiroot_function_fdf_struct :: struct {
     n:      size_t;
     params: *void;
 }
+#run {
+    instance: gsl_multiroot_function_fdf_struct;
+    assert(((cast(*void)(*instance.f)) - cast(*void)(*instance)) == 0, "gsl_multiroot_function_fdf_struct.f has unexpected offset % instead of 0", ((cast(*void)(*instance.f)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_function_fdf_struct.f)) == 8, "gsl_multiroot_function_fdf_struct.f has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_function_fdf_struct.f)));
+    assert(((cast(*void)(*instance.df)) - cast(*void)(*instance)) == 8, "gsl_multiroot_function_fdf_struct.df has unexpected offset % instead of 8", ((cast(*void)(*instance.df)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_function_fdf_struct.df)) == 8, "gsl_multiroot_function_fdf_struct.df has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_function_fdf_struct.df)));
+    assert(((cast(*void)(*instance.fdf)) - cast(*void)(*instance)) == 16, "gsl_multiroot_function_fdf_struct.fdf has unexpected offset % instead of 16", ((cast(*void)(*instance.fdf)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_function_fdf_struct.fdf)) == 8, "gsl_multiroot_function_fdf_struct.fdf has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_function_fdf_struct.fdf)));
+    assert(((cast(*void)(*instance.n)) - cast(*void)(*instance)) == 24, "gsl_multiroot_function_fdf_struct.n has unexpected offset % instead of 24", ((cast(*void)(*instance.n)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_function_fdf_struct.n)) == 8, "gsl_multiroot_function_fdf_struct.n has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_function_fdf_struct.n)));
+    assert(((cast(*void)(*instance.params)) - cast(*void)(*instance)) == 32, "gsl_multiroot_function_fdf_struct.params has unexpected offset % instead of 32", ((cast(*void)(*instance.params)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_function_fdf_struct.params)) == 8, "gsl_multiroot_function_fdf_struct.params has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_function_fdf_struct.params)));
+    assert(size_of(gsl_multiroot_function_fdf_struct) == 40, "gsl_multiroot_function_fdf_struct has size % instead of 40", size_of(gsl_multiroot_function_fdf_struct));
+}
 
 gsl_multiroot_function_fdf :: gsl_multiroot_function_fdf_struct;
 
-anon_struct_68 :: struct {
+gsl_multiroot_fdfsolver_type :: struct {
     name:    *u8;
     size:    size_t;
     alloc:   #type (a0: *void, a1: size_t) -> s32 #c_call;
@@ -2487,10 +3877,24 @@ anon_struct_68 :: struct {
     iterate: #type (a0: *void, a1: *gsl_multiroot_function_fdf, a2: *gsl_vector, a3: *gsl_vector, a4: *gsl_matrix, a5: *gsl_vector) -> s32 #c_call;
     free:    #type (a0: *void) -> void #c_call;
 }
+#run {
+    instance: gsl_multiroot_fdfsolver_type;
+    assert(((cast(*void)(*instance.name)) - cast(*void)(*instance)) == 0, "gsl_multiroot_fdfsolver_type.name has unexpected offset % instead of 0", ((cast(*void)(*instance.name)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fdfsolver_type.name)) == 8, "gsl_multiroot_fdfsolver_type.name has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fdfsolver_type.name)));
+    assert(((cast(*void)(*instance.size)) - cast(*void)(*instance)) == 8, "gsl_multiroot_fdfsolver_type.size has unexpected offset % instead of 8", ((cast(*void)(*instance.size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fdfsolver_type.size)) == 8, "gsl_multiroot_fdfsolver_type.size has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fdfsolver_type.size)));
+    assert(((cast(*void)(*instance.alloc)) - cast(*void)(*instance)) == 16, "gsl_multiroot_fdfsolver_type.alloc has unexpected offset % instead of 16", ((cast(*void)(*instance.alloc)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fdfsolver_type.alloc)) == 8, "gsl_multiroot_fdfsolver_type.alloc has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fdfsolver_type.alloc)));
+    assert(((cast(*void)(*instance.set)) - cast(*void)(*instance)) == 24, "gsl_multiroot_fdfsolver_type.set has unexpected offset % instead of 24", ((cast(*void)(*instance.set)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fdfsolver_type.set)) == 8, "gsl_multiroot_fdfsolver_type.set has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fdfsolver_type.set)));
+    assert(((cast(*void)(*instance.iterate)) - cast(*void)(*instance)) == 32, "gsl_multiroot_fdfsolver_type.iterate has unexpected offset % instead of 32", ((cast(*void)(*instance.iterate)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fdfsolver_type.iterate)) == 8, "gsl_multiroot_fdfsolver_type.iterate has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fdfsolver_type.iterate)));
+    assert(((cast(*void)(*instance.free)) - cast(*void)(*instance)) == 40, "gsl_multiroot_fdfsolver_type.free has unexpected offset % instead of 40", ((cast(*void)(*instance.free)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fdfsolver_type.free)) == 8, "gsl_multiroot_fdfsolver_type.free has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fdfsolver_type.free)));
+    assert(size_of(gsl_multiroot_fdfsolver_type) == 48, "gsl_multiroot_fdfsolver_type has size % instead of 48", size_of(gsl_multiroot_fdfsolver_type));
+}
 
-gsl_multiroot_fdfsolver_type :: anon_struct_68;
-
-anon_struct_69 :: struct {
+gsl_multiroot_fdfsolver :: struct {
     type:  *gsl_multiroot_fdfsolver_type;
     fdf:   *gsl_multiroot_function_fdf;
     x:     *gsl_vector;
@@ -2499,8 +3903,24 @@ anon_struct_69 :: struct {
     dx:    *gsl_vector;
     state: *void;
 }
-
-gsl_multiroot_fdfsolver :: anon_struct_69;
+#run {
+    instance: gsl_multiroot_fdfsolver;
+    assert(((cast(*void)(*instance.type)) - cast(*void)(*instance)) == 0, "gsl_multiroot_fdfsolver.type has unexpected offset % instead of 0", ((cast(*void)(*instance.type)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fdfsolver.type)) == 8, "gsl_multiroot_fdfsolver.type has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fdfsolver.type)));
+    assert(((cast(*void)(*instance.fdf)) - cast(*void)(*instance)) == 8, "gsl_multiroot_fdfsolver.fdf has unexpected offset % instead of 8", ((cast(*void)(*instance.fdf)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fdfsolver.fdf)) == 8, "gsl_multiroot_fdfsolver.fdf has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fdfsolver.fdf)));
+    assert(((cast(*void)(*instance.x)) - cast(*void)(*instance)) == 16, "gsl_multiroot_fdfsolver.x has unexpected offset % instead of 16", ((cast(*void)(*instance.x)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fdfsolver.x)) == 8, "gsl_multiroot_fdfsolver.x has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fdfsolver.x)));
+    assert(((cast(*void)(*instance.f)) - cast(*void)(*instance)) == 24, "gsl_multiroot_fdfsolver.f has unexpected offset % instead of 24", ((cast(*void)(*instance.f)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fdfsolver.f)) == 8, "gsl_multiroot_fdfsolver.f has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fdfsolver.f)));
+    assert(((cast(*void)(*instance.J)) - cast(*void)(*instance)) == 32, "gsl_multiroot_fdfsolver.J has unexpected offset % instead of 32", ((cast(*void)(*instance.J)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fdfsolver.J)) == 8, "gsl_multiroot_fdfsolver.J has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fdfsolver.J)));
+    assert(((cast(*void)(*instance.dx)) - cast(*void)(*instance)) == 40, "gsl_multiroot_fdfsolver.dx has unexpected offset % instead of 40", ((cast(*void)(*instance.dx)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fdfsolver.dx)) == 8, "gsl_multiroot_fdfsolver.dx has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fdfsolver.dx)));
+    assert(((cast(*void)(*instance.state)) - cast(*void)(*instance)) == 48, "gsl_multiroot_fdfsolver.state has unexpected offset % instead of 48", ((cast(*void)(*instance.state)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multiroot_fdfsolver.state)) == 8, "gsl_multiroot_fdfsolver.state has unexpected size % instead of 8", size_of(type_of(gsl_multiroot_fdfsolver.state)));
+    assert(size_of(gsl_multiroot_fdfsolver) == 56, "gsl_multiroot_fdfsolver has size % instead of 56", size_of(gsl_multiroot_fdfsolver));
+}
 
 gsl_multiroot_fdfsolver_alloc :: (T: *gsl_multiroot_fdfsolver_type, n: size_t) -> *gsl_multiroot_fdfsolver #foreign libgsl;
 
@@ -2519,24 +3939,38 @@ gsl_multiroot_test_delta :: (dx: *gsl_vector, x: *gsl_vector, epsabs: float64, e
 
 gsl_multiroot_test_residual :: (f: *gsl_vector, epsabs: float64) -> s32 #foreign libgsl;
 
-gsl_multiroot_fsolver_dnewton_: *gsl_multiroot_fsolver_type;
-gsl_multiroot_fsolver_broyden_: *gsl_multiroot_fsolver_type;
-gsl_multiroot_fsolver_hybrid_: *gsl_multiroot_fsolver_type;
-gsl_multiroot_fsolver_hybrids_: *gsl_multiroot_fsolver_type;
+gsl_multiroot_fsolver_dnewton: *gsl_multiroot_fsolver_type;
+gsl_multiroot_fsolver_broyden: *gsl_multiroot_fsolver_type;
+gsl_multiroot_fsolver_hybrid: *gsl_multiroot_fsolver_type;
+gsl_multiroot_fsolver_hybrids: *gsl_multiroot_fsolver_type;
 
-gsl_multiroot_fdfsolver_newton_: *gsl_multiroot_fdfsolver_type;
-gsl_multiroot_fdfsolver_gnewton_: *gsl_multiroot_fdfsolver_type;
-gsl_multiroot_fdfsolver_hybridj_: *gsl_multiroot_fdfsolver_type;
-gsl_multiroot_fdfsolver_hybridsj_: *gsl_multiroot_fdfsolver_type;
+gsl_multiroot_fdfsolver_newton: *gsl_multiroot_fdfsolver_type;
+gsl_multiroot_fdfsolver_gnewton: *gsl_multiroot_fdfsolver_type;
+gsl_multiroot_fdfsolver_hybridj: *gsl_multiroot_fdfsolver_type;
+gsl_multiroot_fdfsolver_hybridsj: *gsl_multiroot_fdfsolver_type;
 
+/* Definition of an arbitrary real-valued function with gsl_vector input and */
+/* parameters */
 gsl_multimin_function_struct :: struct {
     f:      #type (a0: *gsl_vector, a1: *void) -> float64 #c_call;
     n:      size_t;
     params: *void;
 }
+#run {
+    instance: gsl_multimin_function_struct;
+    assert(((cast(*void)(*instance.f)) - cast(*void)(*instance)) == 0, "gsl_multimin_function_struct.f has unexpected offset % instead of 0", ((cast(*void)(*instance.f)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_function_struct.f)) == 8, "gsl_multimin_function_struct.f has unexpected size % instead of 8", size_of(type_of(gsl_multimin_function_struct.f)));
+    assert(((cast(*void)(*instance.n)) - cast(*void)(*instance)) == 8, "gsl_multimin_function_struct.n has unexpected offset % instead of 8", ((cast(*void)(*instance.n)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_function_struct.n)) == 8, "gsl_multimin_function_struct.n has unexpected size % instead of 8", size_of(type_of(gsl_multimin_function_struct.n)));
+    assert(((cast(*void)(*instance.params)) - cast(*void)(*instance)) == 16, "gsl_multimin_function_struct.params has unexpected offset % instead of 16", ((cast(*void)(*instance.params)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_function_struct.params)) == 8, "gsl_multimin_function_struct.params has unexpected size % instead of 8", size_of(type_of(gsl_multimin_function_struct.params)));
+    assert(size_of(gsl_multimin_function_struct) == 24, "gsl_multimin_function_struct has size % instead of 24", size_of(gsl_multimin_function_struct));
+}
 
 gsl_multimin_function :: gsl_multimin_function_struct;
 
+/* Definition of an arbitrary differentiable real-valued function */
+/* with gsl_vector input and parameters */
 gsl_multimin_function_fdf_struct :: struct {
     f:      #type (a0: *gsl_vector, a1: *void) -> float64 #c_call;
     df:     #type (a0: *gsl_vector, a1: *void, a2: *gsl_vector) -> void #c_call;
@@ -2544,12 +3978,27 @@ gsl_multimin_function_fdf_struct :: struct {
     n:      size_t;
     params: *void;
 }
+#run {
+    instance: gsl_multimin_function_fdf_struct;
+    assert(((cast(*void)(*instance.f)) - cast(*void)(*instance)) == 0, "gsl_multimin_function_fdf_struct.f has unexpected offset % instead of 0", ((cast(*void)(*instance.f)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_function_fdf_struct.f)) == 8, "gsl_multimin_function_fdf_struct.f has unexpected size % instead of 8", size_of(type_of(gsl_multimin_function_fdf_struct.f)));
+    assert(((cast(*void)(*instance.df)) - cast(*void)(*instance)) == 8, "gsl_multimin_function_fdf_struct.df has unexpected offset % instead of 8", ((cast(*void)(*instance.df)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_function_fdf_struct.df)) == 8, "gsl_multimin_function_fdf_struct.df has unexpected size % instead of 8", size_of(type_of(gsl_multimin_function_fdf_struct.df)));
+    assert(((cast(*void)(*instance.fdf)) - cast(*void)(*instance)) == 16, "gsl_multimin_function_fdf_struct.fdf has unexpected offset % instead of 16", ((cast(*void)(*instance.fdf)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_function_fdf_struct.fdf)) == 8, "gsl_multimin_function_fdf_struct.fdf has unexpected size % instead of 8", size_of(type_of(gsl_multimin_function_fdf_struct.fdf)));
+    assert(((cast(*void)(*instance.n)) - cast(*void)(*instance)) == 24, "gsl_multimin_function_fdf_struct.n has unexpected offset % instead of 24", ((cast(*void)(*instance.n)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_function_fdf_struct.n)) == 8, "gsl_multimin_function_fdf_struct.n has unexpected size % instead of 8", size_of(type_of(gsl_multimin_function_fdf_struct.n)));
+    assert(((cast(*void)(*instance.params)) - cast(*void)(*instance)) == 32, "gsl_multimin_function_fdf_struct.params has unexpected offset % instead of 32", ((cast(*void)(*instance.params)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_function_fdf_struct.params)) == 8, "gsl_multimin_function_fdf_struct.params has unexpected size % instead of 8", size_of(type_of(gsl_multimin_function_fdf_struct.params)));
+    assert(size_of(gsl_multimin_function_fdf_struct) == 40, "gsl_multimin_function_fdf_struct has size % instead of 40", size_of(gsl_multimin_function_fdf_struct));
+}
 
 gsl_multimin_function_fdf :: gsl_multimin_function_fdf_struct;
 
 gsl_multimin_diff :: (f: *gsl_multimin_function, x: *gsl_vector, g: *gsl_vector) -> s32 #foreign libgsl;
 
-anon_struct_70 :: struct {
+/* minimization of non-differentiable functions */
+gsl_multimin_fminimizer_type :: struct {
     name:    *u8;
     size:    size_t;
     alloc:   #type (a0: *void, a1: size_t) -> s32 #c_call;
@@ -2559,10 +4008,25 @@ anon_struct_70 :: struct {
 
     free:    #type (a0: *void) -> void #c_call;
 }
+#run {
+    instance: gsl_multimin_fminimizer_type;
+    assert(((cast(*void)(*instance.name)) - cast(*void)(*instance)) == 0, "gsl_multimin_fminimizer_type.name has unexpected offset % instead of 0", ((cast(*void)(*instance.name)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fminimizer_type.name)) == 8, "gsl_multimin_fminimizer_type.name has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fminimizer_type.name)));
+    assert(((cast(*void)(*instance.size)) - cast(*void)(*instance)) == 8, "gsl_multimin_fminimizer_type.size has unexpected offset % instead of 8", ((cast(*void)(*instance.size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fminimizer_type.size)) == 8, "gsl_multimin_fminimizer_type.size has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fminimizer_type.size)));
+    assert(((cast(*void)(*instance.alloc)) - cast(*void)(*instance)) == 16, "gsl_multimin_fminimizer_type.alloc has unexpected offset % instead of 16", ((cast(*void)(*instance.alloc)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fminimizer_type.alloc)) == 8, "gsl_multimin_fminimizer_type.alloc has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fminimizer_type.alloc)));
+    assert(((cast(*void)(*instance.set)) - cast(*void)(*instance)) == 24, "gsl_multimin_fminimizer_type.set has unexpected offset % instead of 24", ((cast(*void)(*instance.set)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fminimizer_type.set)) == 8, "gsl_multimin_fminimizer_type.set has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fminimizer_type.set)));
+    assert(((cast(*void)(*instance.iterate)) - cast(*void)(*instance)) == 32, "gsl_multimin_fminimizer_type.iterate has unexpected offset % instead of 32", ((cast(*void)(*instance.iterate)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fminimizer_type.iterate)) == 8, "gsl_multimin_fminimizer_type.iterate has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fminimizer_type.iterate)));
+    assert(((cast(*void)(*instance.free)) - cast(*void)(*instance)) == 40, "gsl_multimin_fminimizer_type.free has unexpected offset % instead of 40", ((cast(*void)(*instance.free)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fminimizer_type.free)) == 8, "gsl_multimin_fminimizer_type.free has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fminimizer_type.free)));
+    assert(size_of(gsl_multimin_fminimizer_type) == 48, "gsl_multimin_fminimizer_type has size % instead of 48", size_of(gsl_multimin_fminimizer_type));
+}
 
-gsl_multimin_fminimizer_type :: anon_struct_70;
-
-anon_struct_71 :: struct {
+gsl_multimin_fminimizer :: struct {
+    /* multi dimensional part */
     type:  *gsl_multimin_fminimizer_type;
     f:     *gsl_multimin_function;
 
@@ -2573,8 +4037,22 @@ anon_struct_71 :: struct {
 
     state: *void;
 }
-
-gsl_multimin_fminimizer :: anon_struct_71;
+#run {
+    instance: gsl_multimin_fminimizer;
+    assert(((cast(*void)(*instance.type)) - cast(*void)(*instance)) == 0, "gsl_multimin_fminimizer.type has unexpected offset % instead of 0", ((cast(*void)(*instance.type)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fminimizer.type)) == 8, "gsl_multimin_fminimizer.type has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fminimizer.type)));
+    assert(((cast(*void)(*instance.f)) - cast(*void)(*instance)) == 8, "gsl_multimin_fminimizer.f has unexpected offset % instead of 8", ((cast(*void)(*instance.f)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fminimizer.f)) == 8, "gsl_multimin_fminimizer.f has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fminimizer.f)));
+    assert(((cast(*void)(*instance.fval)) - cast(*void)(*instance)) == 16, "gsl_multimin_fminimizer.fval has unexpected offset % instead of 16", ((cast(*void)(*instance.fval)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fminimizer.fval)) == 8, "gsl_multimin_fminimizer.fval has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fminimizer.fval)));
+    assert(((cast(*void)(*instance.x)) - cast(*void)(*instance)) == 24, "gsl_multimin_fminimizer.x has unexpected offset % instead of 24", ((cast(*void)(*instance.x)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fminimizer.x)) == 8, "gsl_multimin_fminimizer.x has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fminimizer.x)));
+    assert(((cast(*void)(*instance.size)) - cast(*void)(*instance)) == 32, "gsl_multimin_fminimizer.size has unexpected offset % instead of 32", ((cast(*void)(*instance.size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fminimizer.size)) == 8, "gsl_multimin_fminimizer.size has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fminimizer.size)));
+    assert(((cast(*void)(*instance.state)) - cast(*void)(*instance)) == 40, "gsl_multimin_fminimizer.state has unexpected offset % instead of 40", ((cast(*void)(*instance.state)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fminimizer.state)) == 8, "gsl_multimin_fminimizer.state has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fminimizer.state)));
+    assert(size_of(gsl_multimin_fminimizer) == 48, "gsl_multimin_fminimizer has size % instead of 48", size_of(gsl_multimin_fminimizer));
+}
 
 gsl_multimin_fminimizer_alloc :: (T: *gsl_multimin_fminimizer_type, n: size_t) -> *gsl_multimin_fminimizer #foreign libgsl;
 
@@ -2592,11 +4070,13 @@ gsl_multimin_fminimizer_minimum :: (s: *gsl_multimin_fminimizer) -> float64 #for
 
 gsl_multimin_fminimizer_size :: (s: *gsl_multimin_fminimizer) -> float64 #foreign libgsl;
 
+/* Convergence test functions */
 gsl_multimin_test_gradient :: (g: *gsl_vector, epsabs: float64) -> s32 #foreign libgsl;
 
 gsl_multimin_test_size :: (size: float64, epsabs: float64) -> s32 #foreign libgsl;
 
-anon_struct_72 :: struct {
+/* minimisation of differentiable functions */
+gsl_multimin_fdfminimizer_type :: struct {
     name:    *u8;
     size:    size_t;
     alloc:   #type (a0: *void, a1: size_t) -> s32 #c_call;
@@ -2607,10 +4087,27 @@ anon_struct_72 :: struct {
     restart: #type (a0: *void) -> s32 #c_call;
     free:    #type (a0: *void) -> void #c_call;
 }
+#run {
+    instance: gsl_multimin_fdfminimizer_type;
+    assert(((cast(*void)(*instance.name)) - cast(*void)(*instance)) == 0, "gsl_multimin_fdfminimizer_type.name has unexpected offset % instead of 0", ((cast(*void)(*instance.name)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fdfminimizer_type.name)) == 8, "gsl_multimin_fdfminimizer_type.name has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fdfminimizer_type.name)));
+    assert(((cast(*void)(*instance.size)) - cast(*void)(*instance)) == 8, "gsl_multimin_fdfminimizer_type.size has unexpected offset % instead of 8", ((cast(*void)(*instance.size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fdfminimizer_type.size)) == 8, "gsl_multimin_fdfminimizer_type.size has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fdfminimizer_type.size)));
+    assert(((cast(*void)(*instance.alloc)) - cast(*void)(*instance)) == 16, "gsl_multimin_fdfminimizer_type.alloc has unexpected offset % instead of 16", ((cast(*void)(*instance.alloc)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fdfminimizer_type.alloc)) == 8, "gsl_multimin_fdfminimizer_type.alloc has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fdfminimizer_type.alloc)));
+    assert(((cast(*void)(*instance.set)) - cast(*void)(*instance)) == 24, "gsl_multimin_fdfminimizer_type.set has unexpected offset % instead of 24", ((cast(*void)(*instance.set)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fdfminimizer_type.set)) == 8, "gsl_multimin_fdfminimizer_type.set has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fdfminimizer_type.set)));
+    assert(((cast(*void)(*instance.iterate)) - cast(*void)(*instance)) == 32, "gsl_multimin_fdfminimizer_type.iterate has unexpected offset % instead of 32", ((cast(*void)(*instance.iterate)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fdfminimizer_type.iterate)) == 8, "gsl_multimin_fdfminimizer_type.iterate has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fdfminimizer_type.iterate)));
+    assert(((cast(*void)(*instance.restart)) - cast(*void)(*instance)) == 40, "gsl_multimin_fdfminimizer_type.restart has unexpected offset % instead of 40", ((cast(*void)(*instance.restart)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fdfminimizer_type.restart)) == 8, "gsl_multimin_fdfminimizer_type.restart has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fdfminimizer_type.restart)));
+    assert(((cast(*void)(*instance.free)) - cast(*void)(*instance)) == 48, "gsl_multimin_fdfminimizer_type.free has unexpected offset % instead of 48", ((cast(*void)(*instance.free)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fdfminimizer_type.free)) == 8, "gsl_multimin_fdfminimizer_type.free has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fdfminimizer_type.free)));
+    assert(size_of(gsl_multimin_fdfminimizer_type) == 56, "gsl_multimin_fdfminimizer_type has size % instead of 56", size_of(gsl_multimin_fdfminimizer_type));
+}
 
-gsl_multimin_fdfminimizer_type :: anon_struct_72;
-
-anon_struct_73 :: struct {
+gsl_multimin_fdfminimizer :: struct {
+    /* multi dimensional part */
     type:     *gsl_multimin_fdfminimizer_type;
     fdf:      *gsl_multimin_function_fdf;
 
@@ -2621,8 +4118,24 @@ anon_struct_73 :: struct {
 
     state:    *void;
 }
-
-gsl_multimin_fdfminimizer :: anon_struct_73;
+#run {
+    instance: gsl_multimin_fdfminimizer;
+    assert(((cast(*void)(*instance.type)) - cast(*void)(*instance)) == 0, "gsl_multimin_fdfminimizer.type has unexpected offset % instead of 0", ((cast(*void)(*instance.type)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fdfminimizer.type)) == 8, "gsl_multimin_fdfminimizer.type has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fdfminimizer.type)));
+    assert(((cast(*void)(*instance.fdf)) - cast(*void)(*instance)) == 8, "gsl_multimin_fdfminimizer.fdf has unexpected offset % instead of 8", ((cast(*void)(*instance.fdf)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fdfminimizer.fdf)) == 8, "gsl_multimin_fdfminimizer.fdf has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fdfminimizer.fdf)));
+    assert(((cast(*void)(*instance.f)) - cast(*void)(*instance)) == 16, "gsl_multimin_fdfminimizer.f has unexpected offset % instead of 16", ((cast(*void)(*instance.f)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fdfminimizer.f)) == 8, "gsl_multimin_fdfminimizer.f has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fdfminimizer.f)));
+    assert(((cast(*void)(*instance.x)) - cast(*void)(*instance)) == 24, "gsl_multimin_fdfminimizer.x has unexpected offset % instead of 24", ((cast(*void)(*instance.x)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fdfminimizer.x)) == 8, "gsl_multimin_fdfminimizer.x has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fdfminimizer.x)));
+    assert(((cast(*void)(*instance.gradient)) - cast(*void)(*instance)) == 32, "gsl_multimin_fdfminimizer.gradient has unexpected offset % instead of 32", ((cast(*void)(*instance.gradient)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fdfminimizer.gradient)) == 8, "gsl_multimin_fdfminimizer.gradient has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fdfminimizer.gradient)));
+    assert(((cast(*void)(*instance.dx)) - cast(*void)(*instance)) == 40, "gsl_multimin_fdfminimizer.dx has unexpected offset % instead of 40", ((cast(*void)(*instance.dx)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fdfminimizer.dx)) == 8, "gsl_multimin_fdfminimizer.dx has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fdfminimizer.dx)));
+    assert(((cast(*void)(*instance.state)) - cast(*void)(*instance)) == 48, "gsl_multimin_fdfminimizer.state has unexpected offset % instead of 48", ((cast(*void)(*instance.state)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multimin_fdfminimizer.state)) == 8, "gsl_multimin_fdfminimizer.state has unexpected size % instead of 8", size_of(type_of(gsl_multimin_fdfminimizer.state)));
+    assert(size_of(gsl_multimin_fdfminimizer) == 56, "gsl_multimin_fdfminimizer has size % instead of 56", size_of(gsl_multimin_fdfminimizer));
+}
 
 gsl_multimin_fdfminimizer_alloc :: (T: *gsl_multimin_fdfminimizer_type, n: size_t) -> *gsl_multimin_fdfminimizer #foreign libgsl;
 
@@ -2644,14 +4157,14 @@ gsl_multimin_fdfminimizer_gradient :: (s: *gsl_multimin_fdfminimizer) -> *gsl_ve
 
 gsl_multimin_fdfminimizer_minimum :: (s: *gsl_multimin_fdfminimizer) -> float64 #foreign libgsl;
 
-gsl_multimin_fdfminimizer_steepest_descent_: *gsl_multimin_fdfminimizer_type;
-gsl_multimin_fdfminimizer_conjugate_pr_: *gsl_multimin_fdfminimizer_type;
-gsl_multimin_fdfminimizer_conjugate_fr_: *gsl_multimin_fdfminimizer_type;
-gsl_multimin_fdfminimizer_vector_bfgs_: *gsl_multimin_fdfminimizer_type;
-gsl_multimin_fdfminimizer_vector_bfgs2_: *gsl_multimin_fdfminimizer_type;
-gsl_multimin_fminimizer_nmsimplex_: *gsl_multimin_fminimizer_type;
-gsl_multimin_fminimizer_nmsimplex2_: *gsl_multimin_fminimizer_type;
-gsl_multimin_fminimizer_nmsimplex2rand_: *gsl_multimin_fminimizer_type;
+gsl_multimin_fdfminimizer_steepest_descent: *gsl_multimin_fdfminimizer_type;
+gsl_multimin_fdfminimizer_conjugate_pr: *gsl_multimin_fdfminimizer_type;
+gsl_multimin_fdfminimizer_conjugate_fr: *gsl_multimin_fdfminimizer_type;
+gsl_multimin_fdfminimizer_vector_bfgs: *gsl_multimin_fdfminimizer_type;
+gsl_multimin_fdfminimizer_vector_bfgs2: *gsl_multimin_fdfminimizer_type;
+gsl_multimin_fminimizer_nmsimplex: *gsl_multimin_fminimizer_type;
+gsl_multimin_fminimizer_nmsimplex2: *gsl_multimin_fminimizer_type;
+gsl_multimin_fminimizer_nmsimplex2rand: *gsl_multimin_fminimizer_type;
 
 gsl_fit_linear :: (x: *float64, xstride: size_t, y: *float64, ystride: size_t, n: size_t, c0: *float64, c1: *float64, cov00: *float64, cov01: *float64, cov11: *float64, sumsq: *float64) -> s32 #foreign libgsl;
 
@@ -2670,16 +4183,29 @@ gsl_multifit_gradient :: (J: *gsl_matrix, f: *gsl_vector, g: *gsl_vector) -> s32
 gsl_multifit_covar :: (J: *gsl_matrix, epsrel: float64, covar: *gsl_matrix) -> s32 #foreign libgsl;
 gsl_multifit_covar_QRPT :: (r: *gsl_matrix, perm: *gsl_permutation, epsrel: float64, covar: *gsl_matrix) -> s32 #foreign libgsl;
 
+/* Definition of vector-valued functions with parameters based on gsl_vector */
 gsl_multifit_function_struct :: struct {
     f:      #type (a0: *gsl_vector, a1: *void, a2: *gsl_vector) -> s32 #c_call;
-    n:      size_t;
-    p:      size_t;
+    n:      size_t; /* number of functions */
+    p:      size_t; /* number of independent variables */
     params: *void;
+}
+#run {
+    instance: gsl_multifit_function_struct;
+    assert(((cast(*void)(*instance.f)) - cast(*void)(*instance)) == 0, "gsl_multifit_function_struct.f has unexpected offset % instead of 0", ((cast(*void)(*instance.f)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_function_struct.f)) == 8, "gsl_multifit_function_struct.f has unexpected size % instead of 8", size_of(type_of(gsl_multifit_function_struct.f)));
+    assert(((cast(*void)(*instance.n)) - cast(*void)(*instance)) == 8, "gsl_multifit_function_struct.n has unexpected offset % instead of 8", ((cast(*void)(*instance.n)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_function_struct.n)) == 8, "gsl_multifit_function_struct.n has unexpected size % instead of 8", size_of(type_of(gsl_multifit_function_struct.n)));
+    assert(((cast(*void)(*instance.p)) - cast(*void)(*instance)) == 16, "gsl_multifit_function_struct.p has unexpected offset % instead of 16", ((cast(*void)(*instance.p)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_function_struct.p)) == 8, "gsl_multifit_function_struct.p has unexpected size % instead of 8", size_of(type_of(gsl_multifit_function_struct.p)));
+    assert(((cast(*void)(*instance.params)) - cast(*void)(*instance)) == 24, "gsl_multifit_function_struct.params has unexpected offset % instead of 24", ((cast(*void)(*instance.params)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_function_struct.params)) == 8, "gsl_multifit_function_struct.params has unexpected size % instead of 8", size_of(type_of(gsl_multifit_function_struct.params)));
+    assert(size_of(gsl_multifit_function_struct) == 32, "gsl_multifit_function_struct has size % instead of 32", size_of(gsl_multifit_function_struct));
 }
 
 gsl_multifit_function :: gsl_multifit_function_struct;
 
-anon_struct_74 :: struct {
+gsl_multifit_fsolver_type :: struct {
     name:    *u8;
     size:    size_t;
     alloc:   #type (a0: *void, a1: size_t, a2: size_t) -> s32 #c_call;
@@ -2687,10 +4213,24 @@ anon_struct_74 :: struct {
     iterate: #type (a0: *void, a1: *gsl_multifit_function, a2: *gsl_vector, a3: *gsl_vector, a4: *gsl_vector) -> s32 #c_call;
     free:    #type (a0: *void) -> void #c_call;
 }
+#run {
+    instance: gsl_multifit_fsolver_type;
+    assert(((cast(*void)(*instance.name)) - cast(*void)(*instance)) == 0, "gsl_multifit_fsolver_type.name has unexpected offset % instead of 0", ((cast(*void)(*instance.name)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fsolver_type.name)) == 8, "gsl_multifit_fsolver_type.name has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fsolver_type.name)));
+    assert(((cast(*void)(*instance.size)) - cast(*void)(*instance)) == 8, "gsl_multifit_fsolver_type.size has unexpected offset % instead of 8", ((cast(*void)(*instance.size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fsolver_type.size)) == 8, "gsl_multifit_fsolver_type.size has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fsolver_type.size)));
+    assert(((cast(*void)(*instance.alloc)) - cast(*void)(*instance)) == 16, "gsl_multifit_fsolver_type.alloc has unexpected offset % instead of 16", ((cast(*void)(*instance.alloc)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fsolver_type.alloc)) == 8, "gsl_multifit_fsolver_type.alloc has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fsolver_type.alloc)));
+    assert(((cast(*void)(*instance.set)) - cast(*void)(*instance)) == 24, "gsl_multifit_fsolver_type.set has unexpected offset % instead of 24", ((cast(*void)(*instance.set)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fsolver_type.set)) == 8, "gsl_multifit_fsolver_type.set has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fsolver_type.set)));
+    assert(((cast(*void)(*instance.iterate)) - cast(*void)(*instance)) == 32, "gsl_multifit_fsolver_type.iterate has unexpected offset % instead of 32", ((cast(*void)(*instance.iterate)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fsolver_type.iterate)) == 8, "gsl_multifit_fsolver_type.iterate has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fsolver_type.iterate)));
+    assert(((cast(*void)(*instance.free)) - cast(*void)(*instance)) == 40, "gsl_multifit_fsolver_type.free has unexpected offset % instead of 40", ((cast(*void)(*instance.free)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fsolver_type.free)) == 8, "gsl_multifit_fsolver_type.free has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fsolver_type.free)));
+    assert(size_of(gsl_multifit_fsolver_type) == 48, "gsl_multifit_fsolver_type has size % instead of 48", size_of(gsl_multifit_fsolver_type));
+}
 
-gsl_multifit_fsolver_type :: anon_struct_74;
-
-anon_struct_75 :: struct {
+gsl_multifit_fsolver :: struct {
     type:     *gsl_multifit_fsolver_type;
     function: *gsl_multifit_function;
     x:        *gsl_vector;
@@ -2698,8 +4238,22 @@ anon_struct_75 :: struct {
     dx:       *gsl_vector;
     state:    *void;
 }
-
-gsl_multifit_fsolver :: anon_struct_75;
+#run {
+    instance: gsl_multifit_fsolver;
+    assert(((cast(*void)(*instance.type)) - cast(*void)(*instance)) == 0, "gsl_multifit_fsolver.type has unexpected offset % instead of 0", ((cast(*void)(*instance.type)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fsolver.type)) == 8, "gsl_multifit_fsolver.type has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fsolver.type)));
+    assert(((cast(*void)(*instance.function)) - cast(*void)(*instance)) == 8, "gsl_multifit_fsolver.function has unexpected offset % instead of 8", ((cast(*void)(*instance.function)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fsolver.function)) == 8, "gsl_multifit_fsolver.function has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fsolver.function)));
+    assert(((cast(*void)(*instance.x)) - cast(*void)(*instance)) == 16, "gsl_multifit_fsolver.x has unexpected offset % instead of 16", ((cast(*void)(*instance.x)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fsolver.x)) == 8, "gsl_multifit_fsolver.x has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fsolver.x)));
+    assert(((cast(*void)(*instance.f)) - cast(*void)(*instance)) == 24, "gsl_multifit_fsolver.f has unexpected offset % instead of 24", ((cast(*void)(*instance.f)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fsolver.f)) == 8, "gsl_multifit_fsolver.f has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fsolver.f)));
+    assert(((cast(*void)(*instance.dx)) - cast(*void)(*instance)) == 32, "gsl_multifit_fsolver.dx has unexpected offset % instead of 32", ((cast(*void)(*instance.dx)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fsolver.dx)) == 8, "gsl_multifit_fsolver.dx has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fsolver.dx)));
+    assert(((cast(*void)(*instance.state)) - cast(*void)(*instance)) == 40, "gsl_multifit_fsolver.state has unexpected offset % instead of 40", ((cast(*void)(*instance.state)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fsolver.state)) == 8, "gsl_multifit_fsolver.state has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fsolver.state)));
+    assert(size_of(gsl_multifit_fsolver) == 48, "gsl_multifit_fsolver has size % instead of 48", size_of(gsl_multifit_fsolver));
+}
 
 gsl_multifit_fsolver_alloc :: (T: *gsl_multifit_fsolver_type, n: size_t, p: size_t) -> *gsl_multifit_fsolver #foreign libgsl;
 
@@ -2714,20 +4268,42 @@ gsl_multifit_fsolver_driver :: (s: *gsl_multifit_fsolver, maxiter: size_t, epsab
 gsl_multifit_fsolver_name :: (s: *gsl_multifit_fsolver) -> *u8 #foreign libgsl;
 gsl_multifit_fsolver_position :: (s: *gsl_multifit_fsolver) -> *gsl_vector #foreign libgsl;
 
+/* Definition of vector-valued functions and gradient with parameters
+based on gsl_vector */
 gsl_multifit_function_fdf_struct :: struct {
     f:       #type (a0: *gsl_vector, a1: *void, a2: *gsl_vector) -> s32 #c_call;
     df:      #type (a0: *gsl_vector, a1: *void, a2: *gsl_matrix) -> s32 #c_call;
     fdf:     #type (a0: *gsl_vector, a1: *void, a2: *gsl_vector, a3: *gsl_matrix) -> s32 #c_call;
-    n:       size_t;
-    p:       size_t;
-    params:  *void;
-    nevalf:  size_t;
-    nevaldf: size_t;
+    n:       size_t; /* number of functions */
+    p:       size_t; /* number of independent variables */
+    params:  *void; /* user parameters */
+    nevalf:  size_t; /* number of function evaluations */
+    nevaldf: size_t; /* number of Jacobian evaluations */
+}
+#run {
+    instance: gsl_multifit_function_fdf_struct;
+    assert(((cast(*void)(*instance.f)) - cast(*void)(*instance)) == 0, "gsl_multifit_function_fdf_struct.f has unexpected offset % instead of 0", ((cast(*void)(*instance.f)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_function_fdf_struct.f)) == 8, "gsl_multifit_function_fdf_struct.f has unexpected size % instead of 8", size_of(type_of(gsl_multifit_function_fdf_struct.f)));
+    assert(((cast(*void)(*instance.df)) - cast(*void)(*instance)) == 8, "gsl_multifit_function_fdf_struct.df has unexpected offset % instead of 8", ((cast(*void)(*instance.df)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_function_fdf_struct.df)) == 8, "gsl_multifit_function_fdf_struct.df has unexpected size % instead of 8", size_of(type_of(gsl_multifit_function_fdf_struct.df)));
+    assert(((cast(*void)(*instance.fdf)) - cast(*void)(*instance)) == 16, "gsl_multifit_function_fdf_struct.fdf has unexpected offset % instead of 16", ((cast(*void)(*instance.fdf)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_function_fdf_struct.fdf)) == 8, "gsl_multifit_function_fdf_struct.fdf has unexpected size % instead of 8", size_of(type_of(gsl_multifit_function_fdf_struct.fdf)));
+    assert(((cast(*void)(*instance.n)) - cast(*void)(*instance)) == 24, "gsl_multifit_function_fdf_struct.n has unexpected offset % instead of 24", ((cast(*void)(*instance.n)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_function_fdf_struct.n)) == 8, "gsl_multifit_function_fdf_struct.n has unexpected size % instead of 8", size_of(type_of(gsl_multifit_function_fdf_struct.n)));
+    assert(((cast(*void)(*instance.p)) - cast(*void)(*instance)) == 32, "gsl_multifit_function_fdf_struct.p has unexpected offset % instead of 32", ((cast(*void)(*instance.p)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_function_fdf_struct.p)) == 8, "gsl_multifit_function_fdf_struct.p has unexpected size % instead of 8", size_of(type_of(gsl_multifit_function_fdf_struct.p)));
+    assert(((cast(*void)(*instance.params)) - cast(*void)(*instance)) == 40, "gsl_multifit_function_fdf_struct.params has unexpected offset % instead of 40", ((cast(*void)(*instance.params)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_function_fdf_struct.params)) == 8, "gsl_multifit_function_fdf_struct.params has unexpected size % instead of 8", size_of(type_of(gsl_multifit_function_fdf_struct.params)));
+    assert(((cast(*void)(*instance.nevalf)) - cast(*void)(*instance)) == 48, "gsl_multifit_function_fdf_struct.nevalf has unexpected offset % instead of 48", ((cast(*void)(*instance.nevalf)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_function_fdf_struct.nevalf)) == 8, "gsl_multifit_function_fdf_struct.nevalf has unexpected size % instead of 8", size_of(type_of(gsl_multifit_function_fdf_struct.nevalf)));
+    assert(((cast(*void)(*instance.nevaldf)) - cast(*void)(*instance)) == 56, "gsl_multifit_function_fdf_struct.nevaldf has unexpected offset % instead of 56", ((cast(*void)(*instance.nevaldf)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_function_fdf_struct.nevaldf)) == 8, "gsl_multifit_function_fdf_struct.nevaldf has unexpected size % instead of 8", size_of(type_of(gsl_multifit_function_fdf_struct.nevaldf)));
+    assert(size_of(gsl_multifit_function_fdf_struct) == 64, "gsl_multifit_function_fdf_struct has size % instead of 64", size_of(gsl_multifit_function_fdf_struct));
 }
 
 gsl_multifit_function_fdf :: gsl_multifit_function_fdf_struct;
 
-anon_struct_76 :: struct {
+gsl_multifit_fdfsolver_type :: struct {
     name:     *u8;
     size:     size_t;
     alloc:    #type (a0: *void, a1: size_t, a2: size_t) -> s32 #c_call;
@@ -2739,22 +4315,60 @@ anon_struct_76 :: struct {
     jac:      #type (a0: *void, a1: *gsl_matrix) -> s32 #c_call;
     free:     #type (a0: *void) -> void #c_call;
 }
-
-gsl_multifit_fdfsolver_type :: anon_struct_76;
-
-anon_struct_77 :: struct {
-    type:     *gsl_multifit_fdfsolver_type;
-    fdf:      *gsl_multifit_function_fdf;
-    x:        *gsl_vector;
-    f:        *gsl_vector;
-    dx:       *gsl_vector;
-    g:        *gsl_vector;
-    sqrt_wts: *gsl_vector;
-    niter:    size_t;
-    state:    *void;
+#run {
+    instance: gsl_multifit_fdfsolver_type;
+    assert(((cast(*void)(*instance.name)) - cast(*void)(*instance)) == 0, "gsl_multifit_fdfsolver_type.name has unexpected offset % instead of 0", ((cast(*void)(*instance.name)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfsolver_type.name)) == 8, "gsl_multifit_fdfsolver_type.name has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfsolver_type.name)));
+    assert(((cast(*void)(*instance.size)) - cast(*void)(*instance)) == 8, "gsl_multifit_fdfsolver_type.size has unexpected offset % instead of 8", ((cast(*void)(*instance.size)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfsolver_type.size)) == 8, "gsl_multifit_fdfsolver_type.size has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfsolver_type.size)));
+    assert(((cast(*void)(*instance.alloc)) - cast(*void)(*instance)) == 16, "gsl_multifit_fdfsolver_type.alloc has unexpected offset % instead of 16", ((cast(*void)(*instance.alloc)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfsolver_type.alloc)) == 8, "gsl_multifit_fdfsolver_type.alloc has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfsolver_type.alloc)));
+    assert(((cast(*void)(*instance.set)) - cast(*void)(*instance)) == 24, "gsl_multifit_fdfsolver_type.set has unexpected offset % instead of 24", ((cast(*void)(*instance.set)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfsolver_type.set)) == 8, "gsl_multifit_fdfsolver_type.set has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfsolver_type.set)));
+    assert(((cast(*void)(*instance.iterate)) - cast(*void)(*instance)) == 32, "gsl_multifit_fdfsolver_type.iterate has unexpected offset % instead of 32", ((cast(*void)(*instance.iterate)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfsolver_type.iterate)) == 8, "gsl_multifit_fdfsolver_type.iterate has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfsolver_type.iterate)));
+    assert(((cast(*void)(*instance.gradient)) - cast(*void)(*instance)) == 40, "gsl_multifit_fdfsolver_type.gradient has unexpected offset % instead of 40", ((cast(*void)(*instance.gradient)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfsolver_type.gradient)) == 8, "gsl_multifit_fdfsolver_type.gradient has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfsolver_type.gradient)));
+    assert(((cast(*void)(*instance.jac)) - cast(*void)(*instance)) == 48, "gsl_multifit_fdfsolver_type.jac has unexpected offset % instead of 48", ((cast(*void)(*instance.jac)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfsolver_type.jac)) == 8, "gsl_multifit_fdfsolver_type.jac has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfsolver_type.jac)));
+    assert(((cast(*void)(*instance.free)) - cast(*void)(*instance)) == 56, "gsl_multifit_fdfsolver_type.free has unexpected offset % instead of 56", ((cast(*void)(*instance.free)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfsolver_type.free)) == 8, "gsl_multifit_fdfsolver_type.free has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfsolver_type.free)));
+    assert(size_of(gsl_multifit_fdfsolver_type) == 64, "gsl_multifit_fdfsolver_type has size % instead of 64", size_of(gsl_multifit_fdfsolver_type));
 }
 
-gsl_multifit_fdfsolver :: anon_struct_77;
+gsl_multifit_fdfsolver :: struct {
+    type:     *gsl_multifit_fdfsolver_type;
+    fdf:      *gsl_multifit_function_fdf;
+    x:        *gsl_vector; /* parameter values x */
+    f:        *gsl_vector; /* residual vector f(x) */
+    dx:       *gsl_vector; /* step dx */
+    g:        *gsl_vector; /* gradient J^T f */
+    sqrt_wts: *gsl_vector; /* sqrt(wts) */
+    niter:    size_t; /* number of iterations performed */
+    state:    *void;
+}
+#run {
+    instance: gsl_multifit_fdfsolver;
+    assert(((cast(*void)(*instance.type)) - cast(*void)(*instance)) == 0, "gsl_multifit_fdfsolver.type has unexpected offset % instead of 0", ((cast(*void)(*instance.type)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfsolver.type)) == 8, "gsl_multifit_fdfsolver.type has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfsolver.type)));
+    assert(((cast(*void)(*instance.fdf)) - cast(*void)(*instance)) == 8, "gsl_multifit_fdfsolver.fdf has unexpected offset % instead of 8", ((cast(*void)(*instance.fdf)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfsolver.fdf)) == 8, "gsl_multifit_fdfsolver.fdf has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfsolver.fdf)));
+    assert(((cast(*void)(*instance.x)) - cast(*void)(*instance)) == 16, "gsl_multifit_fdfsolver.x has unexpected offset % instead of 16", ((cast(*void)(*instance.x)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfsolver.x)) == 8, "gsl_multifit_fdfsolver.x has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfsolver.x)));
+    assert(((cast(*void)(*instance.f)) - cast(*void)(*instance)) == 24, "gsl_multifit_fdfsolver.f has unexpected offset % instead of 24", ((cast(*void)(*instance.f)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfsolver.f)) == 8, "gsl_multifit_fdfsolver.f has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfsolver.f)));
+    assert(((cast(*void)(*instance.dx)) - cast(*void)(*instance)) == 32, "gsl_multifit_fdfsolver.dx has unexpected offset % instead of 32", ((cast(*void)(*instance.dx)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfsolver.dx)) == 8, "gsl_multifit_fdfsolver.dx has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfsolver.dx)));
+    assert(((cast(*void)(*instance.g)) - cast(*void)(*instance)) == 40, "gsl_multifit_fdfsolver.g has unexpected offset % instead of 40", ((cast(*void)(*instance.g)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfsolver.g)) == 8, "gsl_multifit_fdfsolver.g has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfsolver.g)));
+    assert(((cast(*void)(*instance.sqrt_wts)) - cast(*void)(*instance)) == 48, "gsl_multifit_fdfsolver.sqrt_wts has unexpected offset % instead of 48", ((cast(*void)(*instance.sqrt_wts)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfsolver.sqrt_wts)) == 8, "gsl_multifit_fdfsolver.sqrt_wts has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfsolver.sqrt_wts)));
+    assert(((cast(*void)(*instance.niter)) - cast(*void)(*instance)) == 56, "gsl_multifit_fdfsolver.niter has unexpected offset % instead of 56", ((cast(*void)(*instance.niter)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfsolver.niter)) == 8, "gsl_multifit_fdfsolver.niter has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfsolver.niter)));
+    assert(((cast(*void)(*instance.state)) - cast(*void)(*instance)) == 64, "gsl_multifit_fdfsolver.state has unexpected offset % instead of 64", ((cast(*void)(*instance.state)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfsolver.state)) == 8, "gsl_multifit_fdfsolver.state has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfsolver.state)));
+    assert(size_of(gsl_multifit_fdfsolver) == 72, "gsl_multifit_fdfsolver has size % instead of 72", size_of(gsl_multifit_fdfsolver));
+}
 
 gsl_multifit_fdfsolver_alloc :: (T: *gsl_multifit_fdfsolver_type, n: size_t, p: size_t) -> *gsl_multifit_fdfsolver #foreign libgsl;
 
@@ -2788,20 +4402,42 @@ gsl_multifit_fdfsolver_dif_df :: (x: *gsl_vector, wts: *gsl_vector, fdf: *gsl_mu
 
 gsl_multifit_fdfsolver_dif_fdf :: (x: *gsl_vector, fdf: *gsl_multifit_function_fdf, f: *gsl_vector, J: *gsl_matrix) -> s32 #foreign libgsl;
 
-anon_struct_78 :: struct {
-    n:      size_t;
-    p:      size_t;
-    lambda: float64;
-    L_diag: *gsl_vector;
-    L:      *gsl_matrix;
-    f:      *gsl_vector;
-    wts:    *gsl_vector;
+gsl_multifit_fdfridge :: struct {
+    n:      size_t; /* number of (original) residuals */
+    p:      size_t; /* number of model parameters */
+    lambda: float64; /* damping parameter */
+    L_diag: *gsl_vector; /* diagonal damping matrix or NULL */
+    L:      *gsl_matrix; /* general damping matrix or NULL */
+    f:      *gsl_vector; /* function values for finite diff J */
+    wts:    *gsl_vector; /* weight vector for augmented system */
     s:      *gsl_multifit_fdfsolver;
-    fdf:    *gsl_multifit_function_fdf;
-    fdftik: gsl_multifit_function_fdf;
+    fdf:    *gsl_multifit_function_fdf; /* user defined fdf */
+    fdftik: gsl_multifit_function_fdf; /* Tikhonov modified fdf */
 }
-
-gsl_multifit_fdfridge :: anon_struct_78;
+#run {
+    instance: gsl_multifit_fdfridge;
+    assert(((cast(*void)(*instance.n)) - cast(*void)(*instance)) == 0, "gsl_multifit_fdfridge.n has unexpected offset % instead of 0", ((cast(*void)(*instance.n)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfridge.n)) == 8, "gsl_multifit_fdfridge.n has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfridge.n)));
+    assert(((cast(*void)(*instance.p)) - cast(*void)(*instance)) == 8, "gsl_multifit_fdfridge.p has unexpected offset % instead of 8", ((cast(*void)(*instance.p)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfridge.p)) == 8, "gsl_multifit_fdfridge.p has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfridge.p)));
+    assert(((cast(*void)(*instance.lambda)) - cast(*void)(*instance)) == 16, "gsl_multifit_fdfridge.lambda has unexpected offset % instead of 16", ((cast(*void)(*instance.lambda)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfridge.lambda)) == 8, "gsl_multifit_fdfridge.lambda has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfridge.lambda)));
+    assert(((cast(*void)(*instance.L_diag)) - cast(*void)(*instance)) == 24, "gsl_multifit_fdfridge.L_diag has unexpected offset % instead of 24", ((cast(*void)(*instance.L_diag)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfridge.L_diag)) == 8, "gsl_multifit_fdfridge.L_diag has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfridge.L_diag)));
+    assert(((cast(*void)(*instance.L)) - cast(*void)(*instance)) == 32, "gsl_multifit_fdfridge.L has unexpected offset % instead of 32", ((cast(*void)(*instance.L)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfridge.L)) == 8, "gsl_multifit_fdfridge.L has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfridge.L)));
+    assert(((cast(*void)(*instance.f)) - cast(*void)(*instance)) == 40, "gsl_multifit_fdfridge.f has unexpected offset % instead of 40", ((cast(*void)(*instance.f)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfridge.f)) == 8, "gsl_multifit_fdfridge.f has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfridge.f)));
+    assert(((cast(*void)(*instance.wts)) - cast(*void)(*instance)) == 48, "gsl_multifit_fdfridge.wts has unexpected offset % instead of 48", ((cast(*void)(*instance.wts)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfridge.wts)) == 8, "gsl_multifit_fdfridge.wts has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfridge.wts)));
+    assert(((cast(*void)(*instance.s)) - cast(*void)(*instance)) == 56, "gsl_multifit_fdfridge.s has unexpected offset % instead of 56", ((cast(*void)(*instance.s)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfridge.s)) == 8, "gsl_multifit_fdfridge.s has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfridge.s)));
+    assert(((cast(*void)(*instance.fdf)) - cast(*void)(*instance)) == 64, "gsl_multifit_fdfridge.fdf has unexpected offset % instead of 64", ((cast(*void)(*instance.fdf)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfridge.fdf)) == 8, "gsl_multifit_fdfridge.fdf has unexpected size % instead of 8", size_of(type_of(gsl_multifit_fdfridge.fdf)));
+    assert(((cast(*void)(*instance.fdftik)) - cast(*void)(*instance)) == 72, "gsl_multifit_fdfridge.fdftik has unexpected offset % instead of 72", ((cast(*void)(*instance.fdftik)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_multifit_fdfridge.fdftik)) == 64, "gsl_multifit_fdfridge.fdftik has unexpected size % instead of 64", size_of(type_of(gsl_multifit_fdfridge.fdftik)));
+    assert(size_of(gsl_multifit_fdfridge) == 136, "gsl_multifit_fdfridge has size % instead of 136", size_of(gsl_multifit_fdfridge));
+}
 
 gsl_multifit_fdfridge_alloc :: (T: *gsl_multifit_fdfsolver_type, n: size_t, p: size_t) -> *gsl_multifit_fdfridge #foreign libgsl;
 
@@ -2825,11 +4461,12 @@ gsl_multifit_fdfridge_wset3 :: (w: *gsl_multifit_fdfridge, f: *gsl_multifit_func
 gsl_multifit_fdfridge_iterate :: (w: *gsl_multifit_fdfridge) -> s32 #foreign libgsl;
 gsl_multifit_fdfridge_driver :: (w: *gsl_multifit_fdfridge, maxiter: size_t, xtol: float64, gtol: float64, ftol: float64, info: *s32) -> s32 #foreign libgsl;
 
-gsl_multifit_fdfsolver_lmsder_: *gsl_multifit_fdfsolver_type;
-gsl_multifit_fdfsolver_lmder_: *gsl_multifit_fdfsolver_type;
-gsl_multifit_fdfsolver_lmniel_: *gsl_multifit_fdfsolver_type;
+/* extern const gsl_multifit_fsolver_type * gsl_multifit_fsolver_gradient; */
+gsl_multifit_fdfsolver_lmsder: *gsl_multifit_fdfsolver_type;
+gsl_multifit_fdfsolver_lmder: *gsl_multifit_fdfsolver_type;
+gsl_multifit_fdfsolver_lmniel: *gsl_multifit_fdfsolver_type;
 
-anon_enum_79 :: enum u32 {
+anon_enum_2 :: enum u32 {
     GSL_IEEE_TYPE_NAN      :: 1;
     GSL_IEEE_TYPE_INF      :: 2;
     GSL_IEEE_TYPE_NORMAL   :: 3;
@@ -2837,23 +4474,43 @@ anon_enum_79 :: enum u32 {
     GSL_IEEE_TYPE_ZERO     :: 5;
 }
 
-anon_struct_80 :: struct {
+gsl_ieee_float_rep :: struct {
     sign:     s32;
-    mantissa: [24] u8;
+    mantissa: [24] u8; /* Actual bits are 0..22, element 23 is \0 */
     exponent: s32;
     type:     s32;
 }
+#run {
+    instance: gsl_ieee_float_rep;
+    assert(((cast(*void)(*instance.sign)) - cast(*void)(*instance)) == 0, "gsl_ieee_float_rep.sign has unexpected offset % instead of 0", ((cast(*void)(*instance.sign)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_ieee_float_rep.sign)) == 4, "gsl_ieee_float_rep.sign has unexpected size % instead of 4", size_of(type_of(gsl_ieee_float_rep.sign)));
+    assert(((cast(*void)(*instance.mantissa)) - cast(*void)(*instance)) == 4, "gsl_ieee_float_rep.mantissa has unexpected offset % instead of 4", ((cast(*void)(*instance.mantissa)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_ieee_float_rep.mantissa)) == 24, "gsl_ieee_float_rep.mantissa has unexpected size % instead of 24", size_of(type_of(gsl_ieee_float_rep.mantissa)));
+    assert(((cast(*void)(*instance.exponent)) - cast(*void)(*instance)) == 28, "gsl_ieee_float_rep.exponent has unexpected offset % instead of 28", ((cast(*void)(*instance.exponent)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_ieee_float_rep.exponent)) == 4, "gsl_ieee_float_rep.exponent has unexpected size % instead of 4", size_of(type_of(gsl_ieee_float_rep.exponent)));
+    assert(((cast(*void)(*instance.type)) - cast(*void)(*instance)) == 32, "gsl_ieee_float_rep.type has unexpected offset % instead of 32", ((cast(*void)(*instance.type)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_ieee_float_rep.type)) == 4, "gsl_ieee_float_rep.type has unexpected size % instead of 4", size_of(type_of(gsl_ieee_float_rep.type)));
+    assert(size_of(gsl_ieee_float_rep) == 36, "gsl_ieee_float_rep has size % instead of 36", size_of(gsl_ieee_float_rep));
+}
 
-gsl_ieee_float_rep :: anon_struct_80;
-
-anon_struct_81 :: struct {
+gsl_ieee_double_rep :: struct {
     sign:     s32;
-    mantissa: [53] u8;
+    mantissa: [53] u8; /* Actual bits are 0..51, element 52 is \0 */
     exponent: s32;
     type:     s32;
 }
-
-gsl_ieee_double_rep :: anon_struct_81;
+#run {
+    instance: gsl_ieee_double_rep;
+    assert(((cast(*void)(*instance.sign)) - cast(*void)(*instance)) == 0, "gsl_ieee_double_rep.sign has unexpected offset % instead of 0", ((cast(*void)(*instance.sign)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_ieee_double_rep.sign)) == 4, "gsl_ieee_double_rep.sign has unexpected size % instead of 4", size_of(type_of(gsl_ieee_double_rep.sign)));
+    assert(((cast(*void)(*instance.mantissa)) - cast(*void)(*instance)) == 4, "gsl_ieee_double_rep.mantissa has unexpected offset % instead of 4", ((cast(*void)(*instance.mantissa)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_ieee_double_rep.mantissa)) == 53, "gsl_ieee_double_rep.mantissa has unexpected size % instead of 53", size_of(type_of(gsl_ieee_double_rep.mantissa)));
+    assert(((cast(*void)(*instance.exponent)) - cast(*void)(*instance)) == 60, "gsl_ieee_double_rep.exponent has unexpected offset % instead of 60", ((cast(*void)(*instance.exponent)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_ieee_double_rep.exponent)) == 4, "gsl_ieee_double_rep.exponent has unexpected size % instead of 4", size_of(type_of(gsl_ieee_double_rep.exponent)));
+    assert(((cast(*void)(*instance.type)) - cast(*void)(*instance)) == 64, "gsl_ieee_double_rep.type has unexpected offset % instead of 64", ((cast(*void)(*instance.type)) - cast(*void)(*instance)));
+    assert(size_of(type_of(gsl_ieee_double_rep.type)) == 4, "gsl_ieee_double_rep.type has unexpected size % instead of 4", size_of(type_of(gsl_ieee_double_rep.type)));
+    assert(size_of(gsl_ieee_double_rep) == 68, "gsl_ieee_double_rep has size % instead of 68", size_of(gsl_ieee_double_rep));
+}
 
 gsl_ieee_printf_float :: (x: *float) -> void #foreign libgsl;
 gsl_ieee_printf_double :: (x: *float64) -> void #foreign libgsl;
@@ -2864,20 +4521,20 @@ gsl_ieee_fprintf_double :: (stream: *FILE, x: *float64) -> void #foreign libgsl;
 gsl_ieee_float_to_rep :: (x: *float, r: *gsl_ieee_float_rep) -> void #foreign libgsl;
 gsl_ieee_double_to_rep :: (x: *float64, r: *gsl_ieee_double_rep) -> void #foreign libgsl;
 
-anon_enum_82 :: enum u32 {
+anon_enum_3 :: enum u32 {
     GSL_IEEE_SINGLE_PRECISION   :: 1;
     GSL_IEEE_DOUBLE_PRECISION   :: 2;
     GSL_IEEE_EXTENDED_PRECISION :: 3;
 }
 
-anon_enum_83 :: enum u32 {
+anon_enum_4 :: enum u32 {
     GSL_IEEE_ROUND_TO_NEAREST :: 1;
     GSL_IEEE_ROUND_DOWN       :: 2;
     GSL_IEEE_ROUND_UP         :: 3;
     GSL_IEEE_ROUND_TO_ZERO    :: 4;
 }
 
-anon_enum_84 :: enum u32 {
+anon_enum_5 :: enum u32 {
     GSL_IEEE_MASK_INVALID          :: 1;
     GSL_IEEE_MASK_DENORMALIZED     :: 2;
     GSL_IEEE_MASK_DIVISION_BY_ZERO :: 4;
@@ -2894,5 +4551,6 @@ gsl_ieee_set_mode :: (precision: s32, rounding: s32, exception_mask: s32) -> s32
 
 #scope_file
 
-libgsl :: #foreign_system_library "libgsl";
-libgslcblas :: #foreign_system_library "libgslcblas";
+#import "Basic"; // For assert
+libgsl :: #foreign_library "/usr/lib/x86_64-linux-gnu/libgsl";
+libgslcblas :: #foreign_library "/usr/lib/x86_64-linux-gnu/libgslcblas";

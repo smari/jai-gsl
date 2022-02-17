@@ -94,7 +94,6 @@ generate_bindings :: (write_file := true) {
         for GSL_SOURCE_FILES {
             array_add(*source_files,  tprint("%/%", GSL_PATH, it));
         }
-        strip_prefix             = "";
         auto_detect_enum_prefixes = false;
         user_data                = *gsl_data;
 
